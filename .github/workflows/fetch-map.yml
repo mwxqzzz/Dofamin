@@ -1,0 +1,22 @@
+name: Fetch map data
+on:
+  push:
+    branches: [claude/dofamin-site]
+    paths: [tools/fetch_osm.py, .github/workflows/fetch-map.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch OpenStreetMap data and walking routes
+        run: python3 tools/fetch_osm.py
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/raw
+          git commit -m "Add OpenStreetMap data for the contacts map" || echo "nothing to commit"
+          git push
