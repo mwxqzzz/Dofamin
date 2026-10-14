@@ -7,100 +7,13 @@ Outputs:
 Run from the repository root:  python3 tools/build_site.py
 (build_images.py and build_map.py must have been run before.)
 """
-import json, math, pathlib, re, subprocess, sys, urllib.parse
+import pathlib, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-TOOLS = ROOT / "tools"
-G = json.load(open(TOOLS / "hero-glyphs.json"))
-TOP, VB_H = -735, 750          # glyph box in font units (cap height 714 + overshoot)
 
-# ---------------------------------------------------------------- hero word --
-
-def offset_poly(pts, ts):
-    n = len(pts); lines = []
-    cx = sum(p[0] for p in pts) / n; cy = sum(p[1] for p in pts) / n
-    for i in range(n):
-        (x1, y1), (x2, y2) = pts[i], pts[(i + 1) % n]
-        dx, dy = x2 - x1, y2 - y1; L = math.hypot(dx, dy)
-        nx, ny = -dy / L, dx / L
-        if (cx - (x1 + x2) / 2) * nx + (cy - (y1 + y2) / 2) * ny < 0:
-            nx, ny = -nx, -ny
-        lines.append(((x1 + nx * ts[i], y1 + ny * ts[i]), (dx, dy)))
-    res = []
-    for i in range(n):
-        (p, d), (q, e) = lines[i - 1], lines[i]
-        t = ((q[0] - p[0]) * e[1] - (q[1] - p[1]) * e[0]) / (d[0] * e[1] - d[1] * e[0])
-        res.append((p[0] + d[0] * t, p[1] + d[1] * t))
-    return res
-
-
-def hexagon_d(x0, x1, top, bot, thick=140, thin=40, inset=.2):
-    """The "O" of the logo: a hexagon ring with thick sides and hairline top and bottom."""
-    w = x1 - x0; ym = (top + bot) / 2
-    outer = [(x0, ym), (x0 + w * inset, top), (x1 - w * inset, top), (x1, ym), (x1 - w * inset, bot), (x0 + w * inset, bot)]
-    inner = offset_poly(outer, [thick, thin, thick, thick, thin, thick])
-    f = lambda P: "M" + "L".join(f"{x:.0f} {y:.0f}" for x, y in P) + "Z"
-    return f(outer) + f(inner[::-1])
-
-
-def glyph(ch):
-    """Path of one letter in its own box: x 0..advance, y TOP..TOP+VB_H."""
-    g = G["O" if ch == "O" else ch]
-    if ch == "O":
-        b = g["bounds"]
-        return hexagon_d(b[0], g["adv"] - b[0], -b[3], -b[1]), g["adv"]
-    return g["d"], g["adv"]
-
-
-TRACK = 12
-LETTER_PHOTO = {"D": "h-d", "O": "h-o", "F": "h-f", "A": "h-a", "M": "h-m", "I": "h-i", "N": "h-n"}
-DEPTH = {"D": .9, "O": -.7, "F": 1.1, "A": -.5, "M": .8, "I": -.9, "N": .6}
-
-
-def layout(word):
-    x, out = 0, []
-    for ch in word:
-        d, adv = glyph(ch)
-        out.append((ch, d, x, adv)); x += adv + TRACK
-    return out, x - TRACK
-
-
-def mask_uri(d, adv):
-    svg = f"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 {TOP} {adv} {VB_H}' preserveAspectRatio='none'><path fill-rule='evenodd' d='{d}'/></svg>"
-    return "data:image/svg+xml," + urllib.parse.quote(svg, safe=" ='/:,.-")
-
-
-def hero_word(word, cls, idx0=0):
-    parts, W = layout(word)
-    spans, outline = [], []
-    for i, (ch, d, x, adv) in enumerate(parts):
-        style = (f"left:{x / W * 100:.3f}%;width:{adv / W * 100:.3f}%;--i:{idx0 + i};"
-                 f"--m:url(&quot;{mask_uri(d, adv)}&quot;)")
-        spans.append(f'<span class="hw__l" style="{style}"><img src="img/{LETTER_PHOTO[ch]}.webp" alt="" '
-                     f'data-depth="{DEPTH[ch]}" decoding="async" fetchpriority="high"></span>')
-        outline.append(f'<path transform="translate({x} 0)" fill-rule="evenodd" d="{d}"/>')
-    return (f'<div class="hw {cls}" style="aspect-ratio:{W}/{VB_H}" aria-hidden="true">{"".join(spans)}'
-            f'<svg class="hw__outline" viewBox="0 {TOP} {W} {VB_H}" preserveAspectRatio="none">{"".join(outline)}</svg></div>'), W
-
-
-def footer_word():
-    parts, W = layout("DOFAMIN")
-    gs = []
-    for i, (ch, d, x, adv) in enumerate(parts):
-        cls = ' class="fw__o"' if ch == "O" else ""
-        gs.append(f'<g class="fw__l" data-i="{i}"><path{cls} transform="translate({x} 0)" fill-rule="evenodd" d="{d}"/></g>')
-    return f'<svg class="fw" viewBox="-40 {TOP - 60} {W + 80} {VB_H + 120}" aria-hidden="true">{"".join(gs)}</svg>'
-
-
-line_html, _ = hero_word("DOFAMIN", "hw--line")
-dofa_html, w_dofa = hero_word("DOFA", "hw--top", 0)
-min_html, w_min = hero_word("MIN", "hw--bottom", 4)
-stack_html = (f'<div class="hw-stack" style="--min-w:{w_min / w_dofa * 100:.3f}%">{dofa_html}{min_html}</div>')
-
-# ------------------------------------------------------------------ gallery --
 MASTER = {"marina": ("Марина", "Работа Марины"), "darya": ("Дарья", "Работа Дарьи"),
           "svetlana": ("Светлана", "Работа Светланы"), "natalya": ("Наталья", "Работа Натальи"),
-          "studio": ("Студия", "Работа мастеров студии")}
+          "studio": ("Мастер студии", "Работа мастеров студии")}
 ALT = {
     "marina-1": "Красный маникюр на коротких ногтях, один ноготь зелёный",
     "marina-2": "Красный маникюр средней длины с одним белым ногтем",
@@ -132,53 +45,44 @@ ALT = {
     "studio-9": "Красный гель-лак и красный тюльпан в руке",
     "studio-10": "Белые миндальные ногти, два с крапинками",
 }
-ORDER = ["marina-7", "darya-3", "svetlana-2", "studio-7", "darya-1", "marina-8", "studio-1", "natalya-1",
-         "studio-8", "darya-4", "marina-5", "svetlana-1", "studio-4", "darya-8", "studio-10", "marina-1",
-         "darya-2", "studio-3", "studio-5", "marina-4", "darya-5", "studio-2", "marina-2", "darya-6",
-         "studio-6", "marina-3", "darya-7", "studio-9", "marina-6"]
+# calm, light works first; brighter ones further down
+ORDER = ["darya-8", "svetlana-2", "studio-7", "marina-8", "studio-3", "darya-5", "studio-10", "marina-7",
+         "darya-3", "svetlana-1", "studio-8", "natalya-1", "studio-4", "darya-1", "marina-5", "darya-4",
+         "studio-5", "marina-4", "darya-2", "studio-1", "darya-6", "marina-1", "studio-2", "darya-7",
+         "marina-2", "studio-6", "marina-3", "studio-9", "marina-6"]
 assert sorted(ORDER) == sorted(ALT), set(ALT) ^ set(ORDER)
 
 
-def photo_btn(name, cls, set_name, extra=""):
-    m = name.split("-")[0]
-    who, cap = MASTER[m]
+def who(name):
+    return name.split("-")[0]
+
+
+def photo_btn(name, cls, set_name, inner=""):
+    m = who(name)
+    cap = MASTER[m][1]
     return (f'<button class="{cls}" type="button" data-set="{set_name}" data-m="{m}" data-full="img/{name}.webp" '
-            f'data-cap="{cap}"{extra}><img src="img/{name}-t.webp" alt="{ALT[name]}. {cap}" width="480" height="640" '
-            f'loading="lazy" decoding="async"></button>')
+            f'data-cap="{cap}"><img src="img/{name}-t.webp" alt="{ALT[name]}. {cap}" width="480" height="640" '
+            f'loading="lazy" decoding="async">{inner}</button>')
 
 
-works = "\n".join(photo_btn(n, "wk", "works", f' data-who="{MASTER[n.split("-")[0]][0]}"') for n in ORDER)
+works = "\n".join(photo_btn(n, "wk", "works", f'<span class="wk__who">{MASTER[who(n)][0]}</span>') for n in ORDER)
 
 
-def fan(names, set_name, empty=0):
-    items = [photo_btn(n, "fan__p", set_name) for n in names]
-    items += ['<div class="fan__p fan__p--ph" aria-hidden="true"><span class="todo">уточнить: фото работ</span></div>'] * empty
-    items = [it.replace(' class="fan__p', f' style="--i:{i}" class="fan__p', 1) for i, it in enumerate(items)]
-    return f'<div class="fan" style="--n:{len(items)}">{"".join(items)}</div>'
+def master_photos(m):
+    names = [n for n in ORDER if who(n) == m]
+    shown, rest = names[:3], names[3:]
+    tiles = [photo_btn(n, "mp", m) for n in shown]
+    if rest:
+        tiles.append(photo_btn(rest[0], "mp mp--more", m, f'<span class="mp__more">ещё {len(rest)}</span>'))
+        tiles.append('<div hidden>' + "".join(photo_btn(n, "mp", m) for n in rest[1:]) + '</div>')
+    for _ in range(max(0, 3 - len(shown))):
+        tiles.append('<div class="mp mp--ph" aria-hidden="true"><span class="todo">фото работ</span></div>')
+    return f'<div class="mphotos">{"".join(tiles)}</div>'
 
 
-FANS = {
-    "marina": fan(["marina-7", "marina-8", "marina-5", "marina-1"], "marina"),
-    "darya": fan(["darya-1", "darya-3", "darya-4", "darya-8"], "darya"),
-    "natalya": fan(["natalya-1"], "natalya", 2),
-    "svetlana": fan(["svetlana-2", "svetlana-1"], "svetlana", 1),
-}
-# hidden members of each master's set, so the lightbox shows all of her photos
-MORE = {
-    "marina": ["marina-4", "marina-2", "marina-3", "marina-6"],
-    "darya": ["darya-2", "darya-5", "darya-6", "darya-7"],
-}
-for m, names in MORE.items():
-    FANS[m] += '<div hidden>' + "".join(photo_btn(n, "fan__more", m) for n in names) + "</div>"
-
-# ---------------------------------------------------------------- assemble --
 src = (ROOT / "src" / "index.html").read_text()
-map_svg = (ROOT / "build" / "map.svg").read_text()
-repl = {
-    "<!-- @HERO_LINE -->": line_html, "<!-- @HERO_STACK -->": stack_html, "<!-- @WORKS -->": works,
-    "<!-- @MAP -->": map_svg, "<!-- @FOOTER_WORD -->": footer_word(),
-    **{f"<!-- @FAN_{k.upper()} -->": v for k, v in FANS.items()},
-}
+repl = {"<!-- @WORKS -->": works, "<!-- @MAP -->": (ROOT / "build" / "map.svg").read_text(),
+        **{f"<!-- @M_{m.upper()} -->": master_photos(m) for m in ("marina", "darya", "natalya", "svetlana")}}
 for k, v in repl.items():
     assert k in src, k
     src = src.replace(k, v)

@@ -12,13 +12,6 @@ FOCUS_X = {"studio-10": .58, "darya-6": .5}
 PHOTOS = ([f"marina-{i}" for i in range(1, 9)] + [f"darya-{i}" for i in range(1, 9)] +
           ["svetlana-1", "svetlana-2", "natalya-1"] + [f"studio-{i}" for i in range(1, 11)])
 
-# close crops on the nails, used to fill the letters of the hero word
-HERO = {"h-d": ("marina-5", (40, 200, 300, 700)), "h-o": ("svetlana-2", (150, 400, 600, 880)),
-        "h-f": ("studio-1", (40, 90, 470, 720)), "h-a": ("darya-3", (200, 100, 620, 510)),
-        "h-m": ("studio-7", (150, 280, 520, 680)), "h-i": ("studio-5", (330, 130, 680, 820)),
-        "h-n": ("marina-7", (100, 330, 520, 760))}
-
-
 def crop34(im, fx=.5, fy=.5):
     w, h = im.size
     if w / h > .75:
@@ -35,9 +28,6 @@ for name in PHOTOS:
     t = crop34(im, FOCUS_X.get(name, .5), FOCUS_Y.get(name, .5)); t.thumbnail((480, 640))
     t.save(OUT / f"{name}-t.webp", quality=74, method=6)
 
-for out, (name, box) in HERO.items():
-    Image.open(RAW / f"{name}.jpg").convert("RGB").crop(box).save(OUT / f"{out}.webp", quality=82, method=6)
-
 cover = Image.open(RAW / "cover.jpg").convert("RGB"); cover.thumbnail((900, 1100))
 cover.save(OUT / "entrance.webp", quality=78, method=6)
 
@@ -51,4 +41,17 @@ for y in range(logo.size[1]):
 rgba.thumbnail((480, 200))
 rgba.save(OUT / "logo.webp", quality=90, method=6)
 rgba.save(OUT / "logo.png", optimize=True)
+
+# the same logo for light backgrounds: light parts become aubergine, violet parts stay violet
+AUB, VIO = (0x2B, 0x21, 0x30), (0x8B, 0x3F, 0xA6)
+light = Image.new("RGBA", logo.size); lo = light.load()
+for y in range(logo.size[1]):
+    for x in range(logo.size[0]):
+        r, g, b = px[x, y]; mx, mn = max(r, g, b), min(r, g, b)
+        if mx < 14:
+            lo[x, y] = (0, 0, 0, 0); continue
+        t = min(1, max(0, ((mx - mn) / mx - .12) * 2.2))
+        lo[x, y] = tuple(round(AUB[i] + (VIO[i] - AUB[i]) * t) for i in range(3)) + (min(255, round(mx * 1.05)),)
+light.thumbnail((480, 200))
+light.save(OUT / "logo-light.webp", quality=90, method=6)
 print("done", sum(f.stat().st_size for f in OUT.iterdir()) // 1024, "KB total")
