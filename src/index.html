@@ -1,21 +1,25 @@
-<title>Маникюр и педикюр на Каменной Горке — студия Dofamin, Минск</title>
+<title>Маникюр и педикюр на Каменной Горке · студия Dofamin, Минск</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Студия маникюра и педикюра Dofamin у метро Каменная Горка, Минск, ул. Кунцевщина, 31. 5.0 на Яндекс Картах, стерильные инструменты, DIP-покрытие при аллергии на гель-лак, педикюр с элементами подологии. Онлайн-запись.">
+<meta name="description" content="Студия маникюра и педикюра Dofamin у метро Каменная Горка, Минск, ул. Кунцевщина, 31. Маникюр и педикюр от 40 BYN, 5.0 на Яндекс Картах, стерильные инструменты, DIP при аллергии на гель-лак, подология. Онлайн-запись">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Dofamin — маникюр и педикюр у Каменной Горки">
-<meta property="og:description" content="5.0 на Яндекс Картах. Стерильно, аккуратно, носится без сколов. Онлайн-запись.">
+<meta property="og:title" content="Dofamin: маникюр и педикюр у Каменной Горки от 40 BYN">
+<meta property="og:description" content="5.0 на Яндекс Картах. Покрытие без сколов весь срок носки. Онлайн-запись">
 <meta property="og:locale" content="ru_RU">
 <meta name="theme-color" content="#F8F5F8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300..500;1,300..400&family=Onest:wght@400..600&display=swap">
+<!-- Концепт для владелицы. Цены, рейтинг, адрес, мастера и отзывы взяты с Яндекс Карт.
+     Демонстрационные допущения, которые сверяем с владелицей: время перезвона (15 минут),
+     «отвечаем в 3 раза быстрее» в виджете связи, часы работы, условия гарантии на покрытие.
+     Форма заявки в концепте не отправляет данные: при запуске подключается к Telegram или CRM -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "NailSalon",
   "name": "Dofamin",
   "alternateName": "Дофамин",
-  "description": "Студия маникюра и педикюра у метро Каменная Горка: маникюр с покрытием, японский маникюр, DIP-покрытие при аллергии на гель-лак, наращивание, педикюр с элементами подологии.",
+  "description": "Студия маникюра и педикюра у метро Каменная Горка: маникюр с покрытием, японский маникюр, DIP-покрытие при аллергии на гель-лак, наращивание, педикюр с элементами подологии",
   "image": "img/entrance.webp",
   "logo": "img/logo.png",
   "telephone": "+375295627048",
@@ -33,7 +37,7 @@
     "closes": "21:00"
   }],
   "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "bestRating": "5", "ratingCount": "70", "reviewCount": "37" },
-  "priceRange": "15–170 BYN",
+  "priceRange": "15-170 BYN",
   "currenciesAccepted": "BYN",
   "amenityFeature": [
     { "@type": "LocationFeatureSpecification", "name": "Парковка", "value": true },
@@ -44,7 +48,7 @@
 </script>
 <style>
 :root{
-  /* Layout: light, airy bands with one reading column; photos in soft rounded frames; the hexagon of the logo as a quiet recurring mark */
+  /* Layout: light, airy bands; two dark aubergine bands (quiz and final) carry the calls to action; the hexagon of the logo is a quiet recurring mark */
   --bg:#F8F5F8;
   --surface:#FFFFFF;
   --soft:#F2EAF4;
@@ -59,11 +63,12 @@
   --lilac-2:#F0E4F5;
   --skin:#F2E0D7;
   --dark:#251C2A;
+  --dark-2:#33273A;
   --on-dark:#F4EEF5;
-  --on-dark-mute:#B9ABBE;
-  --note:#FFF4D2;
-  --note-ink:#6B4A00;
-  --note-line:#E3BF5E;
+  --on-dark-mute:#BBAEC0;
+  --pill:#E6F5D8;
+  --pill-ink:#2D5A1B;
+  --ph:#ECE6EE;
   --head:'Jost','Futura','Century Gothic','Trebuchet MS',sans-serif;
   --body:'Onest',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
   --hdr:64px;
@@ -77,54 +82,55 @@
 @media (min-width:1100px){:root{--hdr:76px;--gl:max(48px, env(safe-area-inset-left, 0px));--gr:max(48px, env(safe-area-inset-right, 0px))}}
 
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-html.lock{overflow:hidden}
+html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:clip}
 @media (min-width:1100px){body{font-size:17px}}
 img{max-width:100%;height:auto;display:block}
-a{color:inherit}
+a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
 :focus-visible{outline:2px solid var(--plum);outline-offset:3px;border-radius:6px}
+.dark :focus-visible{outline-color:var(--lilac)}
+[hidden]{display:none!important}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .wrap{padding-left:var(--gl);padding-right:var(--gr);max-width:1280px;margin-inline:auto}
 .i{width:20px;height:20px;flex:none}
-section{scroll-margin-top:var(--hdr);padding-block:72px}
-@media (min-width:900px){section{padding-block:104px}}
+section{scroll-margin-top:var(--hdr);padding-block:64px}
+@media (min-width:900px){section{padding-block:96px}}
 .band-white{background:var(--surface)}
 .band-soft{background:var(--soft)}
+.dark{background:var(--dark);color:var(--on-dark)}
 
 /* type */
 h1,h2,h3{margin:0;font-family:var(--head);font-weight:400;letter-spacing:-.005em;text-wrap:balance}
-.h2{font-size:clamp(30px,7.6vw,48px);line-height:1.12}
-.eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 14px;font:600 12px/1.3 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--plum)}
-.lead{margin:16px 0 0;font-size:17px;line-height:1.6;color:var(--ink-2);max-width:38em;text-wrap:pretty}
-.mute{color:var(--mute)}
-.head{max-width:44em}
-.head--row{display:grid;gap:20px;max-width:none}
-@media (min-width:900px){.head--row{grid-template-columns:minmax(0,1fr) minmax(0,26em);align-items:end;gap:48px}}
+.h2{font-size:clamp(27px,7vw,44px);line-height:1.14}
+.sub{margin:14px 0 0;font-size:15px;line-height:1.55;color:var(--ink-2);max-width:36em;text-wrap:pretty}
+@media (min-width:900px){.sub{font-size:17px}}
+.dark .sub{color:var(--on-dark-mute)}
+.head{max-width:46em}
+.head--c{margin-inline:auto;text-align:center}
+.head--c .sub{margin-inline:auto}
 .hx{flex:none;display:inline-block;width:.86em;height:.76em;background:currentColor;clip-path:polygon(0 50%,25% 0,75% 0,100% 50%,75% 100%,25% 100%)}
+.flag{color:var(--plum);font-weight:600;margin-left:1px}
+.dark .flag{color:var(--lilac)}
 
-/* buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;font:500 16px/1.15 var(--body);text-decoration:none;text-align:center;transition:background-color .2s,color .2s,border-color .2s,transform .15s}
+/* buttons: text always on one line */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 24px;border-radius:999px;font:500 16px/1 var(--body);white-space:nowrap;text-align:center;transition:background-color .2s,color .2s,border-color .2s,transform .15s}
 .btn:active{transform:scale(.98)}
 .btn--main{background:var(--plum);color:#fff;box-shadow:0 12px 26px -16px rgba(139,63,166,.9)}
 .btn--main:hover{background:var(--plum-dk)}
 .btn--ghost{border:1px solid var(--line-2);color:var(--ink);background:var(--surface)}
 .btn--ghost:hover{border-color:var(--plum);color:var(--plum)}
+.dark .btn--ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,238,245,.35)}
+.dark .btn--ghost:hover{border-color:var(--lilac);color:var(--lilac)}
 .btn--sm{min-height:42px;padding:0 18px;font-size:14px}
 .btn .i{width:18px;height:18px}
-.btn[hidden]{display:none}
-.proof{display:flex;align-items:center;gap:8px;margin:9px 0 0;font-size:13px;line-height:1.4;color:var(--mute)}
-.proof .hx{color:var(--plum);font-size:11px}
+@media (max-width:380px){.btn{font-size:15px;padding:0 18px}}
+/* the clickability sticker: only on hero, quiz and final call to action */
+.btn-badge{position:absolute;right:-6px;top:-13px;padding:4px 10px;border-radius:999px;background:var(--pill);color:var(--pill-ink);font:600 11.5px/1.2 var(--body);white-space:nowrap;box-shadow:0 6px 14px -6px rgba(43,33,48,.35);transform:rotate(4deg);pointer-events:none}
 
-/* owner notes: soft but easy to find */
-.todo{display:inline-block;margin:2px 0;font:500 12px/1.4 var(--body);letter-spacing:0;text-transform:none;font-style:normal;background:var(--note);color:var(--note-ink);border:1px dashed var(--note-line);padding:2px 8px;border-radius:6px;vertical-align:middle;text-align:left}
-.notes-off .todo{display:none!important}
-.notes-tgl{position:fixed;z-index:44;right:0;top:50%;transform:translateY(-50%);writing-mode:vertical-rl;font:500 11px/1 var(--body);background:var(--note);color:var(--note-ink);border:1px dashed var(--note-line);border-right:0;padding:12px 7px;padding-right:calc(7px + env(safe-area-inset-right, 0px));border-radius:10px 0 0 10px}
-.notes-off .notes-tgl{opacity:.7}
-
-/* header */
-.hdr{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top, 0px);background:rgba(248,245,248,.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
-.hdr.is-scrolled{border-bottom-color:var(--line)}
+/* header and push-down mobile menu */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top, 0px);background:rgba(248,245,248,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.is-scrolled,.menu-open .hdr{border-bottom-color:var(--line)}
 .hdr__in{height:var(--hdr);display:flex;align-items:center;gap:10px;padding-left:var(--gl);padding-right:var(--gr);max-width:1280px;margin-inline:auto}
 .hdr__logo{margin-right:auto;display:block}
 .hdr__logo img{height:34px;width:auto}
@@ -133,264 +139,219 @@ h1,h2,h3{margin:0;font-family:var(--head);font-weight:400;letter-spacing:-.005em
 .hdr__burger span{display:block;width:22px;height:1.5px;background:var(--ink);transition:transform .3s var(--ease)}
 .menu-open .hdr__burger span:first-child{transform:translateY(4.25px) rotate(45deg)}
 .menu-open .hdr__burger span:last-child{transform:translateY(-4.25px) rotate(-45deg)}
+.mmenu{max-height:0;overflow:hidden;transition:max-height .35s var(--ease)}
+.menu-open .mmenu{max-height:420px}
+.mmenu nav{display:grid;padding:4px var(--gr) 18px var(--gl)}
+.mmenu nav a{display:flex;justify-content:space-between;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--line);font:400 22px/1.2 var(--head);border-radius:0}
+.mmenu nav a small{font:400 13px var(--body);color:var(--mute)}
+.mmenu__tel{display:block;padding:14px var(--gr) 18px var(--gl);font-size:17px;font-weight:500}
 @media (min-width:1100px){
   .hdr__logo img{height:42px}
   .hdr__nav{display:flex;gap:30px;margin-right:30px}
-  .hdr__nav a{text-decoration:none;font-size:15px;color:var(--ink-2);padding:8px 0;transition:color .2s}
+  .hdr__nav a{font-size:15px;color:var(--ink-2);padding:8px 0;transition:color .2s}
   .hdr__nav a:hover{color:var(--plum)}
-  .hdr__burger{display:none}
+  .hdr__burger,.mmenu{display:none}
 }
-.menu{position:fixed;inset:0;z-index:49;background:var(--bg);display:flex;flex-direction:column;gap:28px;overflow-y:auto;padding:calc(var(--hdr) + env(safe-area-inset-top, 0px) + 16px) var(--gr) calc(28px + env(safe-area-inset-bottom, 0px)) var(--gl);opacity:0;visibility:hidden;transition:opacity .3s,visibility 0s .3s}
-.menu-open .menu{opacity:1;visibility:visible;transition:opacity .3s}
-.menu nav{display:grid}
-.menu nav a{display:flex;justify-content:space-between;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line);font:400 30px/1.1 var(--head);text-decoration:none}
-.menu nav a small{font:400 13px var(--body);color:var(--mute)}
-.menu__contacts{display:grid;gap:6px;color:var(--mute);font-size:15px}
-.menu__contacts a{color:var(--ink);text-decoration:none;font-size:19px}
-@media (min-width:1100px){.menu{display:none}}
 
-/* hero */
-.hero{padding-top:calc(var(--hdr) + 30px);padding-bottom:56px}
-.hero__grid{display:grid;gap:36px}
-.mark{display:flex;align-items:center;margin:4px 0 22px;font:300 clamp(40px,13.5vw,92px)/1 var(--head);letter-spacing:.16em;color:var(--ink);white-space:nowrap}
-.mark svg{width:.84em;height:.76em;margin:0 .16em 0 .02em;fill:none;stroke:var(--plum);stroke-linejoin:round}
-.hero h1{font-size:clamp(31px,8.2vw,52px);line-height:1.1}
-.hero__sub{margin:14px 0 0;font-size:18px;color:var(--ink-2)}
-.hero__cta{display:grid;gap:14px;margin-top:28px}
+/* 1. hero */
+.hero{padding-top:calc(var(--hdr) + 24px);padding-bottom:56px}
+.hero__grid{display:grid;gap:32px}
+.hero h1{font-size:clamp(29px,7.9vw,52px);line-height:1.12}
+.hero__sub{margin:14px 0 0;font-size:16px;line-height:1.5;color:var(--ink-2);max-width:32em}
+.hero__cta{display:grid;gap:12px;margin-top:24px}
 .hero__cta .btn{width:100%}
-.hero__media{position:relative;height:clamp(360px,104vw,580px)}
+.anchors{display:flex;flex-wrap:wrap;gap:8px 18px;margin:20px 0 0;padding:0;list-style:none;font-size:14px;color:var(--ink-2)}
+.anchors li{display:inline-flex;align-items:center;gap:8px}
+.anchors .hx{color:var(--plum);font-size:10px}
+.hero__media{position:relative;height:clamp(350px,100vw,580px)}
 .hero__main,.hero__small{position:absolute;overflow:hidden;background:var(--soft)}
 .hero__main{left:0;top:0;width:64%;aspect-ratio:3/4;border-radius:999px 999px 26px 26px;box-shadow:var(--shadow)}
 .hero__small{right:0;bottom:10%;width:44%;aspect-ratio:3/4;border-radius:22px;border:6px solid var(--bg);box-shadow:var(--shadow)}
 .hero__main img,.hero__small img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
 .hero__main:hover img,.hero__small:hover img{transform:scale(1.03)}
-.rating{position:absolute;left:6%;bottom:0;z-index:2;display:grid;gap:4px;padding:14px 18px;border-radius:18px;background:var(--surface);box-shadow:var(--shadow);text-decoration:none}
+.rating{position:absolute;left:6%;bottom:0;z-index:2;display:grid;gap:4px;padding:14px 18px;border-radius:18px;background:var(--surface);box-shadow:var(--shadow)}
 .rating__top{display:flex;align-items:center;gap:10px}
 .rating b{font:300 34px/1 var(--head)}
 .hexes{display:flex;gap:3px;color:var(--plum);font-size:12px}
 .rating small{font-size:12px;color:var(--mute)}
-.hero__note{display:flex;align-items:center;gap:14px;margin-top:44px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--mute)}
-.hero__note p{margin:0;max-width:34em}
-.hero__note b{font-weight:500;color:var(--ink-2)}
-.mol{flex:none;width:84px;height:auto;fill:none;stroke:var(--plum);stroke-width:2;stroke-linecap:round;opacity:.75}
-.mol text{fill:var(--plum);stroke:none;font:500 15px var(--body)}
-@media (min-width:700px){.hero__cta{grid-template-columns:auto auto;justify-content:start}.hero__cta .btn{width:auto;min-width:250px}}
+@media (min-width:700px){.hero__sub{font-size:18px}.hero__cta{grid-template-columns:auto auto;justify-content:start}.hero__cta .btn{width:auto;min-width:250px}}
 @media (min-width:1000px){
-  .hero{padding-top:calc(var(--hdr) + 48px);padding-bottom:72px}
-  .hero__grid{grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:64px;align-items:center}
-  .hero__media{order:-1;height:600px}
+  .hero{padding-top:calc(var(--hdr) + 48px);padding-bottom:80px}
+  .hero__grid{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:64px;align-items:center}
+  .hero__media{height:600px}
   .hero__main{width:68%}
   .hero__small{width:42%;bottom:6%}
 }
 
-/* trust row */
-.trust{padding-block:36px}
-.trust__row{display:grid;grid-template-columns:1fr 1fr}
-.tr{padding:16px 14px 16px 0;display:grid;gap:4px;align-content:start}
-.tr:nth-child(n+3){border-top:1px solid var(--line)}
-.tr:nth-child(even){padding-left:16px;border-left:1px solid var(--line)}
-.tr b{font:400 19px/1.2 var(--head)}
-.tr .tr__num{font-size:34px;font-weight:300;line-height:1}
-.tr span{font-size:14px;line-height:1.45;color:var(--mute)}
-@media (min-width:900px){
-  .trust{padding-block:44px}
-  .trust__row{grid-template-columns:repeat(4,1fr)}
-  .tr,.tr:nth-child(n+3),.tr:nth-child(even){border-top:0;padding:8px 28px;border-left:1px solid var(--line)}
-  .tr:first-child{border-left:0;padding-left:0}
-  .tr b{font-size:21px}
-}
-
-/* works */
-.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px}
-.chip{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 16px;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);font-size:14px;color:var(--ink-2);transition:background-color .2s,color .2s,border-color .2s}
+/* 2. gallery slider */
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.chip{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:0 15px;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);font-size:14px;color:var(--ink-2);transition:background-color .2s,color .2s,border-color .2s}
 .chip small{font-size:12px;color:var(--mute)}
 .chip:hover{border-color:var(--plum)}
 .chip[aria-pressed="true"]{background:var(--plum);border-color:var(--plum);color:#fff}
 .chip[aria-pressed="true"] small{color:rgba(255,255,255,.75)}
-.works__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px;margin-top:24px}
-@media (min-width:700px){.works__grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media (min-width:1100px){.works__grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 18px}}
-.wk{display:block;text-align:left}
-.wk[hidden],.works:not(.is-open) .wk.is-extra{display:none}
-.wk img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:16px;background:var(--soft);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
-.wk:hover img{transform:translateY(-3px);box-shadow:var(--shadow)}
+.slider{position:relative;margin-top:22px}
+.track{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0 calc(var(--gr) * -1) 0 calc(var(--gl) * -1);padding:0 var(--gr) 6px var(--gl);scroll-padding-left:var(--gl)}
+.track::-webkit-scrollbar{display:none}
+.wk{flex:0 0 min(62%,280px);scroll-snap-align:start;display:block;text-align:left}
+@media (min-width:1100px){.wk{flex-basis:calc((100% - 36px) / 4)}.track{margin:0;padding:0 0 6px;scroll-padding-left:0}}
+.wk img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:16px;background:var(--soft);transition:transform .5s var(--ease)}
+.wk:hover img{transform:translateY(-3px)}
 .wk__who{display:block;margin-top:8px;font-size:13px;color:var(--mute)}
-.works__foot{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;margin-top:32px}
+.arrows{display:flex;align-items:center;gap:10px;margin-top:18px}
+.arrow{width:46px;height:46px;border-radius:50%;border:1px solid var(--line-2);background:var(--surface);display:grid;place-items:center;color:var(--ink-2);transition:border-color .2s,color .2s,opacity .2s}
+.arrow:hover{border-color:var(--plum);color:var(--plum)}
+.arrow:disabled{opacity:.35;cursor:default}
+.arrows__count{margin-left:8px;font-size:14px;color:var(--mute);font-variant-numeric:tabular-nums}
 
-/* prices & calculator */
-.prices__grid{display:grid;gap:22px;margin-top:34px}
-@media (min-width:1100px){.prices__grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:28px;align-items:start}}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:6px 20px 20px}
-@media (min-width:700px){.card{padding:10px 30px 28px}}
-.step{margin:0;padding:20px 0;border:0;border-bottom:1px solid var(--line);min-width:0}
-.step[hidden]{display:none}
-.step__h{display:flex;gap:10px;align-items:center;padding:0;margin:0 0 14px;font:500 15px/1.3 var(--body);color:var(--ink)}
-.step__h b{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--lilac-2);color:var(--plum);font-size:13px;font-weight:600}
-.step__hint{margin:12px 0 0;font-size:14px;color:var(--mute);max-width:36em}
-.opts{display:flex;flex-wrap:wrap;gap:8px}
-.opt{position:relative}
-.opt input{position:absolute;opacity:0;pointer-events:none}
-.opt span{display:flex;flex-direction:column;justify-content:center;min-height:46px;padding:8px 16px;border:1px solid var(--line-2);border-radius:14px;background:var(--surface);font-size:15px;font-weight:500;line-height:1.25;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s}
-.opt span:hover{border-color:var(--plum)}
-.opt small{font-weight:400;font-size:12px;color:var(--mute);margin-top:2px}
-.opt input:checked+span{background:var(--plum);border-color:var(--plum);color:#fff}
-.opt input:checked+span small{color:rgba(255,255,255,.8)}
-.opt input:focus-visible+span{outline:2px solid var(--plum);outline-offset:2px}
-.step__len{display:grid;gap:14px}
-.step__len.has-nail{grid-template-columns:96px minmax(0,1fr);align-items:center;gap:18px}
-.nailfig{display:none;margin:0}
-.has-nail .nailfig{display:block}
-.legend{display:none;flex-wrap:wrap;gap:4px 14px;margin-top:12px;font-size:12px;color:var(--mute)}
-.has-nail .legend{display:flex}
-.nail{width:96px;height:auto;display:block}
+/* 3. services with prices */
+.svc{display:grid;gap:14px;margin-top:30px}
+@media (min-width:700px){.svc{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1100px){.svc{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}}
+.svc__c{display:flex;flex-direction:column;gap:6px;padding:22px;border-radius:22px;background:var(--surface);border:1px solid var(--line)}
+.svc__top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.svc__c h3{font-size:21px;line-height:1.2}
+.svc__price{flex:none;font:300 24px/1 var(--head);white-space:nowrap}
+.svc__price small{font:500 12px var(--body);color:var(--mute);margin-left:3px}
+.svc__c p{margin:0;font-size:14px;color:var(--mute)}
+.svc__gift{align-self:flex-start;margin-top:4px;font-size:12px;font-weight:500;padding:2px 10px;border-radius:999px;background:var(--lilac-2);color:var(--plum-dk)}
+.svc__c .btn{margin-top:auto;align-self:flex-start}
+.svc__c .btn--sm{margin-top:14px}
+.plist{margin-top:22px;border-radius:22px;background:var(--surface);border:1px solid var(--line);padding:0 20px}
+@media (min-width:700px){.plist{padding:0 30px}}
+.plist>summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0;cursor:pointer;font:400 19px/1.25 var(--head)}
+.plist>summary::-webkit-details-marker{display:none}
+.plist__cols{display:grid;gap:4px 40px;padding-bottom:18px}
+@media (min-width:900px){.plist__cols{grid-template-columns:1fr 1fr}}
+.plist h4{margin:16px 0 4px;font:500 15px/1.3 var(--body);color:var(--plum-dk)}
+.pl{list-style:none;margin:0;padding:0}
+.pl li{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:7px 0;border-bottom:1px dashed var(--line);border-radius:0;font-size:14px;line-height:1.4}
+.pl b{flex:none;font-weight:500;font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+.pm{flex:none;width:30px;height:30px;border-radius:50%;border:1px solid var(--line-2);position:relative;transition:transform .3s var(--ease),background-color .2s,border-color .2s}
+.pm::before,.pm::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:1.5px;border-radius:0;background:var(--ink-2);transform:translate(-50%,-50%)}
+.pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+details[open]>summary .pm{transform:rotate(45deg);background:var(--lilac-2);border-color:var(--lilac)}
+
+/* 4. quiz */
+.quiz__box{max-width:760px;margin:0 auto;text-align:center}
+.qform{margin-top:28px;padding:22px 18px;border-radius:24px;background:var(--dark-2);text-align:left}
+@media (min-width:700px){.qform{padding:30px 34px}}
+.qprog{display:flex;align-items:center;gap:14px;font-size:13px;color:var(--on-dark-mute)}
+.qprog__bar{flex:1;height:3px;border-radius:3px;background:rgba(244,238,245,.15);overflow:hidden}
+.qprog__bar i{display:block;height:100%;width:33%;border-radius:0;background:var(--lilac);transition:width .35s var(--ease)}
+.qstep h3{margin:18px 0 16px;font-size:22px;line-height:1.25;color:var(--on-dark)}
+.qopts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media (min-width:700px){.qopts--3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.qopt{display:flex;flex-direction:column;justify-content:center;gap:2px;min-height:56px;padding:10px 14px;border-radius:14px;border:1px solid rgba(244,238,245,.2);background:rgba(244,238,245,.04);text-align:left;font-size:15px;font-weight:500;line-height:1.25;color:var(--on-dark);transition:background-color .2s,border-color .2s}
+.qopt small{font-size:12px;font-weight:400;color:var(--on-dark-mute)}
+.qopt:hover{border-color:var(--lilac)}
+.qopt[aria-pressed="true"]{background:var(--plum);border-color:var(--plum)}
+.qlen{display:grid;gap:16px}
+.qlen.has-nail{grid-template-columns:84px minmax(0,1fr);align-items:center}
+.qlen .nailfig{display:none;margin:0}
+.qlen.has-nail .nailfig{display:block}
+.nail{width:84px;height:auto;display:block}
 .nail__finger{fill:var(--skin);stroke:#D8C1C9;stroke-width:2}
 .nail__bed{fill:var(--lilac);stroke:var(--plum);stroke-width:1.6}
 .nail__free{fill:#fff;stroke:var(--plum);stroke-width:2.5;vector-effect:non-scaling-stroke}
+.legend{display:none;flex-wrap:wrap;gap:4px 14px;margin-top:12px;font-size:12px;color:var(--on-dark-mute)}
+.has-nail .legend{display:flex}
 .legend span{display:inline-flex;align-items:center;gap:6px}
-.legend i{width:12px;height:12px;border-radius:3px;border:1.5px solid var(--plum);background:var(--lilac)}
+.legend i{width:12px;height:12px;border-radius:3px;border:1.5px solid var(--lilac);background:var(--lilac)}
 .legend i.fe{background:#fff}
-.step--x{display:flex;flex-wrap:wrap;gap:10px 22px;border-bottom:0;padding-bottom:8px}
-.tog{display:inline-flex;align-items:center;gap:10px;cursor:pointer;font-size:15px;font-weight:500;min-height:40px}
-.tog input{appearance:none;-webkit-appearance:none;margin:0;width:42px;height:24px;border-radius:999px;background:var(--line-2);position:relative;transition:background-color .2s;cursor:pointer;flex:none}
-.tog input::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.2);transition:transform .2s var(--ease)}
-.tog input:checked{background:var(--plum)}
-.tog input:checked::after{transform:translateX(18px)}
-.tog[hidden]{display:none}
-.calc__res{position:sticky;bottom:calc(10px + env(safe-area-inset-bottom, 0px));z-index:3;margin-top:14px;display:grid;gap:10px;padding:12px 12px 12px 16px;border-radius:20px;background:var(--surface);border:1px solid var(--line-2);box-shadow:0 18px 40px -18px rgba(43,33,48,.4)}
-.calc__sum{display:flex;align-items:center;gap:14px}
-.calc__price{flex:none;font:300 44px/1 var(--head);letter-spacing:-.01em;font-variant-numeric:tabular-nums}
-.calc__price small{font:500 13px var(--body);margin-left:5px;color:var(--mute)}
-.calc__desc{font-size:13px;line-height:1.35;color:var(--mute)}
-.calc__gift{margin:0;display:inline-flex;align-items:center;gap:7px;justify-self:start;font-size:12px;font-weight:500;padding:4px 11px;border-radius:999px;background:var(--lilac-2);color:var(--plum-dk)}
-.calc__gift .hx{font-size:9px}
-.calc__gift[hidden]{display:none}
-.calc__res .btn{min-height:50px}
-.calc__note{margin:0;font-size:12px;color:var(--mute)}
-@media (max-width:1099px){.calc__note{display:none}}
-@media (min-width:1100px){
-  .calc__res{position:static;box-shadow:none;background:var(--lilac-2);border-color:transparent;grid-template-columns:auto minmax(0,1fr);align-items:center;padding:22px 24px;column-gap:28px;row-gap:12px;margin-top:18px}
-  .calc__sum{grid-row:1/span 3;flex-direction:column;align-items:flex-start;gap:6px}
-  .calc__price{font-size:56px}
-  .calc__res .btn,.calc__note,.calc__gift{grid-column:2}
-  .calc__res .calc__gift{background:var(--surface)}
-  .calc__res .btn{min-height:54px;justify-self:start;min-width:280px}
-}
+.qback{margin-top:16px;font-size:14px;color:var(--on-dark-mute)}
+.qback:hover{color:var(--on-dark)}
+.qsum{display:inline-flex;align-items:center;gap:8px;margin:0 0 14px;padding:6px 12px;border-radius:999px;background:rgba(244,238,245,.08);font-size:13px;color:var(--on-dark-mute)}
+.qsum .hx{color:var(--lilac);font-size:9px}
+.field{display:block;width:100%;min-height:54px;padding:0 18px;border-radius:14px;border:1px solid rgba(244,238,245,.25);background:var(--surface);color:var(--ink);font:500 17px/1 var(--body);font-variant-numeric:tabular-nums}
+.field:focus{outline:2px solid var(--lilac);outline-offset:2px}
+.field.bad{outline:2px solid #F08FA0}
+.consent{display:flex;align-items:flex-start;gap:10px;margin:14px 0 18px;font-size:12.5px;line-height:1.45;color:var(--on-dark-mute)}
+.consent input{flex:none;margin:2px 0 0;width:17px;height:17px;accent-color:var(--lilac)}
+.consent a{color:var(--on-dark);font-weight:500}
+.qsend{width:100%}
+.qerr{margin:10px 0 0;font-size:13px;color:#F5B5C0}
+.qdone{text-align:center;padding:10px 0 4px}
+.qdone b{display:block;font:400 26px/1.2 var(--head);color:var(--on-dark)}
+.qdone p{margin:10px auto 22px;max-width:30em;color:var(--on-dark-mute)}
 
-.plist__head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:18px 0 10px}
-.plist__head h3{font-size:24px}
-.plist details{border-top:1px solid var(--line)}
-.plist summary,.faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 0;cursor:pointer}
-.plist summary::-webkit-details-marker,.faq summary::-webkit-details-marker{display:none}
-.plist summary span{font:400 19px/1.25 var(--head)}
-.plist summary small{display:block;font:400 13px/1.4 var(--body);color:var(--mute);margin-top:3px}
-.pm{flex:none;width:30px;height:30px;border-radius:50%;border:1px solid var(--line-2);position:relative;transition:transform .3s var(--ease),background-color .2s,border-color .2s}
-.pm::before,.pm::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:1.5px;background:var(--ink-2);transform:translate(-50%,-50%)}
-.pm::after{transform:translate(-50%,-50%) rotate(90deg)}
-details[open]>summary .pm{transform:rotate(45deg);background:var(--lilac-2);border-color:var(--lilac)}
-.pl{list-style:none;margin:0 0 14px;padding:0}
-.pl li{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:15px;line-height:1.4}
-.pl li:last-child{border-bottom:0}
-.pl b{flex:none;font-weight:500;font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
-.gift{display:inline-block;margin-top:4px;font-size:12px;font-weight:500;padding:1px 9px;border-radius:999px;background:var(--lilac-2);color:var(--plum-dk)}
+/* 5. steps */
+.steps{list-style:none;margin:34px 0 0;padding:0;display:grid;gap:12px;counter-reset:s}
+@media (min-width:1000px){.steps{grid-template-columns:repeat(4,minmax(0,1fr)) minmax(0,1.35fr);gap:16px;align-items:stretch}}
+.steps li{counter-increment:s;position:relative;display:grid;gap:4px;align-content:start;padding:20px 20px 22px 66px;border-radius:0;border-top:1px solid var(--line)}
+.steps li::before{content:counter(s);position:absolute;left:18px;top:16px;width:34px;height:30px;display:grid;place-items:center;clip-path:polygon(0 50%,25% 0,75% 0,100% 50%,75% 100%,25% 100%);background:var(--lilac-2);color:var(--plum);font:500 14px var(--body)}
+@media (min-width:1000px){.steps li{padding:62px 0 0;border-top:0}.steps li::before{left:0;top:0}}
+.steps b{font:400 19px/1.25 var(--head)}
+.steps span{font-size:14px;color:var(--mute)}
+.steps li.steps__last{padding:22px 22px 24px 66px;border-radius:22px;border-top:0;background:var(--soft)}
+.steps li.steps__last::before{background:var(--plum);color:#fff}
+.steps li.steps__last b{font-size:24px}
+@media (min-width:1000px){.steps li.steps__last{padding:62px 26px 26px}.steps li.steps__last::before{left:26px;top:20px}}
 
-/* safety */
-.safety__grid{display:grid;gap:16px;margin-top:34px}
-@media (min-width:900px){.safety__grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}}
-.quote{margin:0;padding:24px;border-radius:22px;background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column;gap:14px}
-.quote blockquote{margin:0;font:400 19px/1.5 var(--head);color:var(--ink)}
-.quote mark{background:var(--lilac-2);color:inherit;padding:0 .12em;border-radius:4px}
-.quote figcaption{font-size:13px;color:var(--mute);margin-top:auto}
-.phs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
-@media (min-width:900px){.phs{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:20px}}
-.ph{position:relative;min-height:180px;border:1px dashed var(--line-2);border-radius:22px;background:var(--surface);display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;gap:8px;padding:18px;color:var(--mute)}
-.ph b{font:400 18px/1.25 var(--head);color:var(--ink)}
-.ph>.hx{position:absolute;top:18px;left:18px;color:var(--lilac);font-size:22px}
-.phs .ph--note{grid-column:1/-1;min-height:0;padding:0;border:0;background:none}
-@media (min-width:900px){.phs .ph--note{grid-column:auto;padding:18px;border:1px dashed var(--line-2);background:var(--surface);justify-content:center}}
+/* photo placeholders: flat grey, camera icon, caption */
+.ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:180px;padding:18px;border-radius:20px;background:var(--ph);color:var(--mute);font-size:13px;text-align:center}
+.ph svg{width:30px;height:30px;stroke:var(--mute);fill:none;stroke-width:1.5}
 
-/* special cases */
-.cases{margin-top:34px;border-top:1px solid var(--line)}
-.case{display:grid;gap:10px;padding:24px 0;border-bottom:1px solid var(--line)}
-.case__q{margin:0;font:400 clamp(21px,5.4vw,26px)/1.3 var(--head)}
-.case__a{margin:0;max-width:36em;color:var(--ink-2)}
-.case__a strong{font-weight:600;color:var(--ink)}
-.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
-.tag{display:inline-block;font-size:13px;padding:4px 12px;border-radius:999px;background:var(--bg);border:1px solid var(--line);color:var(--ink-2);font-variant-numeric:tabular-nums;text-decoration:none}
-.tag--soft{background:var(--lilac-2);border-color:var(--lilac-2);color:var(--plum-dk)}
-a.tag:hover{border-color:var(--plum);color:var(--plum)}
-@media (min-width:900px){.case{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:48px;align-items:baseline;padding:30px 0}}
-
-/* masters */
-.masters__grid{display:grid;gap:18px;margin-top:34px}
-@media (min-width:1000px){.masters__grid{grid-template-columns:1fr 1fr;gap:22px}}
-.mst{display:flex;flex-direction:column;gap:18px;padding:24px;border-radius:26px;background:var(--surface);border:1px solid var(--line)}
-@media (min-width:700px){.mst{padding:30px}}
-.mst__head{display:flex;align-items:center;gap:16px}
-.mst__ava{flex:none;width:62px;aspect-ratio:1.15;clip-path:polygon(0 50%,25% 0,75% 0,100% 50%,75% 100%,25% 100%);background:var(--lilac-2);display:grid;place-items:center;font:400 26px/1 var(--head);color:var(--plum)}
-.mst h3{font-size:28px;line-height:1.1}
+/* 6. masters */
+.masters__grid{display:grid;gap:16px;margin-top:30px}
+@media (min-width:1000px){.masters__grid{grid-template-columns:1fr 1fr;gap:20px}}
+.mst{display:grid;grid-template-columns:96px minmax(0,1fr);gap:16px 18px;padding:20px;border-radius:24px;background:var(--surface);border:1px solid var(--line)}
+@media (min-width:700px){.mst{grid-template-columns:150px minmax(0,1fr);padding:24px}}
+.mst .ph{min-height:0;aspect-ratio:3/4;height:auto;border-radius:16px;padding:8px;font-size:11px}
+.mst .ph svg{width:24px;height:24px}
+.mst h3{font-size:26px;line-height:1.1}
 .mst__role{margin:4px 0 0;font-size:14px;color:var(--plum)}
-.mst__skills{margin:0;color:var(--ink-2);font-size:15px}
-.mphotos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.mst__skills{margin:8px 0 0;font-size:14px;color:var(--ink-2)}
+.mst__q{grid-column:1/-1;margin:0;font:italic 400 18px/1.4 var(--head);color:var(--ink)}
+.mst__q span{display:block;margin-top:4px;font:400 13px var(--body);color:var(--mute)}
+.mphotos{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
 .mp{position:relative;display:block;border-radius:12px;overflow:hidden;aspect-ratio:3/4;background:var(--soft)}
 .mp img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
 .mp:hover img{transform:scale(1.04)}
 .mp--more::after{content:"";position:absolute;inset:0;background:rgba(43,33,48,.45)}
 .mp__more{position:absolute;inset:0;z-index:1;display:grid;place-items:center;color:#fff;font:400 17px var(--head)}
-.mp--ph{display:flex;align-items:flex-end;padding:6px;border:1px dashed var(--line-2);background:var(--bg)}
-.mp--ph .todo{font-size:10px;padding:1px 5px}
-.mst__q{margin:0;padding-top:18px;border-top:1px solid var(--line)}
-.mst__q blockquote{margin:0;font-size:15px;line-height:1.6;color:var(--ink-2)}
-.mst__q figcaption{margin-top:8px;font-size:13px;color:var(--mute)}
-.mst__foot{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:auto}
+.mp--ph{display:grid;place-items:center;background:var(--ph)}
+.mp--ph svg{width:20px;height:20px;stroke:var(--mute);fill:none;stroke-width:1.5}
+.mst .btn{grid-column:1/-1;justify-self:start}
 
-/* reviews */
-.rv-sum{display:grid;gap:6px;justify-items:start}
-.rv-sum__top{display:flex;align-items:center;gap:12px}
-.rv-sum b{font:300 52px/1 var(--head)}
-.rv-sum .hexes{font-size:14px;gap:4px}
-.rv-sum p{margin:0;font-size:14px;color:var(--mute);max-width:24em}
-.rv-feature{margin:34px 0 0;padding:28px 24px;border-radius:26px;background:var(--surface);border:1px solid var(--line)}
-.rv-feature blockquote{margin:0;font:400 clamp(20px,5.2vw,27px)/1.45 var(--head);max-width:38em}
-.rv-feature figcaption{margin-top:16px;font-size:14px;color:var(--mute)}
-@media (min-width:900px){.rv-feature{padding:40px 44px}}
-.rv-list{display:flex;gap:14px;margin:16px calc(var(--gr) * -1) 0 calc(var(--gl) * -1);padding:4px var(--gr) 10px var(--gl);overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:var(--gl);scrollbar-width:none}
+/* 7. sterility */
+.ster{display:grid;gap:22px}
+@media (min-width:1000px){.ster{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:56px;align-items:stretch}}
+.bigq{margin:28px 0 0;padding:0}
+.bigq blockquote{margin:0;font:400 clamp(22px,5.6vw,32px)/1.35 var(--head);color:var(--ink)}
+.bigq figcaption{margin-top:12px;font-size:14px;color:var(--mute)}
+.alsoq{display:grid;gap:10px;margin-top:24px}
+.alsoq p{margin:0;padding:12px 16px;border-radius:14px;background:var(--lilac-2);font-size:14px;color:var(--ink-2)}
+.alsoq p b{font-weight:500;color:var(--ink)}
+.ster__ph{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ster__ph .ph{height:100%;min-height:220px}
+
+/* 8. special cases: list with dividers */
+.cases{list-style:none;margin:30px 0 0;padding:0;display:grid}
+@media (min-width:900px){.cases{grid-template-columns:1fr 1fr;column-gap:56px}}
+.cases li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 16px;padding:16px 0;border-bottom:1px solid var(--line);border-radius:0}
+.cases b{font:400 20px/1.25 var(--head)}
+.cases span{grid-column:1;font-size:14px;color:var(--mute)}
+.cases em{grid-row:1/span 2;grid-column:2;align-self:center;font:300 22px/1 var(--head);font-style:normal;color:var(--plum);white-space:nowrap}
+.special__cta{margin-top:28px}
+
+/* 9. reviews */
+.rv-sum{display:flex;align-items:center;gap:12px;margin-top:16px;color:var(--mute);font-size:14px}
+.rv-sum b{font:300 40px/1 var(--head);color:var(--ink)}
+.rv-list{display:flex;gap:12px;margin:26px calc(var(--gr) * -1) 0 calc(var(--gl) * -1);padding:4px var(--gr) 10px var(--gl);overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:var(--gl);scrollbar-width:none}
 .rv-list::-webkit-scrollbar{display:none}
-.rv{flex:0 0 min(84%,380px);scroll-snap-align:start;margin:0;padding:22px;border-radius:22px;background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column;gap:14px}
-.rv blockquote{margin:0;font-size:15px;line-height:1.6;color:var(--ink-2)}
-.rv figcaption{display:flex;flex-wrap:wrap;gap:2px 10px;margin-top:auto;font-size:13px;color:var(--mute)}
+.rv{flex:0 0 min(80%,340px);scroll-snap-align:start;margin:0;padding:20px;border-radius:20px;background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column;gap:12px}
+.rv blockquote{margin:0;font:400 18px/1.4 var(--head);color:var(--ink)}
+.rv figcaption{margin-top:auto;font-size:13px;color:var(--mute)}
 .rv figcaption b{font-weight:600;color:var(--ink)}
-.rv__m{color:var(--plum)}
-.rv-hint{margin:4px 0 0;font-size:13px;color:var(--mute)}
-@media (min-width:900px){.rv-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:18px 0 0;padding:0;overflow:visible}.rv{flex:none}.rv-hint{display:none}}
-.reviews__all{margin-top:28px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
+@media (min-width:1000px){.rv-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:30px 0 0;padding:0;overflow:visible}.rv{flex:none}}
+.rv-all{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-weight:500;color:var(--plum)}
 
-/* atmosphere */
-.atmo__grid{display:grid;gap:40px}
-@media (min-width:1000px){.atmo__grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:center}}
-.atmo__quote{margin:22px 0 0;font:italic 400 21px/1.45 var(--head);color:var(--ink-2);max-width:28em}
-.atmo__by{margin:8px 0 0;font-size:13px;color:var(--mute)}
-.visit{list-style:none;margin:30px 0 0;padding:0;counter-reset:v}
-.visit li{counter-increment:v;display:grid;grid-template-columns:44px minmax(0,1fr);gap:2px 12px;padding:16px 0;border-top:1px solid var(--line)}
-.visit li::before{content:counter(v);grid-row:1/span 2;font:300 30px/1 var(--head);color:var(--plum)}
-.visit b{font:400 19px/1.3 var(--head)}
-.visit span{font-size:14px;color:var(--mute)}
-.atmo__facts{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}
-.stack{position:relative;height:clamp(380px,104vw,520px)}
-.stack .ph{position:absolute;width:62%;height:66%;min-height:0;background:var(--surface)}
-.stack .ph:nth-child(1){left:0;top:0}
-.stack .ph:nth-child(2){right:0;top:14%;background:var(--lilac-2);border-color:var(--lilac)}
-.ccard{position:absolute;left:8%;bottom:0;z-index:2;width:min(66%,300px);aspect-ratio:1.586;border-radius:18px;background:var(--dark);color:var(--on-dark);padding:16px 18px;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;box-shadow:0 28px 50px -26px rgba(37,28,42,.75)}
-.ccard img{height:26px;width:auto}
-.ccard__t{font:400 20px/1.15 var(--head)}
-.ccard .todo{margin-top:6px}
-
-/* gift */
-.gift-p{display:grid;gap:36px;padding:32px 22px;border-radius:30px;background:var(--soft)}
+/* 10. gift */
+.gift-p{display:grid;gap:30px;padding:30px 22px;border-radius:30px;background:var(--soft)}
 @media (min-width:900px){.gift-p{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:center;gap:56px;padding:56px}}
-.seasons{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
-.seasons span{font-size:14px;padding:6px 14px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--ink-2)}
-.gift-p__cta{margin-top:26px}
-.cert-wrap{display:grid;place-items:center;padding:12px 0}
+.gift-p .btn{margin-top:24px}
+.cert-wrap{display:grid;place-items:center;padding:8px 0}
 .cert{width:min(100%,380px);aspect-ratio:1.6;margin:0;border-radius:20px;background:var(--dark);color:var(--on-dark);padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 34px 60px -30px rgba(37,28,42,.8);transform:rotate(-3deg)}
 .cert__top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
 .cert__top img{height:30px;width:auto}
@@ -399,35 +360,29 @@ a.tag:hover{border-color:var(--plum);color:var(--plum)}
 .cert__title span{color:var(--lilac)}
 .cert__bottom{display:flex;justify-content:space-between;gap:10px;font-size:12px;color:var(--on-dark-mute)}
 
-/* faq */
-.faq__grid{display:grid;gap:28px}
-@media (min-width:1000px){.faq__grid{grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:72px;align-items:start}.faq__aside{position:sticky;top:calc(var(--hdr) + 32px)}}
-.faq__aside .btn{margin-top:22px}
-.faq__list{border-top:1px solid var(--line)}
-.faq details{border-bottom:1px solid var(--line)}
+/* 11. faq, centred */
+.faq__list{max-width:780px;margin:30px auto 0;border-top:1px solid var(--line);border-radius:0}
+.faq details{border-bottom:1px solid var(--line);border-radius:0}
+.faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 0;cursor:pointer}
+.faq summary::-webkit-details-marker{display:none}
 .faq summary span{font:400 19px/1.35 var(--head)}
-.faq__a{padding:0 44px 20px 0;color:var(--ink-2);max-width:40em}
-.faq__a p{margin:0 0 10px}
-.faq__a a{color:var(--plum);font-weight:500}
+.faq__a{padding:0 44px 18px 0;color:var(--ink-2)}
+.faq__a p{margin:0 0 8px}
 
-/* contacts */
-.ct-grid{display:grid;gap:36px;margin-top:34px}
-@media (min-width:1000px){.ct-grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:64px;align-items:start}}
-.ct-addr{margin:0;font:400 clamp(26px,6.6vw,34px)/1.2 var(--head)}
-.ct-list{margin:22px 0 0}
-.ct-list>div{display:grid;grid-template-columns:100px minmax(0,1fr);gap:12px;padding:13px 0;border-top:1px solid var(--line)}
-.ct-list dt{font-size:13px;color:var(--mute);padding-top:2px}
+/* 12. final: address, map, booking */
+.fin__grid{display:grid;gap:30px;margin-top:30px}
+@media (min-width:1000px){.fin__grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:64px;align-items:start}}
+.ct-list{margin:0}
+.ct-list>div{display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px;padding:12px 0;border-top:1px solid rgba(244,238,245,.14);border-radius:0}
+.ct-list dt{font-size:13px;color:var(--on-dark-mute);padding-top:2px}
 .ct-list dd{margin:0}
-.ct-list a{text-decoration:none}
 .ct-big{font-size:19px;font-weight:500;font-variant-numeric:tabular-nums}
-.ct-acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-.mini{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:0 14px;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);font-size:13px;font-weight:500;text-decoration:none;color:var(--ink-2);transition:border-color .2s,color .2s}
-.mini:hover{border-color:var(--plum);color:var(--plum)}
+.mini{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 13px;margin-top:8px;border-radius:999px;border:1px solid rgba(244,238,245,.28);font-size:13px;font-weight:500;color:var(--on-dark);white-space:nowrap;transition:border-color .2s,color .2s}
+.mini:hover{border-color:var(--lilac);color:var(--lilac)}
 .mini .i{width:16px;height:16px}
-.mini[hidden]{display:none}
-.ct-cta{display:grid;gap:12px;margin-top:26px}
-@media (min-width:700px){.ct-cta{grid-template-columns:auto auto;justify-content:start}}
-.map{position:relative;margin:0;border-radius:24px;overflow:hidden;background:#F3EEF5;border:1px solid var(--line)}
+.fin__cta{display:grid;gap:12px;margin-top:26px}
+@media (min-width:700px){.fin__cta{grid-template-columns:auto auto;justify-content:start}}
+.map{position:relative;margin:0;border-radius:24px;overflow:hidden;background:#F3EEF5}
 .map-svg{display:block;width:100%;height:auto;font-family:var(--body)}
 .m-bg{fill:#F3EEF5}
 .m-green path{fill:#E6EBE1}
@@ -448,42 +403,46 @@ a.tag:hover{border-color:var(--plum);color:var(--plum)}
 .m-pin .m-pin-in{fill:#fff;stroke:none}
 .map__legend{position:absolute;left:12px;top:12px;display:grid;gap:4px;font-size:12px;background:rgba(255,255,255,.92);padding:9px 12px;border-radius:12px;color:var(--ink-2)}
 .map__legend span{display:flex;align-items:center;gap:8px}
-.map__legend i{width:18px;border-top:3px dotted var(--plum)}
+.map__legend i{width:18px;border-top:3px dotted var(--plum);border-radius:0}
 .map__legend i.st{border-top-color:#C394D6}
 .map__door{position:absolute;right:12px;bottom:12px;width:28%;max-width:150px;margin:0;border-radius:14px;overflow:hidden;background:var(--surface);border:4px solid var(--surface);box-shadow:var(--shadow)}
 .map__door img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:10px}
 .map__door figcaption{font-size:11px;font-weight:500;padding:5px 2px 2px;text-align:center;color:var(--ink-2)}
 .map__frame{display:block;width:100%;min-height:520px;border:0}
-.map__osm{margin:8px 0 0;font-size:11px;color:var(--mute)}
-.map__actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.map__osm{margin:8px 0 0;font-size:11px;color:var(--on-dark-mute)}
+.map__actions{display:flex;flex-wrap:wrap;gap:0 8px}
 
 /* footer */
-.ftr{background:var(--dark);color:var(--on-dark);padding-top:48px;padding-bottom:32px}
-.ftr__top{display:grid;gap:24px}
-@media (min-width:900px){.ftr__top{grid-template-columns:auto 1fr auto;align-items:center;gap:48px}}
-.ftr__logo img{height:46px;width:auto}
-.ftr__links{display:flex;flex-wrap:wrap;gap:8px 24px;font-size:15px}
-.ftr__links a{color:var(--on-dark);text-decoration:none}
+.ftr{background:var(--dark);color:var(--on-dark);padding-top:8px;padding-bottom:32px}
+.ftr__in{display:grid;gap:18px;padding-top:28px;border-top:1px solid rgba(244,238,245,.14);border-radius:0}
+@media (min-width:900px){.ftr__in{grid-template-columns:auto 1fr auto;align-items:center;gap:40px}}
+.ftr__logo img{height:44px;width:auto}
+.ftr__links{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:14px}
 .ftr__links a:hover{color:var(--lilac)}
-.ftr__small{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(244,238,245,.14);font-size:13px;color:var(--on-dark-mute)}
+.ftr__small{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;margin-top:22px;font-size:12.5px;color:var(--on-dark-mute)}
+.ftr__small a:hover{color:var(--on-dark)}
 @media (max-width:1099px){.ftr{padding-bottom:calc(32px + 78px + env(safe-area-inset-bottom, 0px))}}
 
-/* sticky mobile bar */
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:45;display:flex;gap:8px;align-items:center;padding:10px var(--gr) calc(10px + env(safe-area-inset-bottom, 0px)) var(--gl);background:rgba(255,255,255,.95);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1px solid var(--line);transform:translateY(110%);visibility:hidden;transition:transform .35s var(--ease),visibility 0s .35s}
+/* sticky booking bar (phones) and quick-contact widget */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:45;display:flex;align-items:center;padding:10px calc(var(--gr) + 66px) calc(10px + env(safe-area-inset-bottom, 0px)) var(--gl);background:rgba(255,255,255,.95);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1px solid var(--line);border-radius:0;transform:translateY(110%);visibility:hidden;transition:transform .35s var(--ease),visibility 0s .35s}
 .has-bar .bar{transform:none;visibility:visible;transition:transform .35s var(--ease)}
-.has-bar.calc-in .bar{transform:translateY(110%);visibility:hidden;transition:transform .35s var(--ease),visibility 0s .35s}
-.bar .btn{flex:1;min-height:52px;flex-direction:column;gap:1px;line-height:1.1}
-.bar__proof{font-size:11px;font-weight:400;opacity:.85}
-.bar__ic{flex:none;width:52px;height:52px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;color:var(--ink-2);background:var(--surface)}
+.has-bar.quiz-in .bar{transform:translateY(110%);visibility:hidden;transition:transform .35s var(--ease),visibility 0s .35s}
+.bar .btn{flex:1;min-height:52px}
 @media (min-width:1100px){.bar{display:none}}
+.fab{position:fixed;z-index:46;right:var(--gr);bottom:calc(12px + env(safe-area-inset-bottom, 0px));display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+@media (min-width:1100px){.fab{bottom:28px}}
+.fab__btn{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:#fff;box-shadow:0 14px 30px -12px rgba(37,28,42,.7)}
+.fab__btn .i{width:24px;height:24px}
+.fab__panel{width:min(270px,calc(100vw - 36px));padding:16px;border-radius:20px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow)}
+.fab__hint{margin:0 0 10px;font-size:13px;color:var(--mute)}
+.fab__panel a{display:flex;align-items:center;gap:10px;padding:11px 0;border-top:1px solid var(--line);border-radius:0;font-weight:500}
+.fab__panel a .i{color:var(--plum)}
 
 /* lightbox */
 .lb{position:fixed;inset:0;z-index:60;background:rgba(37,28,42,.95);color:var(--on-dark);display:grid;grid-template-rows:auto minmax(0,1fr) auto;padding-top:env(safe-area-inset-top, 0px)}
-.lb[hidden]{display:none}
 .lb__top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px var(--gr) 10px var(--gl);font-size:14px;color:var(--on-dark-mute)}
 .lb__top b{color:var(--on-dark);font-weight:500}
 .lb__close,.lb__nav{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(244,238,245,.25);background:rgba(37,28,42,.6);color:var(--on-dark)}
-.lb__nav[hidden]{display:none}
 .lb__fig{position:relative;margin:0;min-height:0;display:flex;align-items:center;justify-content:center;padding:0 var(--gr) 0 var(--gl);touch-action:pan-y}
 .lb__img{max-width:100%;max-height:100%;object-fit:contain;border-radius:12px;user-select:none;-webkit-user-drag:none}
 .lb__nav{position:absolute;top:50%;transform:translateY(-50%)}
@@ -491,14 +450,9 @@ a.tag:hover{border-color:var(--plum);color:var(--plum)}
 .lb__nav--next{right:calc(var(--gr) + 4px)}
 .lb__bottom{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:12px var(--gr) calc(14px + env(safe-area-inset-bottom, 0px)) var(--gl)}
 .lb__count{font-variant-numeric:tabular-nums;color:var(--on-dark-mute);font-size:14px}
-@media (max-width:699px){.lb__bottom .btn{flex:1}}
-
-/* gentle reveal */
-.rise{transition:opacity .7s var(--ease),transform .7s var(--ease)}
-.rise.pre{opacity:0;transform:translateY(14px)}
+html.lock{overflow:hidden}
 
 @media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
 }
 </style>
@@ -507,100 +461,67 @@ a.tag:hover{border-color:var(--plum);color:var(--plum)}
   <symbol id="i-arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5"/><circle cx="12" cy="12" r="4.1"/></g><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></symbol>
   <symbol id="i-tel" viewBox="0 0 24 24"><path d="M7 3.6h2.5l1.5 4-2.1 1.4a11.5 11.5 0 0 0 6.1 6.1l1.4-2.1 4 1.5V17a2.2 2.2 0 0 1-2.4 2.2A16 16 0 0 1 4.8 6 2.2 2.2 0 0 1 7 3.6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 4v-4h0A2.5 2.5 0 0 1 4 13.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
   <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
   <symbol id="i-l" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-r" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="8" y="8" width="12" height="12" rx="2.5"/><path d="M16 8V6.5A2.5 2.5 0 0 0 13.5 4h-7A2.5 2.5 0 0 0 4 6.5v7A2.5 2.5 0 0 0 6.5 16H8"/></g></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-cam" viewBox="0 0 24 24"><path d="M4 8.5A1.5 1.5 0 0 1 5.5 7H8l1.5-2h5L16 7h2.5A1.5 1.5 0 0 1 20 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 17.5Z"/><circle cx="12" cy="12.5" r="3.2"/></symbol>
 </svg>
 
 <header class="hdr" id="hdr">
   <div class="hdr__in">
     <a class="hdr__logo" href="#top" aria-label="Dofamin, наверх"><img src="img/logo-light.webp" alt="Dofamin beauty &amp; health" width="480" height="192"></a>
     <nav class="hdr__nav" aria-label="Разделы сайта">
-      <a href="#works">Работы</a><a href="#prices">Цены</a><a href="#masters">Мастера</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a>
+      <a href="#works">Работы</a><a href="#prices">Цены</a><a href="#masters">Мастера</a><a href="#reviews">Отзывы</a><a href="#address">Адрес</a>
     </nav>
-    <a class="btn btn--main btn--sm" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Записаться</a>
-    <button class="hdr__burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Открыть меню"><span></span><span></span></button>
+    <a class="btn btn--main btn--sm" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Выбрать время</a>
+    <button class="hdr__burger" type="button" aria-expanded="false" aria-controls="mmenu" aria-label="Открыть меню"><span></span><span></span></button>
+  </div>
+  <div class="mmenu" id="mmenu">
+    <nav aria-label="Меню">
+      <a href="#works">Работы <small>29 фото</small></a>
+      <a href="#prices">Цены <small>от 40 BYN</small></a>
+      <a href="#masters">Мастера <small>4 мастера</small></a>
+      <a href="#reviews">Отзывы <small>5.0</small></a>
+      <a href="#address">Адрес <small>Кунцевщина, 31</small></a>
+    </nav>
+    <a class="mmenu__tel" href="tel:+375295627048">+375 29 562-70-48</a>
   </div>
 </header>
 
-<div class="menu" id="menu" inert>
-  <nav aria-label="Меню">
-    <a href="#works">Работы <small>29 фото</small></a>
-    <a href="#prices">Цены <small>калькулятор</small></a>
-    <a href="#masters">Мастера <small>4 мастера</small></a>
-    <a href="#reviews">Отзывы <small>5.0</small></a>
-    <a href="#contacts">Контакты <small>Кунцевщина, 31</small></a>
-  </nav>
-  <a class="btn btn--main" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Записаться онлайн<svg class="i"><use href="#i-arr"/></svg></a>
-  <div class="menu__contacts">
-    <a href="tel:+375295627048">+375 29 562-70-48</a>
-    <a href="https://ig.me/m/dofamin.tut" target="_blank" rel="noopener">@dofamin.tut</a>
-    <span>Минск, ул. Кунцевщина, 31 · 9:00–21:00</span>
-  </div>
-</div>
-
 <main>
-<!-- 1. HERO -->
-<section class="hero" id="top" aria-label="Студия Dofamin">
-  <div class="wrap">
-    <div class="hero__grid">
-      <div class="hero__text">
-        <p class="eyebrow">Студия маникюра и педикюра · Минск</p>
-        <p class="mark" aria-hidden="true">D<svg viewBox="0 0 100 90"><path stroke-width="6" d="M3 45 26 4h48l23 41-23 41H26Z"/><path stroke-width="3" opacity=".5" d="M24 45 37 22h26l13 23-13 23H37Z"/></svg>FAMIN</p>
-        <h1>Маникюр и&nbsp;педикюр у&nbsp;Каменной Горки</h1>
-        <p class="hero__sub">Стерильно, аккуратно, носится без сколов.</p>
-        <div class="hero__cta">
-          <div>
-            <a class="btn btn--main" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Записаться онлайн<svg class="i"><use href="#i-arr"/></svg></a>
-            <p class="proof"><span class="hx"></span>5.0 на Яндекс Картах · стерильные инструменты</p>
-          </div>
-          <div>
-            <a class="btn btn--ghost" href="https://ig.me/m/dofamin.tut" target="_blank" rel="noopener"><svg class="i"><use href="#i-ig"/></svg>Написать в Instagram</a>
-            <p class="proof"><span class="hx"></span>Можно прислать фото дизайна, который нравится</p>
-          </div>
-        </div>
+<!-- 1. HERO: offer, the number, the light next step -->
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="wrap hero__grid">
+    <div>
+      <h1 id="h1">Маникюр и педикюр у метро Каменная&nbsp;Горка от 40 BYN</h1>
+      <p class="hero__sub">Покрытие без сколов весь срок носки, стерильные инструменты и 5.0 на Яндекс Картах</p>
+      <div class="hero__cta">
+        <a class="btn btn--main" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Выбрать время онлайн<svg class="i"><use href="#i-arr"/></svg><span class="btn-badge">без звонков</span></a>
+        <a class="btn btn--ghost" href="https://ig.me/m/dofamin.tut" target="_blank" rel="noopener"><svg class="i"><use href="#i-ig"/></svg>Написать в Instagram</a>
       </div>
-      <div class="hero__media">
-        <button class="hero__main" type="button" data-set="darya" data-alias data-full="img/darya-8.webp" data-cap="Работа Дарьи"><img src="img/darya-8.webp" alt="Молочные миндальные ногти средней длины. Работа Дарьи" width="768" height="1024" fetchpriority="high" decoding="async"></button>
-        <button class="hero__small" type="button" data-set="svetlana" data-alias data-full="img/svetlana-2.webp" data-cap="Работа Светланы"><img src="img/svetlana-2-t.webp" alt="Квадратные ногти с серебряным френчем и фиолетовой линией. Работа Светланы" width="480" height="640" decoding="async"></button>
-        <a class="rating" href="https://yandex.by/maps/org/dofamin/225603981549/reviews/" target="_blank" rel="noopener">
-          <span class="rating__top"><b>5.0</b><span class="hexes" aria-hidden="true"><span class="hx"></span><span class="hx"></span><span class="hx"></span><span class="hx"></span><span class="hx"></span></span></span>
-          <small>70 оценок на Яндекс Картах</small>
-        </a>
-      </div>
+      <ul class="anchors">
+        <li><span class="hx"></span>850 м от метро</li>
+        <li><span class="hx"></span>Подарок к следующему визиту</li>
+        <li><span class="hx"></span>DIP при аллергии на гель-лак</li>
+      </ul>
     </div>
-    <div class="hero__note">
-      <svg class="mol" viewBox="0 40 262 122" aria-hidden="true">
-        <path d="M90 60 124.6 80V120L90 140 55.4 120V80Z"/>
-        <path d="M95 70.9 112.7 81.1M112.7 118.9 95 129.1M62.3 110.2V89.8"/>
-        <path d="M124.6 80 159.2 60 193.8 80 214 68.3M55.4 80 33 67M55.4 120 33 133"/>
-        <text x="218" y="72">NH2</text><text x="30" y="68" text-anchor="end">HO</text><text x="30" y="140" text-anchor="end">HO</text>
-      </svg>
-      <p><b>Дофамин</b> — гормон удовольствия. Вырабатывается, когда смотришь на&nbsp;свои руки.</p>
+    <div class="hero__media">
+      <button class="hero__main" type="button" data-set="darya" data-alias data-full="img/darya-8.webp" data-cap="Работа Дарьи"><img src="img/darya-8.webp" alt="Молочные миндальные ногти средней длины. Работа Дарьи" width="768" height="1024" fetchpriority="high" decoding="async"></button>
+      <button class="hero__small" type="button" data-set="svetlana" data-alias data-full="img/svetlana-2.webp" data-cap="Работа Светланы"><img src="img/svetlana-2-t.webp" alt="Квадратные ногти с серебряным френчем и фиолетовой линией. Работа Светланы" width="480" height="640" decoding="async"></button>
+      <a class="rating" href="https://yandex.by/maps/org/dofamin/225603981549/reviews/" target="_blank" rel="noopener">
+        <span class="rating__top"><b>5.0</b><span class="hexes" aria-hidden="true"><span class="hx"></span><span class="hx"></span><span class="hx"></span><span class="hx"></span><span class="hx"></span></span></span>
+        <small>70 оценок на Яндекс Картах</small>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- 2. TRUST -->
-<section class="trust band-white" aria-label="Почему нам доверяют">
-  <div class="wrap trust__row">
-    <div class="tr"><b class="tr__num">5.0</b><span>Яндекс Карты · 70 оценок, 37 отзывов</span></div>
-    <div class="tr"><b>Стерильные инструменты</b><span>Клиентки отдельно отмечают это в отзывах</span></div>
-    <div class="tr"><b>Ходят годами</b><span>«Делаю маникюр только здесь уже много лет»</span></div>
-    <div class="tr"><b>Подарок к следующему визиту</b><span>И клиентская карта со скидкой</span></div>
-  </div>
-</section>
-
-<!-- 3. WORKS -->
-<section class="works" id="works" aria-labelledby="works-title">
+<!-- 2. GALLERY: show, do not tell -->
+<section class="works band-white" id="works" aria-labelledby="works-title">
   <div class="wrap">
-    <div class="head rise">
-      <p class="eyebrow">Работы</p>
-      <h2 class="h2" id="works-title">Фото клиенток, без студийного света</h2>
-      <p class="lead">Все снимки клиентки выложили в отзывах на Яндекс Картах. Нажмите на фото, чтобы рассмотреть его целиком.</p>
-    </div>
+    <h2 class="h2 head" id="works-title">29 работ наших мастеров из отзывов клиенток на Яндекс Картах</h2>
     <div class="chips" role="group" aria-label="Показать работы мастера">
       <button class="chip" type="button" data-f="all" aria-pressed="true">Все <small>29</small></button>
       <button class="chip" type="button" data-f="marina" aria-pressed="false">Марина <small>8</small></button>
@@ -609,418 +530,322 @@ a.tag:hover{border-color:var(--plum);color:var(--plum)}
       <button class="chip" type="button" data-f="natalya" aria-pressed="false">Наталья <small>1</small></button>
       <button class="chip" type="button" data-f="studio" aria-pressed="false">Без подписи <small>10</small></button>
     </div>
-    <div class="works__grid">
+    <div class="slider">
+      <div class="track" id="track">
 <!-- @WORKS -->
-    </div>
-    <div class="works__foot">
-      <button class="btn btn--ghost" type="button" id="works-more">Показать все 29 фото</button>
-      <a class="btn btn--main" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Хочу так же — записаться<svg class="i"><use href="#i-arr"/></svg></a>
+      </div>
+      <div class="arrows">
+        <button class="arrow" type="button" id="prev" aria-label="Предыдущие фото"><svg class="i"><use href="#i-l"/></svg></button>
+        <button class="arrow" type="button" id="next" aria-label="Следующие фото"><svg class="i"><use href="#i-r"/></svg></button>
+        <span class="arrows__count" id="count">29 фото</span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- 4. PRICES -->
-<section class="prices band-soft" id="prices" aria-labelledby="prices-title">
+<!-- 3. SERVICES with public prices, each card leads into the quiz -->
+<section class="prices" id="prices" aria-labelledby="prices-title">
   <div class="wrap">
-    <div class="head--row head rise">
-      <div>
-        <p class="eyebrow">Цены</p>
-        <h2 class="h2" id="prices-title">Сколько будет стоить мой маникюр</h2>
-      </div>
-      <div>
-        <p class="lead" style="margin-top:0">Выберите услугу, длину и дизайн. Цена посчитается по прайсу студии.</p>
-        <p class="proof"><span class="hx"></span>Цены в BYN, актуальны на октябрь 2026</p>
-      </div>
+    <div class="head">
+      <h2 class="h2" id="prices-title">Маникюр с покрытием от 60 BYN, педикюр от 40 BYN</h2>
+      <p class="sub">Цены на октябрь 2026. Точную сумму назовём после 3 вопросов ниже</p>
     </div>
-    <div class="prices__grid">
-      <form class="calc card" id="calc" aria-label="Калькулятор стоимости">
-        <fieldset class="step">
-          <legend class="step__h"><b>1</b>Услуга</legend>
-          <div class="opts" id="c-s">
-            <label class="opt"><input type="radio" name="c-s" value="coat" checked><span>Маникюр с покрытием<small>коррекция</small></span></label>
-            <label class="opt"><input type="radio" name="c-s" value="ext"><span>Наращивание</span></label>
-            <label class="opt"><input type="radio" name="c-s" value="jap"><span>Японский маникюр</span></label>
-            <label class="opt"><input type="radio" name="c-s" value="dip"><span>DIP<small>при аллергии на гель-лак</small></span></label>
-            <label class="opt"><input type="radio" name="c-s" value="ped"><span>Педикюр</span></label>
-          </div>
-          <p class="step__hint" id="c-hint">В цену входят снятие, маникюр, ремонт до 3 ногтей, укрепление и покрытие.</p>
-        </fieldset>
-        <fieldset class="step">
-          <legend class="step__h"><b>2</b><span id="c-a-t">Длина</span></legend>
-          <div class="step__len has-nail" id="c-len">
-            <figure class="nailfig">
-              <svg class="nail" viewBox="20 -150 180 440" aria-hidden="true">
-                <path class="nail__finger" d="M40 290V100C40 50 72 22 110 22s70 28 70 78v190"/>
-                <path class="nail__free" id="c-free" transform="translate(110 84) scale(1 .87)" d="M-40 0V-62C-40-88-22-100 0-100S40-88 40-62V0Z"/>
-                <path class="nail__bed" d="M70 192V84c0-14 18-24 40-24s40 10 40 24v108c0 6-4 10-10 10H80c-6 0-10-4-10-10Z"/>
-              </svg>
-            </figure>
-            <div>
-              <div class="opts" id="c-a"></div>
-              <div class="legend"><span><i></i>ногтевое ложе</span><span><i class="fe"></i>свободный край</span></div>
-            </div>
-          </div>
-        </fieldset>
-        <fieldset class="step" id="c-b-wrap">
-          <legend class="step__h"><b>3</b><span id="c-b-t">Дизайн</span></legend>
-          <div class="opts" id="c-b"></div>
-        </fieldset>
-        <div class="step step--x">
-          <label class="tog"><input type="checkbox" id="c-x"><span id="c-x-l">Массаж рук +30</span></label>
-          <label class="tog" id="c-fr-wrap" hidden><input type="checkbox" id="c-fr"><span>Френч +5</span></label>
-        </div>
-        <div class="calc__res" aria-live="polite">
-          <div class="calc__sum">
-            <span class="calc__price"><span id="c-price">75</span><small>BYN</small></span>
-            <span class="calc__desc" id="c-desc">Маникюр с покрытием, Medium, френч или дизайн</span>
-          </div>
-          <p class="calc__gift" id="c-gift" hidden></p>
-          <a class="btn btn--main" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Записаться на эту услугу<svg class="i"><use href="#i-arr"/></svg></a>
-          <p class="calc__note">Расчёт по прайсу студии на октябрь 2026</p>
-        </div>
-      </form>
-
-      <div class="plist card" aria-labelledby="plist-title">
-        <div class="plist__head"><h3 id="plist-title">Полный прайс</h3><span class="mute" style="font-size:13px">BYN</span></div>
-        <details open>
-          <summary><span>Маникюр с покрытием<small>Коррекция: снятие, маникюр, ремонт до 3 ногтей, укрепление, покрытие</small></span><i class="pm"></i></summary>
+    <div class="svc">
+      <article class="svc__c">
+        <div class="svc__top"><h3>Маникюр с покрытием</h3><span class="svc__price">от 60<small>BYN</small></span></div>
+        <p>Снятие, маникюр, укрепление и гель-лак</p>
+        <span class="svc__gift">Простой декор 2 ногтей в подарок</span>
+        <button class="btn btn--ghost btn--sm" type="button" data-quiz="coat">Узнать цену своей длины</button>
+      </article>
+      <article class="svc__c">
+        <div class="svc__top"><h3>Наращивание</h3><span class="svc__price">от 100<small>BYN</small></span></div>
+        <p>Держится больше 4 недель без отслоек, пишут клиентки</p>
+        <button class="btn btn--ghost btn--sm" type="button" data-quiz="ext">Рассчитать наращивание</button>
+      </article>
+      <article class="svc__c">
+        <div class="svc__top"><h3>Японский маникюр</h3><span class="svc__price">от 60<small>BYN</small></span></div>
+        <p>Ухоженные натуральные ногти без цветного покрытия</p>
+        <button class="btn btn--ghost btn--sm" type="button" data-quiz="jap">Выбрать японский</button>
+      </article>
+      <article class="svc__c">
+        <div class="svc__top"><h3>DIP при аллергии</h3><span class="svc__price">от 80<small>BYN</small></span></div>
+        <p>Покрытие вместо гель-лака, снятие бесплатно</p>
+        <button class="btn btn--ghost btn--sm" type="button" data-quiz="dip">Подобрать DIP</button>
+      </article>
+      <article class="svc__c">
+        <div class="svc__top"><h3>Педикюр</h3><span class="svc__price">от 40<small>BYN</small></span></div>
+        <p>Обработка стоп дисками, уход с маслом и кремом</p>
+        <span class="svc__gift">Лечебный лак в подарок</span>
+        <button class="btn btn--ghost btn--sm" type="button" data-quiz="ped">Рассчитать педикюр</button>
+      </article>
+      <article class="svc__c">
+        <div class="svc__top"><h3>Проблемные ногти и стопы</h3><span class="svc__price">от 15<small>BYN</small></span></div>
+        <p>Врастающий ноготь, онихолизис, трещины и мозоли</p>
+        <button class="btn btn--ghost btn--sm" type="button" data-quiz="podo">Показать мастеру стопы</button>
+      </article>
+    </div>
+    <details class="plist">
+      <summary>Весь прайс студии<i class="pm"></i></summary>
+      <div class="plist__cols">
+        <div>
+          <h4>Маникюр с покрытием, коррекция</h4>
           <ul class="pl">
             <li><span>Express-NUDE, короткие</span><b>60</b></li>
-            <li><span>NATURAL, короткие, однотон<br><span class="gift">Простой декор 2 ногтей в подарок</span></span><b>60</b></li>
-            <li><span>NATURAL, короткие + френч или дизайн</span><b>65</b></li>
-            <li><span>MEDIUM, свободный край до ½ ложа, однотон</span><b>70</b></li>
+            <li><span>NATURAL, короткие, однотон</span><b>60</b></li>
+            <li><span>NATURAL + френч или дизайн</span><b>65</b></li>
+            <li><span>MEDIUM, однотон</span><b>70</b></li>
             <li><span>MEDIUM + френч или дизайн</span><b>75</b></li>
-            <li><span>LONG, от ½ до длины ложа, однотон</span><b>80</b></li>
+            <li><span>LONG, однотон</span><b>80</b></li>
             <li><span>LONG + френч или дизайн</span><b>90</b></li>
-            <li><span>EXTRA LONG, длиннее ложа, однотон</span><b>100</b></li>
+            <li><span>EXTRA LONG, однотон</span><b>100</b></li>
             <li><span>EXTRA LONG + френч или дизайн</span><b>110</b></li>
             <li><span>Сложная арочная коррекция</span><b>110</b></li>
             <li><span>Сложный дизайн, роспись, камни</span><b>+10</b></li>
           </ul>
-        </details>
-        <details>
-          <summary><span>DIP при аллергии на гель-лак<small>Снятие бесплатно</small></span><i class="pm"></i></summary>
+          <h4>DIP при аллергии на гель-лак</h4>
           <ul class="pl">
-            <li><span>Короткие</span><b>80</b></li>
-            <li><span>Средние</span><b>90</b></li>
-            <li><span>Снятие<br><span class="gift">Бесплатно</span></span><b>0</b></li>
+            <li><span>Короткие, снятие бесплатно</span><b>80</b></li>
+            <li><span>Средние, снятие бесплатно</span><b>90</b></li>
           </ul>
-        </details>
-        <details>
-          <summary><span>Японский маникюр</span><i class="pm"></i></summary>
+          <h4>Японский маникюр</h4>
           <ul class="pl">
             <li><span>Японский маникюр</span><b>60</b></li>
-            <li><span>Снятие + японский маникюр</span><b>70</b></li>
+            <li><span>Снятие + японский</span><b>70</b></li>
           </ul>
-        </details>
-        <details>
-          <summary><span>Маникюр без покрытия</span><i class="pm"></i></summary>
+          <h4>Без покрытия</h4>
           <ul class="pl">
-            <li><span>Маникюр<br><span class="gift">Лечебный лак в подарок</span></span><b>40</b></li>
+            <li><span>Маникюр, лечебный лак в подарок</span><b>40</b></li>
             <li><span>Маникюр + лак</span><b>50</b></li>
             <li><span>Снятие + маникюр</span><b>50</b></li>
             <li><span>Мужской маникюр</span><b>50</b></li>
-            <li><span>Детский маникюр <span class="todo">уточнить цену</span></span><b>—</b></li>
           </ul>
-        </details>
-        <details>
-          <summary><span>Наращивание</span><i class="pm"></i></summary>
+          <h4>Наращивание</h4>
           <ul class="pl">
             <li><span>Средняя длина, камуфляж</span><b>100</b></li>
             <li><span>Средняя длина + цвет или дизайн</span><b>110</b></li>
             <li><span>Длинные, камуфляж</span><b>110</b></li>
             <li><span>Длинные + цвет или дизайн</span><b>120</b></li>
           </ul>
-        </details>
-        <details>
-          <summary><span>Педикюр<small>Smart-обработка стоп дисками, пальцы, уход: масло, крем, свеча</small></span><i class="pm"></i></summary>
+        </div>
+        <div>
+          <h4>Педикюр</h4>
           <ul class="pl">
-            <li><span>Без покрытия<br><span class="gift">Лечебный лак в подарок</span></span><b>70</b></li>
+            <li><span>Без покрытия, лечебный лак в подарок</span><b>70</b></li>
             <li><span>+ лак</span><b>80</b></li>
             <li><span>+ гель-лак</span><b>85</b></li>
             <li><span>+ плёнки</span><b>85</b></li>
           </ul>
-        </details>
-        <details>
-          <summary><span>Экспресс-педикюр<small>Только пальцы</small></span><i class="pm"></i></summary>
+          <h4>Экспресс-педикюр, только пальцы</h4>
           <ul class="pl">
             <li><span>Без покрытия</span><b>40</b></li>
             <li><span>+ лак</span><b>55</b></li>
             <li><span>+ гель-лак</span><b>60</b></li>
             <li><span>+ плёнки</span><b>80</b></li>
           </ul>
-        </details>
-        <details>
-          <summary><span>Японский педикюр</span><i class="pm"></i></summary>
+          <h4>Японский педикюр</h4>
           <ul class="pl">
             <li><span>Стопы и пальцы</span><b>75</b></li>
             <li><span>Только пальчики</span><b>55</b></li>
             <li><span>Френч в педикюре</span><b>+5</b></li>
           </ul>
-        </details>
-        <details>
-          <summary><span>Подология<small>Проблемные ногти и стопы</small></span><i class="pm"></i></summary>
+          <h4>Подология</h4>
           <ul class="pl">
             <li><span>Педикюр с элементами подологии</span><b>85</b></li>
-            <li><span>+ лак</span><b>95</b></li>
-            <li><span>+ гель-лак</span><b>100</b></li>
-            <li><span>Обработка стоп: трещины, мозоли, натоптыши</span><b>40</b></li>
+            <li><span>+ лак / + гель-лак</span><b>95 / 100</b></li>
+            <li><span>Обработка стоп: трещины, мозоли</span><b>40</b></li>
             <li><span>Врастающий ноготь</span><b>35</b></li>
             <li><span>Стержневая мозоль</span><b>15</b></li>
             <li><span>Онихолизис, 1 ноготь: к педикюру / отдельно</span><b>15 / 35</b></li>
             <li><span>Онихолизис, все ногти: к педикюру / отдельно</span><b>40 / 60</b></li>
-            <li><span>Коррекционная система LIGHT SYSTEM, 1 ноготь</span><b>90</b></li>
-            <li><span>LIGHT SYSTEM, 2 ногтя</span><b>170</b></li>
+            <li><span>LIGHT SYSTEM: 1 ноготь / 2 ногтя</span><b>90 / 170</b></li>
           </ul>
-        </details>
-        <details>
-          <summary><span>Дополнительно</span><i class="pm"></i></summary>
+          <h4>Дополнительно</h4>
           <ul class="pl">
             <li><span>Массаж рук: к маникюру / отдельно</span><b>30 / 40</b></li>
             <li><span>Массаж стоп: к педикюру / отдельно</span><b>30 / 40</b></li>
           </ul>
-        </details>
+        </div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- 4. QUIZ: three steps, the last one is the phone -->
+<section class="quiz dark" id="quiz" aria-labelledby="quiz-title">
+  <div class="wrap quiz__box">
+    <h2 class="h2" id="quiz-title">Узнайте точную цену своего маникюра за 3 вопроса</h2>
+    <p class="sub">Перезвоним за 15 минут, назовём цену и свободное время у мастера</p>
+    <form class="qform" id="qform" novalidate>
+      <div class="qprog"><span id="qstep-n">Вопрос 1 из 3</span><span class="qprog__bar"><i id="qbar"></i></span></div>
+      <div class="qstep" data-step="1">
+        <h3>Что будем делать?</h3>
+        <div class="qopts qopts--3" id="q-s">
+          <button class="qopt" type="button" data-v="coat">Маникюр с покрытием</button>
+          <button class="qopt" type="button" data-v="ext">Наращивание</button>
+          <button class="qopt" type="button" data-v="jap">Японский маникюр</button>
+          <button class="qopt" type="button" data-v="dip">DIP<small>при аллергии на гель-лак</small></button>
+          <button class="qopt" type="button" data-v="ped">Педикюр</button>
+          <button class="qopt" type="button" data-v="podo">Проблемные ногти и стопы</button>
+        </div>
+      </div>
+      <div class="qstep" data-step="2" hidden>
+        <h3 id="q-a-t">Какая длина нужна?</h3>
+        <div class="qlen has-nail" id="q-len">
+          <figure class="nailfig">
+            <svg class="nail" viewBox="20 -150 180 440" aria-hidden="true">
+              <path class="nail__finger" d="M40 290V100C40 50 72 22 110 22s70 28 70 78v190"/>
+              <path class="nail__free" id="q-free" transform="translate(110 84) scale(1 .87)" d="M-40 0V-62C-40-88-22-100 0-100S40-88 40-62V0Z"/>
+              <path class="nail__bed" d="M70 192V84c0-14 18-24 40-24s40 10 40 24v108c0 6-4 10-10 10H80c-6 0-10-4-10-10Z"/>
+            </svg>
+          </figure>
+          <div>
+            <div class="qopts" id="q-a"></div>
+            <div class="legend"><span><i></i>ногтевое ложе</span><span><i class="fe"></i>свободный край</span></div>
+          </div>
+        </div>
+        <button class="qback" type="button" data-back="1">Назад</button>
+      </div>
+      <div class="qstep" data-step="3" hidden>
+        <h3>Куда перезвонить?</h3>
+        <p class="qsum" id="q-sum"><span class="hx"></span><span></span></p>
+        <label class="sr" for="q-phone">Телефон</label>
+        <input class="field" id="q-phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+375 (__) ___-__-__">
+        <div class="consent"><input type="checkbox" id="q-ok" checked><label for="q-ok">Даю согласие на <a href="consent.html" target="_blank" rel="noopener">обработку персональных данных</a></label></div>
+        <button class="btn btn--main qsend" type="submit">Узнать точную цену<svg class="i"><use href="#i-arr"/></svg><span class="btn-badge">за 15 минут</span></button>
+        <p class="qerr" id="q-err" hidden></p>
+        <button class="qback" type="button" data-back="2">Назад</button>
+      </div>
+      <div class="qdone" id="q-done" hidden>
+        <b>Заявка принята</b>
+        <p>Перезвоним в течение 15 минут, назовём цену и свободное время. Если удобнее выбрать время самой, оно есть онлайн</p>
+        <a class="btn btn--ghost" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Посмотреть свободные окна</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- 5. WHAT HAPPENS AFTER THE REQUEST -->
+<section class="after" id="after" aria-labelledby="after-title">
+  <div class="wrap">
+    <div class="head">
+      <h2 class="h2" id="after-title">Что будет после заявки: от звонка до подарка</h2>
+    </div>
+    <ol class="steps">
+      <li><b>Перезвоним за 15 минут</b><span>Назовём цену и свободные окна</span></li>
+      <li><b>Подберём мастера</b><span>Под вашу длину, дизайн и ногти</span></li>
+      <li><b>Встретим с чаем</b><span>Угощаем чаем с конфетами</span></li>
+      <li><b>Покажем варианты дизайна</b><span>Можно принести своё фото</span></li>
+      <li class="steps__last"><b>Подарок к следующему визиту</b><span>И клиентская карта со скидкой</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 6. MASTERS: often named in reviews, so they come early -->
+<section class="masters band-white" id="masters" aria-labelledby="masters-title">
+  <div class="wrap">
+    <h2 class="h2 head" id="masters-title">К этим мастерам клиентки ходят годами</h2>
+    <div class="masters__grid">
+      <article class="mst">
+        <div class="ph"><svg viewBox="0 0 24 24"><use href="#i-cam"/></svg>Фото Марины</div>
+        <div><h3>Марина</h3><p class="mst__role">Топ-мастер</p><p class="mst__skills">Японский маникюр, сложный дизайн, массаж рук</p></div>
+        <!-- @M_MARINA -->
+        <p class="mst__q">«Человек своего дела, качественно быстро и аккуратно сделала мне красоту»<span>Александра, отзыв на Яндекс Картах</span></p>
+        <a class="btn btn--main btn--sm" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Записаться к Марине</a>
+      </article>
+      <article class="mst">
+        <div class="ph"><svg viewBox="0 0 24 24"><use href="#i-cam"/></svg>Фото Дарьи</div>
+        <div><h3>Дарья</h3><p class="mst__role">Наращивание и смелые идеи</p><p class="mst__skills">Наращивание, сложные ногти, педикюр</p></div>
+        <!-- @M_DARYA -->
+        <p class="mst__q">«Наращивание держится без отслоек более 4 недель»<span>Виктория К., отзыв на Яндекс Картах</span></p>
+        <a class="btn btn--main btn--sm" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Записаться к Дарье</a>
+      </article>
+      <article class="mst">
+        <div class="ph"><svg viewBox="0 0 24 24"><use href="#i-cam"/></svg>Фото Натальи</div>
+        <div><h3>Наталья</h3><p class="mst__role">Клиентки зовут её Натали</p><p class="mst__skills">Маникюр, педикюр, точный подбор цвета</p></div>
+        <!-- @M_NATALYA -->
+        <p class="mst__q">«Весь процесс прошел без неприятных ощущений»<span>Людмила Коломиец, отзыв на Яндекс Картах</span></p>
+        <a class="btn btn--main btn--sm" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Записаться к Наталье</a>
+      </article>
+      <article class="mst">
+        <div class="ph"><svg viewBox="0 0 24 24"><use href="#i-cam"/></svg>Фото Светланы</div>
+        <div><h3>Светлана</h3><p class="mst__role">Аккуратный маникюр</p><p class="mst__skills">К ней возвращаются постоянные клиентки</p></div>
+        <!-- @M_SVETLANA -->
+        <p class="mst__q">«Всегда записываюсь только к мастеру Светлане»<span>Милова Алина, отзыв на Яндекс Картах</span></p>
+        <a class="btn btn--main btn--sm" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Записаться к Светлане</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 7. STERILITY: the main fear, answered with the clients' own words -->
+<section class="sterile" id="sterile" aria-labelledby="sterile-title">
+  <div class="wrap ster">
+    <div>
+      <h2 class="h2" id="sterile-title">Про стерильные инструменты клиентки пишут сами</h2>
+      <figure class="bigq">
+        <blockquote>«Обратила внимание что все инструменты тщательно обрабатываются, для меня это очень важно!!!»</blockquote>
+        <figcaption>Алена Белова, отзыв на Яндекс Картах</figcaption>
+      </figure>
+      <div class="alsoq">
+        <p><b>«Все стерильно и безопасно»</b> Марина Деревянко</p>
+        <p><b>«Хорошо обработанный, стерильный инструментарий»</b> Наталия Лавкова</p>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- 5. SAFETY -->
-<section class="safety" id="safety" aria-labelledby="safety-title">
-  <div class="wrap">
-    <div class="head rise">
-      <p class="eyebrow">Стерильность и безопасность</p>
-      <h2 class="h2" id="safety-title">Про стерильность пишут сами клиентки</h2>
-      <p class="lead">Здесь только то, что клиентки написали в отзывах на Яндекс Картах.</p>
-    </div>
-    <div class="safety__grid">
-      <figure class="quote rise">
-        <blockquote>«Обратила внимание что все <mark>инструменты тщательно обрабатываются</mark>, для меня это очень важно!!!»</blockquote>
-        <figcaption>Алена Белова · 3 февраля 2025</figcaption>
-      </figure>
-      <figure class="quote rise">
-        <blockquote>«Красивый и качественный аккуратный маникюр, замечательный мастер. <mark>Все стерильно и безопасно.</mark>»</blockquote>
-        <figcaption>Марина Деревянко · 4 апреля 2025</figcaption>
-      </figure>
-      <figure class="quote rise">
-        <blockquote>«…чистота на рабочих местах и <mark>хорошо обработанный, стерильный инструментарий</mark>.»</blockquote>
-        <figcaption>Наталия Лавкова · 13 февраля 2025</figcaption>
-      </figure>
-    </div>
-    <div class="phs">
-      <div class="ph"><span class="hx"></span><b>Стерилизатор в работе</b><span class="todo">уточнить и сфотографировать</span></div>
-      <div class="ph"><span class="hx"></span><b>Крафт-пакет с инструментами</b><span class="todo">уточнить и сфотографировать</span></div>
-      <div class="ph ph--note"><span class="todo">уточнить у владелицы: этапы обработки инструментов (дезинфекция, очистка, стерилизация: сухожар или автоклав), вскрывается ли крафт-пакет при клиентке, одноразовые ли пилки и бафы</span></div>
+    <div class="ster__ph">
+      <div class="ph"><svg viewBox="0 0 24 24"><use href="#i-cam"/></svg>Стерилизатор в работе</div>
+      <div class="ph"><svg viewBox="0 0 24 24"><use href="#i-cam"/></svg>Инструменты в крафт-пакете</div>
     </div>
   </div>
 </section>
 
-<!-- 6. SPECIAL CASES -->
+<!-- 8. SPECIAL CASES: "is this for me?" -->
 <section class="special band-white" id="special" aria-labelledby="special-title">
   <div class="wrap">
-    <div class="head rise">
-      <p class="eyebrow">Особые случаи</p>
-      <h2 class="h2" id="special-title">Здесь не осудят</h2>
-      <p class="lead">Аллергия, проблемные ногти, трещины на стопах. Для мастера это обычная работа, о ней можно сказать спокойно и сразу.</p>
+    <div class="head">
+      <h2 class="h2" id="special-title">С аллергией и проблемными ногтями здесь не осудят</h2>
+      <p class="sub">Для мастера это обычная работа, о ней можно сказать сразу при записи</p>
     </div>
-    <div class="cases">
-      <div class="case">
-        <p class="case__q">У меня аллергия на гель-лак</p>
-        <div>
-          <p class="case__a"><strong>DIP-покрытие.</strong> Его делают как раз для тех, кому не подходит гель-лак.</p>
-          <div class="tags"><span class="tag">Короткие 80</span><span class="tag">Средние 90</span><span class="tag tag--soft">Снятие бесплатно</span></div>
-        </div>
-      </div>
-      <div class="case">
-        <p class="case__q">Врастает или отслаивается ноготь</p>
-        <div>
-          <p class="case__a"><strong>Педикюр с элементами подологии.</strong> Врастающий ноготь, онихолизис, коррекционная система LIGHT SYSTEM.</p>
-          <div class="tags"><span class="tag">Педикюр с подологией 85</span><span class="tag">Врастающий ноготь 35</span><span class="tag">Онихолизис от 15</span><span class="tag">LIGHT SYSTEM от 90</span></div>
-        </div>
-      </div>
-      <div class="case">
-        <p class="case__q">Трещины, мозоли, натоптыши</p>
-        <div>
-          <p class="case__a"><strong>Обработка стоп.</strong> Отдельно или вместе с педикюром.</p>
-          <div class="tags"><span class="tag">Обработка стоп 40</span><span class="tag">Стержневая мозоль 15</span></div>
-        </div>
-      </div>
-      <div class="case">
-        <p class="case__q">Диабетическая стопа</p>
-        <div>
-          <p class="case__a"><strong>Педикюр с элементами подологии.</strong> Предупредите об этом при записи.</p>
-          <div class="tags"><span class="todo">уточнить у владелицы: работают ли с диабетической стопой и что нужно знать заранее</span></div>
-        </div>
-      </div>
-      <div class="case">
-        <p class="case__q">Маникюр для мужа или ребёнка</p>
-        <div>
-          <p class="case__a"><strong>Мужской и детский маникюр</strong> тоже делают.</p>
-          <div class="tags"><span class="tag">Мужской 50</span><span class="tag">Детский</span><span class="todo">уточнить цену и возраст для детского</span></div>
-        </div>
-      </div>
-      <div class="case">
-        <p class="case__q">Можно прийти вместе с мамой?</p>
-        <div>
-          <p class="case__a"><strong>Конечно.</strong> «Приходим с мамой уже второй раз и остаёмся максимально довольными результатом!», пишет Андрей Голубцов. Чтобы записаться вдвоём на одно время, напишите в Instagram.</p>
-          <div class="tags"><a class="tag" href="https://ig.me/m/dofamin.tut" target="_blank" rel="noopener">Написать в Instagram</a></div>
-        </div>
-      </div>
-    </div>
+    <ul class="cases">
+      <li><b>Аллергия на гель-лак</b><span>DIP-покрытие, снятие бесплатно</span><em>80</em></li>
+      <li><b>Врастающий ноготь</b><span>Педикюр с элементами подологии</span><em>35</em></li>
+      <li><b>Ноготь отслаивается</b><span>Онихолизис, к педикюру или отдельно</span><em>от 15</em></li>
+      <li><b>Трещины и мозоли</b><span>Обработка стоп дисками</span><em>40</em></li>
+      <li><b>Мужской маникюр</b><span>Аккуратно и без покрытия</span><em>50</em></li>
+      <li><b>Вместе с мамой</b><span>Запишем вас к двум мастерам на одно время</span></li>
+    </ul>
+    <div class="special__cta"><a class="btn btn--main" href="https://ig.me/m/dofamin.tut" target="_blank" rel="noopener"><svg class="i"><use href="#i-ig"/></svg>Спросить мастера в директе</a></div>
   </div>
 </section>
 
-<!-- 7. MASTERS -->
-<section class="masters" id="masters" aria-labelledby="masters-title">
-  <div class="wrap">
-    <div class="head rise">
-      <p class="eyebrow">Мастера</p>
-      <h2 class="h2" id="masters-title">К своему мастеру клиентки ходят годами</h2>
-      <p class="lead">Работы ниже из отзывов клиенток. Нажмите на фото, чтобы посмотреть все работы мастера.</p>
-    </div>
-    <div class="masters__grid">
-      <article class="mst rise" aria-labelledby="m-marina">
-        <div class="mst__head"><div class="mst__ava" aria-hidden="true">М</div><div><h3 id="m-marina">Марина</h3><p class="mst__role">Топ-мастер</p></div></div>
-        <p class="mst__skills">Японский маникюр, сложный дизайн, массаж рук. Постоянно повышает квалификацию.</p>
-        <!-- @M_MARINA -->
-        <figure class="mst__q">
-          <blockquote>«Записалась на маникюр к мастеру Марина. Человек своего дела, качественно быстро и аккуратно сделала мне красоту, давно так не радовалась ногтям. В конце был приятный бонус в виде подарочка на следующий раз и карточка клиента.»</blockquote>
-          <figcaption>Александра · 3 февраля 2025</figcaption>
-        </figure>
-        <div class="mst__foot"><a class="btn btn--ghost btn--sm" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Записаться к Марине</a><span class="todo">уточнить: фото мастера и стаж</span></div>
-      </article>
-
-      <article class="mst rise" aria-labelledby="m-darya">
-        <div class="mst__head"><div class="mst__ava" aria-hidden="true">Д</div><div><h3 id="m-darya">Дарья</h3><p class="mst__role">Наращивание и смелые идеи</p></div></div>
-        <p class="mst__skills">Наращивание, сложные ногти, педикюр. Берётся за любые задумки.</p>
-        <!-- @M_DARYA -->
-        <figure class="mst__q">
-          <blockquote>«Даша просто шикарный мастер, наращивание держится без отслоек более 4 недель. Всегда есть креативность, берется за все мои задумки.»</blockquote>
-          <figcaption>Виктория К. · 16 февраля 2025</figcaption>
-        </figure>
-        <div class="mst__foot"><a class="btn btn--ghost btn--sm" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Записаться к Дарье</a><span class="todo">уточнить: фото мастера и стаж</span></div>
-      </article>
-
-      <article class="mst rise" aria-labelledby="m-natalya">
-        <div class="mst__head"><div class="mst__ava" aria-hidden="true">Н</div><div><h3 id="m-natalya">Наталья</h3><p class="mst__role">Клиентки зовут её Натали</p></div></div>
-        <p class="mst__skills">Маникюр и педикюр, точный подбор цвета. Покрытие стоит весь срок носки.</p>
-        <!-- @M_NATALYA -->
-        <figure class="mst__q">
-          <blockquote>«Мастер проявила высокий профессионализм — внимательно выслушала мои пожелания и предложила несколько вариантов дизайна. … Весь процесс прошел без неприятных ощущений, что говорит о большом опыте мастера. Цены также приятно удивили — за такую качественную работу они более чем разумные.»</blockquote>
-          <figcaption>Людмила Коломиец · 25 января 2025</figcaption>
-        </figure>
-        <div class="mst__foot"><a class="btn btn--ghost btn--sm" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Записаться к Наталье</a><span class="todo">уточнить: фото мастера и стаж</span></div>
-      </article>
-
-      <article class="mst rise" aria-labelledby="m-svetlana">
-        <div class="mst__head"><div class="mst__ava" aria-hidden="true">С</div><div><h3 id="m-svetlana">Светлана</h3><p class="mst__role">Аккуратный маникюр</p></div></div>
-        <p class="mst__skills">К Светлане возвращаются постоянные клиентки.</p>
-        <!-- @M_SVETLANA -->
-        <figure class="mst__q">
-          <blockquote>«Уже постоянный клиент этой студии. Всегда записываюсь только к мастеру Светлане, но уверена что там все мастера на высоте. Отличный подход к клиенту, угощают чаем с конфетками.»</blockquote>
-          <figcaption>Милова Алина · 16 апреля 2025</figcaption>
-        </figure>
-        <div class="mst__foot"><a class="btn btn--ghost btn--sm" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Записаться к Светлане</a><span class="todo">уточнить: фото мастера и стаж</span></div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- 8. REVIEWS -->
+<!-- 9. REVIEWS: one main quote as the heading -->
 <section class="reviews band-soft" id="reviews" aria-labelledby="reviews-title">
   <div class="wrap">
-    <div class="head--row head rise">
-      <div>
-        <p class="eyebrow">Отзывы</p>
-        <h2 class="h2" id="reviews-title">Что пишут на Яндекс Картах</h2>
-      </div>
-      <div class="rv-sum">
-        <div class="rv-sum__top"><b>5.0</b><span class="hexes" aria-hidden="true"><span class="hx"></span><span class="hx"></span><span class="hx"></span><span class="hx"></span><span class="hx"></span></span></div>
-        <p>70 оценок и 37 отзывов. По маникюру, мастерам и атмосфере 100% положительных.</p>
-      </div>
-    </div>
-    <figure class="rv-feature rise">
-      <blockquote>«Моя любимая студия, делаю маникюр только здесь уже много лет, причем мастер не важен - любая из девочек сделает идеальные ручки и ножки! Спасибо за то, что вам можно доверится и не переживать, что что-то пойдет не так.»</blockquote>
-      <figcaption>Maslina · 3 февраля 2025</figcaption>
-    </figure>
+    <h2 class="h2 head" id="reviews-title">«Вам можно доверится и не переживать, что что-то пойдет не так»</h2>
+    <p class="rv-sum"><b>5.0</b><span class="hexes" aria-hidden="true"><span class="hx"></span><span class="hx"></span><span class="hx"></span><span class="hx"></span><span class="hx"></span></span><span>70 оценок на Яндекс Картах · цитата из отзыва Maslina</span></p>
     <div class="rv-list">
-      <figure class="rv">
-        <blockquote>«Давно пользуюсь услугами студии. Попадала к разным мастерам и всегда оставалась очень довольна результатом! Чёткая форма ногтей, дизайн любой сложности, нигде ничего не ломается, хотя я любитель перехаживать срок носки.»</blockquote>
-        <figcaption><b>Наталья</b><span>9 марта 2025</span></figcaption>
-      </figure>
-      <figure class="rv">
-        <blockquote>«Хожу к топ мастеру Марина на японский маникюр. Обратила внимание что все инструменты тщательно обрабатываются, для меня это очень важно!!! Сам маникюр Марина выполняет быстро, качественно, по желанию делает массажик ручек, сижу всегда и балдею!»</blockquote>
-        <figcaption><b>Алена Белова</b><span>3 февраля 2025</span><span class="rv__m">о Марине</span></figcaption>
-      </figure>
-      <figure class="rv">
-        <blockquote>«Уже не первый год хожу в это замечательное место и могу с уверенностью сказать, что все мастера просто профессионалы своего дела. Так же можно отметить хорошую атмосферу, и, что не мало важно, чистота на рабочих местах и хорошо обработанный, стерильный инструментарий.»</blockquote>
-        <figcaption><b>Наталия Лавкова</b><span>13 февраля 2025</span></figcaption>
-      </figure>
-      <figure class="rv">
-        <blockquote>«Была ни раз у неё на педикюре, сейчас впервые посетила у неё маникюр. У меня довольно сложные ногти, но Дарья замечательно справилась!! Начиная от обработки, заканчивая покрытием и формой.»</blockquote>
-        <figcaption><b>Екатерина Чайка</b><span>21 февраля 2025</span><span class="rv__m">о Дарье</span></figcaption>
-      </figure>
-      <figure class="rv">
-        <blockquote>«Приходим с мамой уже второй раз и остаёмся максимально довольными результатом! Уютная студия, вежливые, тактичные мастера, всегда встречают с улыбкой! Отдельная благодарность мастеру Натали за её чуткость и профессионализм!»</blockquote>
-        <figcaption><b>Андрей Голубцов</b><span>8 апреля 2026</span><span class="rv__m">о Натали</span></figcaption>
-      </figure>
-      <figure class="rv">
-        <blockquote>«Все понравилось, была у мастера Светланы. Красивый и качественный аккуратный маникюр, замечательный мастер. Все стерильно и безопасно.»</blockquote>
-        <figcaption><b>Марина Деревянко</b><span>4 апреля 2025</span><span class="rv__m">о Светлане</span></figcaption>
-      </figure>
+      <figure class="rv"><blockquote>«Долгое время наблюдала за студией в Instagram и наконец-то решилась записаться»</blockquote><figcaption><b>Александра</b> · о Марине</figcaption></figure>
+      <figure class="rv"><blockquote>«Нигде ничего не ломается, хотя я любитель перехаживать срок носки»</blockquote><figcaption><b>Наталья</b> · ходит к разным мастерам</figcaption></figure>
+      <figure class="rv"><blockquote>«У меня довольно сложные ногти, но Дарья замечательно справилась»</blockquote><figcaption><b>Екатерина Чайка</b> · о Дарье</figcaption></figure>
+      <figure class="rv"><blockquote>«Приходим с мамой уже второй раз и остаёмся максимально довольными результатом»</blockquote><figcaption><b>Андрей Голубцов</b> · о Натали</figcaption></figure>
+      <figure class="rv"><blockquote>«Красивый и качественный аккуратный маникюр, замечательный мастер»</blockquote><figcaption><b>Марина Деревянко</b> · о Светлане</figcaption></figure>
+      <figure class="rv"><blockquote>«Уже не первый год хожу в это замечательное место»</blockquote><figcaption><b>Наталия Лавкова</b> · постоянная клиентка</figcaption></figure>
     </div>
-    <p class="rv-hint">Листайте отзывы вбок</p>
-    <div class="reviews__all">
-      <a class="btn btn--ghost" href="https://yandex.by/maps/org/dofamin/225603981549/reviews/" target="_blank" rel="noopener">Все 37 отзывов на Яндекс Картах</a>
-      <span class="mute" style="font-size:13px">Отзывы приведены дословно, без эмодзи, длинные сокращены</span>
-    </div>
+    <a class="rv-all" href="https://yandex.by/maps/org/dofamin/225603981549/reviews/" target="_blank" rel="noopener">Все 37 отзывов на Яндекс Картах<svg class="i"><use href="#i-arr"/></svg></a>
   </div>
 </section>
 
-<!-- 9. ATMOSPHERE -->
-<section class="atmo" id="atmosphere" aria-labelledby="atmo-title">
-  <div class="wrap atmo__grid">
-    <div class="rise">
-      <p class="eyebrow">Атмосфера</p>
-      <h2 class="h2" id="atmo-title">Уютно, по-домашнему</h2>
-      <p class="atmo__quote">«В студии очень уютно, по-домашнему, действительно прихожу и отдыхаю.»</p>
-      <p class="atmo__by">Виктория К., отзыв на Яндекс Картах</p>
-      <ol class="visit">
-        <li><b>Чай с конфетами</b><span>«угощают чаем с конфетками», Милова Алина</span></li>
-        <li><b>Несколько вариантов дизайна на выбор</b><span>«предложила несколько вариантов дизайна», Людмила Коломиец</span></li>
-        <li><b>Подарок на следующий визит и карточка клиента</b><span>«в конце был приятный бонус в виде подарочка на следующий раз», Александра</span></li>
-      </ol>
-      <div class="atmo__facts"><span class="tag">Есть парковка</span><span class="tag">Wi-Fi</span><span class="tag">Клиентская карта со скидкой</span><span class="todo">уточнить размер скидки</span></div>
-    </div>
-    <div class="stack" aria-hidden="true">
-      <div class="ph"><span class="hx"></span><b>Интерьер студии</b><span class="todo">уточнить: фото интерьера</span></div>
-      <div class="ph"><span class="hx"></span><b>Рабочее место мастера</b><span class="todo">уточнить: фото</span></div>
-      <div class="ccard">
-        <img src="img/logo.webp" alt="" width="480" height="192">
-        <div><div class="ccard__t">Карточка клиента</div><span class="todo">уточнить дизайн карты</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 10. GIFT -->
-<section class="giftsec band-white" id="gift" aria-labelledby="gift-title">
+<!-- 10. GIFT CERTIFICATE -->
+<section class="giftsec" id="gift" aria-labelledby="gift-title">
   <div class="wrap">
-    <div class="gift-p rise">
+    <div class="gift-p">
       <div>
-        <p class="eyebrow">Подарочный сертификат</p>
-        <h2 class="h2" id="gift-title">Подарите дофамин</h2>
-        <p class="lead">Сертификат в студию Dofamin. Подарок, который радует каждый раз, когда смотришь на свои руки.</p>
-        <div class="seasons"><span>К Новому году</span><span>К 8 Марта</span></div>
-        <p style="margin:14px 0 0"><span class="todo">уточнить: номиналы, срок действия, бумажный или электронный</span></p>
-        <div class="gift-p__cta">
-          <a class="btn btn--main" href="https://ig.me/m/dofamin.tut" target="_blank" rel="noopener">Заказать сертификат<svg class="i"><use href="#i-arr"/></svg></a>
-          <p class="proof"><span class="hx"></span>Оформление в директе Instagram @dofamin.tut</p>
-        </div>
+        <h2 class="h2" id="gift-title">Подарите дофамин: сертификат к Новому году и 8 Марта</h2>
+        <p class="sub">Дофамин - гормон удовольствия. Вырабатывается, когда смотришь на свои руки</p>
+        <a class="btn btn--main" href="https://ig.me/m/dofamin.tut" target="_blank" rel="noopener">Заказать сертификат<svg class="i"><use href="#i-arr"/></svg></a>
       </div>
       <div class="cert-wrap" aria-hidden="true">
         <figure class="cert">
-          <div class="cert__top"><img src="img/logo.webp" alt="" width="480" height="192"><span class="cert__kind">Подарочный<br>сертификат</span></div>
+          <div class="cert__top"><img src="img/logo.webp" alt="" width="480" height="192" loading="lazy"><span class="cert__kind">Подарочный<br>сертификат</span></div>
           <div class="cert__title">Доза<br><span>удовольствия</span></div>
           <div class="cert__bottom"><span>Минск, Кунцевщина, 31</span><span>@dofamin.tut</span></div>
         </figure>
@@ -1029,82 +854,49 @@ a.tag:hover{border-color:var(--plum);color:var(--plum)}
   </div>
 </section>
 
-<!-- 11. FAQ -->
-<section class="faq" id="faq" aria-labelledby="faq-title">
-  <div class="wrap faq__grid">
-    <div class="faq__aside rise">
-      <p class="eyebrow">Вопросы</p>
-      <h2 class="h2" id="faq-title">Частые вопросы</h2>
-      <p class="lead">Не нашли ответ? Спросите в Instagram, там же можно прислать фото своих ногтей.</p>
-      <a class="btn btn--ghost" href="https://ig.me/m/dofamin.tut" target="_blank" rel="noopener"><svg class="i"><use href="#i-ig"/></svg>Задать вопрос</a>
-    </div>
+<!-- 11. FAQ: questions are visible, the heading stays neutral -->
+<section class="faq band-white" id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <h2 class="h2 head head--c" id="faq-title">Вопросы и ответы</h2>
     <div class="faq__list">
-      <details>
-        <summary><span>Сколько держится покрытие?</span><i class="pm"></i></summary>
-        <div class="faq__a"><p>Клиентки пишут, что покрытие стоит весь срок носки, а наращивание держится без отслоек больше 4 недель. Одна признаётся, что любит перехаживать срок, и всё равно «нигде ничего не ломается».</p><span class="todo">уточнить рекомендуемый срок носки</span></div>
-      </details>
-      <details>
-        <summary><span>Что если появится скол?</span><i class="pm"></i></summary>
-        <div class="faq__a"><p>Напишите в Instagram или позвоните, мастер подскажет, как быть.</p><span class="todo">уточнить условия гарантии: в какой срок и бесплатно ли исправят</span></div>
-      </details>
-      <details>
-        <summary><span>Сколько длится процедура?</span><i class="pm"></i></summary>
-        <div class="faq__a"><p>Зависит от услуги и длины.</p><span class="todo">уточнить длительность: маникюр с покрытием, наращивание, педикюр</span></div>
-      </details>
-      <details>
-        <summary><span>Можно прийти со своим референсом?</span><i class="pm"></i></summary>
-        <div class="faq__a"><p>Да. Покажите фото мастеру или пришлите заранее в Instagram. Мастера делают дизайн любой сложности и сами предлагают несколько вариантов.</p></div>
-      </details>
-      <details>
-        <summary><span>Будет ли больно?</span><i class="pm"></i></summary>
-        <div class="faq__a"><p>Не должно. В отзывах пишут, что «весь процесс прошел без неприятных ощущений». Если что-то беспокоит, скажите мастеру сразу.</p></div>
-      </details>
-      <details>
-        <summary><span>Как понять свою длину?</span><i class="pm"></i></summary>
-        <div class="faq__a"><p>Смотрите на свободный край: часть ногтя, которая выступает за ногтевое ложе. Natural — коротко. Medium — свободный край до половины ложа. Long — от половины до длины ложа. Extra long — длиннее ложа.</p><p><a href="#calc">Посмотреть схему в калькуляторе</a></p></div>
-      </details>
-      <details>
-        <summary><span>Что делать при аллергии на гель-лак?</span><i class="pm"></i></summary>
-        <div class="faq__a"><p>Выбрать DIP-покрытие: его делают как раз при аллергии на гель-лак. Короткие 80 BYN, средние 90 BYN, снятие бесплатно.</p></div>
-      </details>
-      <details>
-        <summary><span>Есть ли парковка?</span><i class="pm"></i></summary>
-        <div class="faq__a"><p>Да, есть парковка. В студии есть Wi-Fi.</p></div>
-      </details>
+      <details><summary><span>Сколько держится покрытие?</span><i class="pm"></i></summary><div class="faq__a"><p>Клиентки пишут, что покрытие стоит весь срок носки, а наращивание держится без отслоек больше 4 недель</p></div></details>
+      <details><summary><span>Что если появится скол?</span><i class="pm"></i></summary><div class="faq__a"><p>Если скол появился в первые 7 дней, исправим бесплатно<span class="flag">*</span>. Напишите в Instagram или позвоните</p></div></details>
+      <details><summary><span>Сколько длится процедура?</span><i class="pm"></i></summary><div class="faq__a"><p>Маникюр с покрытием обычно 1,5-2 часа, педикюр около 1,5 часа<span class="flag">*</span>. Точное время назовём при записи</p></div></details>
+      <details><summary><span>Можно прийти со своим фото дизайна?</span><i class="pm"></i></summary><div class="faq__a"><p>Да. Покажите фото мастеру или пришлите заранее в Instagram. Мастер предложит и свои варианты</p></div></details>
+      <details><summary><span>Будет ли больно?</span><i class="pm"></i></summary><div class="faq__a"><p>Не должно. В отзывах пишут, что «весь процесс прошел без неприятных ощущений». Если что-то беспокоит, скажите мастеру сразу</p></div></details>
+      <details><summary><span>Как понять, какая у меня длина?</span><i class="pm"></i></summary><div class="faq__a"><p>Смотрите на свободный край ногтя. Natural - коротко, Medium - край до половины ложа, Long - до длины ложа, Extra long - длиннее. Схема есть в квизе выше</p></div></details>
+      <details><summary><span>Что делать при аллергии на гель-лак?</span><i class="pm"></i></summary><div class="faq__a"><p>Выбрать DIP-покрытие: короткие 80 BYN, средние 90 BYN, снятие бесплатно</p></div></details>
+      <details><summary><span>Есть ли парковка?</span><i class="pm"></i></summary><div class="faq__a"><p>Да, парковка рядом со входом. В студии есть Wi-Fi</p></div></details>
     </div>
   </div>
 </section>
 
-<!-- 12. CONTACTS -->
-<section class="contacts band-white" id="contacts" aria-labelledby="contacts-title">
+<!-- 12. FINAL: address, map and the same booking button as in the hero -->
+<section class="fin dark" id="address" aria-labelledby="fin-title">
   <div class="wrap">
-    <div class="head rise">
-      <p class="eyebrow">Контакты</p>
-      <h2 class="h2" id="contacts-title">Как нас найти</h2>
+    <div class="head">
+      <h2 class="h2" id="fin-title">Кунцевщина, 31: 850 м от метро Каменная Горка</h2>
+      <p class="sub">Выберите время онлайн, мастер подтвердит запись</p>
     </div>
-    <div class="ct-grid">
+    <div class="fin__grid">
       <div>
-        <p class="ct-addr">Минск, ул.&nbsp;Кунцевщина,&nbsp;31</p>
         <dl class="ct-list">
           <div><dt>Метро</dt><dd>«Каменная Горка», около 850 м пешком</dd></div>
-          <div><dt>Автобус</dt><dd>Остановка «ДС Кунцевщина», около 380 м</dd></div>
-          <div><dt>Удобства</dt><dd>Есть парковка и Wi-Fi</dd></div>
-          <div><dt>Часы</dt><dd>9:00–21:00 <span class="todo">уточнить часы и выходные дни</span></dd></div>
-          <div><dt>Телефон</dt><dd><a class="ct-big" href="tel:+375295627048" id="phone">+375 29 562-70-48</a>
-            <div class="ct-acts"><a class="mini" href="tel:+375295627048"><svg class="i"><use href="#i-tel"/></svg>Позвонить</a><button class="mini" type="button" data-copy="+375 29 562-70-48"><svg class="i"><use href="#i-copy"/></svg><span>Скопировать</span></button></div></dd></div>
-          <div><dt>Instagram</dt><dd><a class="ct-big" href="https://www.instagram.com/dofamin.tut/" target="_blank" rel="noopener">@dofamin.tut</a>
-            <div class="ct-acts"><a class="mini" href="https://ig.me/m/dofamin.tut" target="_blank" rel="noopener"><svg class="i"><use href="#i-ig"/></svg>Написать в директ</a></div></dd></div>
+          <div><dt>Автобус</dt><dd>«ДС Кунцевщина», около 380 м</dd></div>
+          <div><dt>Часы</dt><dd>Ежедневно 9:00-21:00<span class="flag">*</span></dd></div>
+          <div><dt>Телефон</dt><dd><a class="ct-big" href="tel:+375295627048" id="phone">+375 29 562-70-48</a></dd></div>
+          <div><dt>Instagram</dt><dd><a class="ct-big" href="https://www.instagram.com/dofamin.tut/" target="_blank" rel="noopener">@dofamin.tut</a></dd></div>
+          <div><dt>Удобства</dt><dd>Парковка и Wi-Fi</dd></div>
         </dl>
-        <div class="ct-cta">
-          <a class="btn btn--main" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Записаться онлайн<svg class="i"><use href="#i-arr"/></svg></a>
+        <div class="fin__cta">
+          <a class="btn btn--main" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Выбрать время онлайн<svg class="i"><use href="#i-arr"/></svg><span class="btn-badge">без звонков</span></a>
           <a class="btn btn--ghost" href="https://ig.me/m/dofamin.tut" target="_blank" rel="noopener"><svg class="i"><use href="#i-ig"/></svg>Написать в Instagram</a>
         </div>
-        <p class="proof"><span class="hx"></span>5.0 на Яндекс Картах · стерильные инструменты · подарок к следующему визиту</p>
       </div>
       <div>
         <figure class="map" id="map">
 <!-- @MAP -->
-          <div class="map__legend" aria-hidden="true"><span><i></i>от метро, ~850 м</span><span><i class="st"></i>от остановки, ~380 м</span></div>
+          <div class="map__legend" aria-hidden="true"><span><i></i>от метро, 850 м</span><span><i class="st"></i>от остановки, 380 м</span></div>
           <figure class="map__door"><img src="img/entrance.webp" alt="Вход в студию Dofamin на улице Кунцевщина, 31" width="819" height="1024" loading="lazy" decoding="async"><figcaption>Вход в студию</figcaption></figure>
         </figure>
         <p class="map__osm">Схема: данные © участники OpenStreetMap</p>
@@ -1121,25 +913,31 @@ a.tag:hover{border-color:var(--plum);color:var(--plum)}
 
 <footer class="ftr">
   <div class="wrap">
-    <div class="ftr__top">
+    <div class="ftr__in">
       <a class="ftr__logo" href="#top" aria-label="Dofamin, наверх"><img src="img/logo.webp" alt="Dofamin beauty &amp; health" width="480" height="192" loading="lazy"></a>
-      <div class="ftr__links"><a href="#works">Работы</a><a href="#prices">Цены</a><a href="#masters">Мастера</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a></div>
+      <div class="ftr__links"><a href="#works">Работы</a><a href="#prices">Цены</a><a href="#masters">Мастера</a><a href="#reviews">Отзывы</a><a href="#address">Адрес</a></div>
       <div class="ftr__links"><a href="tel:+375295627048">+375 29 562-70-48</a><a href="https://www.instagram.com/dofamin.tut/" target="_blank" rel="noopener">@dofamin.tut</a></div>
     </div>
     <div class="ftr__small">
       <span>Dofamin · студия маникюра и педикюра · Минск, ул. Кунцевщина, 31</span>
-      <span>Фото работ из отзывов клиенток на Яндекс Картах</span>
+      <span><a href="policy.html" target="_blank" rel="noopener">Политика конфиденциальности</a> · <a href="consent.html" target="_blank" rel="noopener">Согласие на обработку персональных данных</a></span>
+      <span>Концепт сайта: отмеченное * сверяем с владелицей, форма заявки подключается при запуске</span>
     </div>
   </div>
 </footer>
 
 <div class="bar" aria-label="Быстрая запись">
-  <a class="btn btn--main" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Записаться онлайн<span class="bar__proof">5.0 на Яндекс Картах</span></a>
-  <a class="bar__ic" href="https://ig.me/m/dofamin.tut" target="_blank" rel="noopener" aria-label="Написать в Instagram"><svg class="i"><use href="#i-ig"/></svg></a>
-  <a class="bar__ic" href="tel:+375295627048" aria-label="Позвонить: +375 29 562-70-48"><svg class="i"><use href="#i-tel"/></svg></a>
+  <a class="btn btn--main" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Выбрать время онлайн<svg class="i"><use href="#i-arr"/></svg></a>
 </div>
 
-<button class="notes-tgl" type="button" aria-pressed="false">Пометки</button>
+<div class="fab" id="fab">
+  <div class="fab__panel" id="fab-panel" hidden>
+    <p class="fab__hint">Тут отвечаем в 3 раза быстрее</p>
+    <a href="https://ig.me/m/dofamin.tut" target="_blank" rel="noopener"><svg class="i"><use href="#i-ig"/></svg>Instagram</a>
+    <a href="tel:+375295627048"><svg class="i"><use href="#i-tel"/></svg>Позвонить</a>
+  </div>
+  <button class="fab__btn" type="button" id="fab-btn" aria-expanded="false" aria-controls="fab-panel" aria-label="Быстрая связь"><svg class="i"><use href="#i-chat"/></svg></button>
+</div>
 
 <div class="lb" hidden role="dialog" aria-modal="true" aria-label="Просмотр фото">
   <div class="lb__top"><span class="lb__cap"></span><button class="lb__close" type="button" aria-label="Закрыть"><svg class="i"><use href="#i-x"/></svg></button></div>
@@ -1148,7 +946,7 @@ a.tag:hover{border-color:var(--plum);color:var(--plum)}
     <button class="lb__nav lb__nav--prev" type="button" aria-label="Предыдущее фото"><svg class="i"><use href="#i-l"/></svg></button>
     <button class="lb__nav lb__nav--next" type="button" aria-label="Следующее фото"><svg class="i"><use href="#i-r"/></svg></button>
   </figure>
-  <div class="lb__bottom"><span class="lb__count"></span><a class="btn btn--main" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Хочу так же — записаться<svg class="i"><use href="#i-arr"/></svg></a></div>
+  <div class="lb__bottom"><span class="lb__count"></span><a class="btn btn--main" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Хочу такой же маникюр<svg class="i"><use href="#i-arr"/></svg></a></div>
 </div>
 
 <script>
@@ -1160,22 +958,19 @@ a.tag:hover{border-color:var(--plum);color:var(--plum)}
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
   const hdr = $('#hdr');
-  const hdrH = () => hdr.offsetHeight;
-  const store = {
-    get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
-    set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
-  };
   const lb = $('.lb');
+  const goTo = el => {
+    const y = el ? el.getBoundingClientRect().top + scrollY - $('.hdr__in').offsetHeight + 1 : 0;
+    scrollTo({ top: Math.max(0, y), behavior: RM ? 'auto' : 'smooth' });
+  };
 
-  /* ---------- menu & in-page links ---------- */
-  const burger = $('.hdr__burger'), menu = $('#menu');
-  function setMenu(open) {
+  /* ---------- push-down menu and in-page links ---------- */
+  const burger = $('.hdr__burger');
+  const setMenu = open => {
     root.classList.toggle('menu-open', open);
-    root.classList.toggle('lock', open || !lb.hidden);
     burger.setAttribute('aria-expanded', open);
     burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
-    menu.inert = !open;
-  }
+  };
   burger.addEventListener('click', () => setMenu(!root.classList.contains('menu-open')));
   d.addEventListener('click', e => {
     const a = e.target.closest('a[href^="#"]');
@@ -1184,143 +979,119 @@ a.tag:hover{border-color:var(--plum);color:var(--plum)}
     const t = id === 'top' ? null : d.getElementById(id);
     if (id !== 'top' && !t) return;
     e.preventDefault();
-    if (root.classList.contains('menu-open')) setMenu(false);
-    const y = t ? t.getBoundingClientRect().top + scrollY - hdrH() - (t.tagName === 'SECTION' ? 0 : 16) : 0;
-    scrollTo({ top: Math.max(0, y), behavior: RM ? 'auto' : 'smooth' });
+    setMenu(false);
+    goTo(t);
   });
 
-  /* ---------- owner notes ---------- */
-  const notesBtn = $('.notes-tgl');
-  const notesCount = $$('.todo').length;
-  function setNotes(off) {
-    root.classList.toggle('notes-off', off);
-    notesBtn.setAttribute('aria-pressed', off);
-    notesBtn.textContent = off ? 'Показать пометки: ' + notesCount : 'Пометки: ' + notesCount + ' · скрыть';
-    store.set('dofamin-notes-off', off ? '1' : '0');
-  }
-  notesBtn.addEventListener('click', () => setNotes(!root.classList.contains('notes-off')));
-  setNotes(store.get('dofamin-notes-off') === '1');
+  /* ---------- quick-contact widget ---------- */
+  const fabBtn = $('#fab-btn'), fabPanel = $('#fab-panel');
+  fabBtn.addEventListener('click', () => { fabPanel.hidden = !fabPanel.hidden; fabBtn.setAttribute('aria-expanded', !fabPanel.hidden); });
+  d.addEventListener('click', e => { if (!e.target.closest('#fab') && !fabPanel.hidden) { fabPanel.hidden = true; fabBtn.setAttribute('aria-expanded', false); } });
 
-  /* ---------- copy phone ---------- */
-  $$('[data-copy]').forEach(b => b.addEventListener('click', () => {
-    const label = b.querySelector('span');
-    const done = ok => { label.textContent = ok ? 'Скопировано' : 'Выделено, скопируйте'; setTimeout(() => label.textContent = 'Скопировать', 2200); };
-    const fallback = () => { const r = d.createRange(); r.selectNodeContents($('#phone')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); done(false); };
-    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(b.dataset.copy).then(() => done(true), fallback);
-    else fallback();
-  }));
-
-  /* ---------- calculator ---------- */
-  const SV = {
-    coat: { hint: 'В цену входят снятие, маникюр, ремонт до 3 ногтей, укрепление и покрытие.', name: 'Маникюр с покрытием',
-      a: { t: 'Длина', nail: true, o: [['natural', 'Natural', 'короткие', .13], ['medium', 'Medium', 'свободный край до ½ ложа', .45], ['long', 'Long', 'от ½ до длины ложа', .9], ['xl', 'Extra long', 'длиннее ложа', 1.3]] },
-      b: { t: () => 'Дизайн', o: () => [['mono', 'Однотон'], ['french', 'Френч или дизайн'], ['complex', 'Сложный дизайн', 'роспись, камни: +10']] },
-      p: (a, b) => { const t = { natural: [60, 65], medium: [70, 75], long: [80, 90], xl: [100, 110] }[a]; return b === 'mono' ? t[0] : t[1] + (b === 'complex' ? 10 : 0); },
-      g: (a, b) => a === 'natural' && b === 'mono' ? 'Простой декор 2 ногтей в подарок' : '',
-      x: ['Массаж рук', 30], d: ['medium', 'french'] },
-    ext: { hint: 'По отзывам, наращивание держится без отслоек больше 4 недель.', name: 'Наращивание',
-      a: { t: 'Длина', nail: true, o: [['medium', 'Средняя', '', .55], ['long', 'Длинные', '', 1.05]] },
-      b: { t: () => 'Покрытие', o: () => [['camo', 'Камуфляж'], ['color', 'Цвет или дизайн']] },
-      p: (a, b) => ({ medium: [100, 110], long: [110, 120] })[a][b === 'camo' ? 0 : 1],
-      x: ['Массаж рук', 30], d: ['medium', 'color'] },
-    jap: { hint: 'Ухоженные натуральные ногти без цветного покрытия. Японский маникюр — специализация Марины.', name: 'Японский маникюр',
-      a: { t: 'Сейчас на ногтях есть покрытие?', o: [['no', 'Нет'], ['yes', 'Да, нужно снять']] },
-      p: a => a === 'no' ? 60 : 70, x: ['Массаж рук', 30], d: ['no'] },
-    dip: { hint: 'Покрытие для тех, у кого аллергия на гель-лак. Снятие бесплатно.', name: 'DIP-маникюр',
-      a: { t: 'Длина', nail: true, o: [['short', 'Короткие', '', .13], ['medium', 'Средние', '', .45]] },
-      p: a => a === 'short' ? 80 : 90, g: () => 'Снятие бесплатно', x: ['Массаж рук', 30], d: ['short'] },
-    ped: { hint: 'Полный педикюр: smart-обработка стоп дисками, пальцы и уход (масло, крем, свеча).', name: 'Педикюр',
-      a: { t: 'Вид педикюра', o: [['smart', 'Полный', 'стопы и пальцы'], ['express', 'Экспресс', 'только пальцы'], ['jap', 'Японский'], ['podo', 'С подологией', 'проблемные ногти и стопы']] },
-      b: { t: a => a === 'jap' ? 'Что обрабатываем' : 'Покрытие',
-        o: a => a === 'jap' ? [['full', 'Стопы и пальцы'], ['toes', 'Только пальчики']]
-          : [['none', 'Без покрытия'], ['lac', 'Лак'], ['gel', 'Гель-лак']].concat(a === 'podo' ? [] : [['film', 'Плёнки']]) },
-      p: (a, b) => ({ smart: { none: 70, lac: 80, gel: 85, film: 85 }, express: { none: 40, lac: 55, gel: 60, film: 80 }, jap: { full: 75, toes: 55 }, podo: { none: 85, lac: 95, gel: 100 } })[a][b],
-      g: (a, b) => a === 'smart' && b === 'none' ? 'Лечебный лак в подарок' : '',
-      fr: (a, b) => b === 'lac' || b === 'gel',
-      x: ['Массаж стоп', 30], d: ['smart', 'gel'] }
+  /* ---------- gallery slider with master filter ---------- */
+  const track = $('#track'), items = $$('.wk', track), chips = $$('.chip'), prev = $('#prev'), next = $('#next'), count = $('#count');
+  const plural = (n, f) => f[(n % 10 === 1 && n % 100 !== 11) ? 0 : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) ? 1 : 2];
+  const syncArrows = () => {
+    const max = track.scrollWidth - track.clientWidth - 2;
+    prev.disabled = track.scrollLeft <= 2;
+    next.disabled = track.scrollLeft >= max;
   };
-  const calc = $('#calc');
-  const st = { s: 'coat', a: 'medium', b: 'french' };
-  const el = { a: $('#c-a'), b: $('#c-b'), bw: $('#c-b-wrap'), at: $('#c-a-t'), bt: $('#c-b-t'), hint: $('#c-hint'), len: $('#c-len'),
-    x: $('#c-x'), xl: $('#c-x-l'), fr: $('#c-fr'), frw: $('#c-fr-wrap'), price: $('#c-price'), desc: $('#c-desc'), gift: $('#c-gift'), free: $('#c-free') };
-  const optsHtml = (name, list, val) => list.map(([v, l, s]) =>
-    `<label class="opt"><input type="radio" name="${name}" value="${v}"${v === val ? ' checked' : ''}><span>${l}${s ? `<small>${s}</small>` : ''}</span></label>`).join('');
-  let freeK = .87, freeAnim = 0;
-  function setFree(ratio) {
-    const to = (ratio * 140 + 24) / 100, from = freeK, t0 = performance.now(), dur = RM ? 1 : 420;
-    cancelAnimationFrame(freeAnim);
-    const step = now => {
-      const p = clamp((now - t0) / dur, 0, 1), e = 1 - Math.pow(1 - p, 3);
-      freeK = from + (to - from) * e;
-      el.free.setAttribute('transform', `translate(110 84) scale(1 ${freeK.toFixed(3)})`);
-      if (p < 1) freeAnim = requestAnimationFrame(step);
-    };
-    freeAnim = requestAnimationFrame(step);
-  }
-  function renderB() {
-    const s = SV[st.s];
-    if (s.b) {
-      const list = s.b.o(st.a);
-      if (!list.some(o => o[0] === st.b)) st.b = list.some(o => o[0] === s.d[1]) ? s.d[1] : list[0][0];
-      el.bt.textContent = s.b.t(st.a);
-      el.b.innerHTML = optsHtml('c-b', list, st.b);
-      el.bw.hidden = false;
-    } else el.bw.hidden = true;
-  }
-  function renderSteps() {
-    const s = SV[st.s];
-    el.hint.textContent = s.hint;
-    el.at.textContent = s.a.t;
-    el.a.innerHTML = optsHtml('c-a', s.a.o, st.a);
-    el.len.classList.toggle('has-nail', !!s.a.nail);
-    renderB();
-    el.xl.textContent = `${s.x[0]} +${s.x[1]}`;
-  }
-  function update() {
-    const s = SV[st.s];
-    const aOpt = s.a.o.find(o => o[0] === st.a);
-    if (s.a.nail && aOpt) setFree(aOpt[3]);
-    const frOn = !!(s.fr && s.fr(st.a, st.b));
-    el.frw.hidden = !frOn;
-    let price = s.p(st.a, st.b);
-    const parts = [s.name, aOpt ? aOpt[1] : ''];
-    if (s.b) { const bOpt = s.b.o(st.a).find(o => o[0] === st.b); if (bOpt) parts.push(bOpt[1].toLowerCase()); }
-    if (frOn && el.fr.checked) { price += 5; parts.push('френч'); }
-    if (el.x.checked) { price += s.x[1]; parts.push(s.x[0].toLowerCase()); }
-    el.price.textContent = price;
-    el.desc.textContent = parts.filter(Boolean).join(', ');
-    const g = s.g ? s.g(st.a, st.b) : '';
-    el.gift.hidden = !g; el.gift.innerHTML = g ? '<span class="hx"></span>' + g : '';
-  }
-  calc.addEventListener('change', e => {
-    const t = e.target;
-    if (t.name === 'c-s') { st.s = t.value; [st.a, st.b] = SV[st.s].d; el.fr.checked = false; el.x.checked = false; renderSteps(); }
-    else if (t.name === 'c-a') { st.a = t.value; if (st.s === 'ped') renderB(); }
-    else if (t.name === 'c-b') st.b = t.value;
-    update();
-  });
-  calc.addEventListener('submit', e => e.preventDefault());
-  renderSteps(); update();
-
-  /* ---------- works gallery ---------- */
-  const works = $('#works'), items = $$('.wk', works), chips = $$('.chip', works), moreBtn = $('#works-more');
-  const FIRST = 8;
-  function applyFilter(f) {
-    items.forEach(i => { i.hidden = f !== 'all' && i.dataset.m !== f; });
-    items.filter(i => !i.hidden).forEach((i, k) => i.classList.toggle('is-extra', f === 'all' && k >= FIRST));
-    moreBtn.hidden = f !== 'all' || works.classList.contains('is-open');
-  }
   chips.forEach(c => c.addEventListener('click', () => {
     chips.forEach(x => x.setAttribute('aria-pressed', x === c));
-    applyFilter(c.dataset.f);
+    items.forEach(i => { i.hidden = c.dataset.f !== 'all' && i.dataset.m !== c.dataset.f; });
+    const n = items.filter(i => !i.hidden).length;
+    count.textContent = n + ' ' + plural(n, ['фото', 'фото', 'фото']);
+    track.scrollLeft = 0; syncArrows();
   }));
-  moreBtn.addEventListener('click', () => { works.classList.add('is-open'); moreBtn.hidden = true; });
-  applyFilter('all');
+  const step = () => track.clientWidth * .85;
+  prev.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: RM ? 'auto' : 'smooth' }));
+  next.addEventListener('click', () => track.scrollBy({ left: step(), behavior: RM ? 'auto' : 'smooth' }));
+  track.addEventListener('scroll', syncArrows, { passive: true });
+  addEventListener('resize', syncArrows);
+  syncArrows();
+
+  /* ---------- quiz: service, length or type, phone ---------- */
+  const Q = {
+    coat: { n: 'Маникюр с покрытием', t: 'Какая длина нужна?', nail: true, o: [['natural', 'Natural', 'короткие', .13], ['medium', 'Medium', 'до ½ ложа', .45], ['long', 'Long', 'до длины ложа', .9], ['xl', 'Extra long', 'длиннее ложа', 1.3]] },
+    ext: { n: 'Наращивание', t: 'Какая длина нужна?', nail: true, o: [['medium', 'Средняя', '', .55], ['long', 'Длинные', '', 1.05]] },
+    jap: { n: 'Японский маникюр', t: 'Сейчас на ногтях есть покрытие?', o: [['no', 'Нет'], ['yes', 'Да, нужно снять']] },
+    dip: { n: 'DIP при аллергии', t: 'Какая длина нужна?', nail: true, o: [['short', 'Короткие', '', .13], ['medium', 'Средние', '', .45]] },
+    ped: { n: 'Педикюр', t: 'Какой педикюр нужен?', o: [['smart', 'Полный', 'стопы и пальцы'], ['express', 'Экспресс', 'только пальцы'], ['jap', 'Японский'], ['unsure', 'Пока не знаю', 'подскажем']] },
+    podo: { n: 'Проблемные ногти и стопы', t: 'Что беспокоит?', o: [['ingrown', 'Врастающий ноготь'], ['onycho', 'Ноготь отслаивается'], ['cracks', 'Трещины и мозоли'], ['other', 'Другое', 'расскажете мастеру']] }
+  };
+  const form = $('#qform'), steps = $$('.qstep', form), bar = $('#qbar'), stepN = $('#qstep-n');
+  const qa = $('#q-a'), qlen = $('#q-len'), qfree = $('#q-free'), phone = $('#q-phone'), err = $('#q-err');
+  const st = { s: null, a: null };
+  function show(n) {
+    steps.forEach(s => { s.hidden = +s.dataset.step !== n; });
+    $('#q-done').hidden = true;
+    bar.style.width = (n / 3 * 100) + '%';
+    stepN.textContent = 'Вопрос ' + n + ' из 3';
+    $$('#q-s .qopt').forEach(b => b.setAttribute('aria-pressed', b.dataset.v === st.s));
+  }
+  let freeK = .87, anim = 0;
+  function setFree(ratio) {
+    const to = (ratio * 140 + 24) / 100, from = freeK, t0 = performance.now(), dur = RM ? 1 : 420;
+    cancelAnimationFrame(anim);
+    const tick = now => {
+      const p = clamp((now - t0) / dur, 0, 1), e = 1 - Math.pow(1 - p, 3);
+      freeK = from + (to - from) * e;
+      qfree.setAttribute('transform', `translate(110 84) scale(1 ${freeK.toFixed(3)})`);
+      if (p < 1) anim = requestAnimationFrame(tick);
+    };
+    anim = requestAnimationFrame(tick);
+  }
+  function pickService(v) {
+    st.s = v; st.a = null;
+    const q = Q[v];
+    $('#q-a-t').textContent = q.t;
+    qlen.classList.toggle('has-nail', !!q.nail);
+    qa.innerHTML = q.o.map(([val, l, sm]) => `<button class="qopt" type="button" data-v="${val}">${l}${sm ? `<small>${sm}</small>` : ''}</button>`).join('');
+    if (q.nail) setFree(q.o[1] ? q.o[1][3] : q.o[0][3]);
+    show(2);
+  }
+  $('#q-s').addEventListener('click', e => { const b = e.target.closest('.qopt'); if (b) pickService(b.dataset.v); });
+  qa.addEventListener('click', e => {
+    const b = e.target.closest('.qopt'); if (!b) return;
+    const q = Q[st.s], o = q.o.find(x => x[0] === b.dataset.v);
+    st.a = o[0];
+    $$('.qopt', qa).forEach(x => x.setAttribute('aria-pressed', x === b));
+    if (q.nail) setFree(o[3]);
+    $('#q-sum span:last-child').textContent = q.n + ', ' + (/[a-z]/i.test(o[1][0]) ? o[1] : o[1].toLowerCase());
+    setTimeout(() => { show(3); phone.focus({ preventScroll: true }); }, q.nail && !RM ? 380 : 0);
+  });
+  qa.addEventListener('mouseover', e => { const b = e.target.closest('.qopt'); const q = Q[st.s]; if (b && q && q.nail) { const o = q.o.find(x => x[0] === b.dataset.v); if (o) setFree(o[3]); } });
+  $$('[data-back]', form).forEach(b => b.addEventListener('click', () => show(+b.dataset.back)));
+  phone.addEventListener('input', () => {
+    let dg = phone.value.replace(/\D/g, '');
+    if (!dg.startsWith('375')) dg = '375' + dg.replace(/^3?7?5?/, '');
+    dg = dg.slice(0, 12);
+    const p = dg.slice(3);
+    let out = '+375';
+    if (p.length) out += ' (' + p.slice(0, 2);
+    if (p.length >= 2) out += ')';
+    if (p.length > 2) out += ' ' + p.slice(2, 5);
+    if (p.length > 5) out += '-' + p.slice(5, 7);
+    if (p.length > 7) out += '-' + p.slice(7, 9);
+    phone.value = out;
+    phone.classList.remove('bad'); err.hidden = true;
+  });
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const ok = phone.value.replace(/\D/g, '').length === 12;
+    if (!ok) { phone.classList.add('bad'); err.textContent = 'Введите номер полностью: +375 и 9 цифр'; err.hidden = false; return; }
+    if (!$('#q-ok').checked) { err.textContent = 'Отметьте согласие на обработку данных'; err.hidden = false; return; }
+    steps.forEach(s => { s.hidden = true; });
+    $('.qprog', form).hidden = true;
+    $('#q-done').hidden = false;
+  });
+  $$('[data-quiz]').forEach(b => b.addEventListener('click', () => { pickService(b.dataset.quiz); goTo($('#quiz')); }));
+  show(1);
 
   /* ---------- lightbox ---------- */
   const lbImg = $('.lb__img', lb), lbCap = $('.lb__cap', lb), lbCount = $('.lb__count', lb);
   let set = [], idx = 0, lastFocus = null;
-  function show(i) {
+  function showLb(i) {
     idx = (i + set.length) % set.length;
     const it = set[idx], im = it.querySelector('img');
     lbImg.src = it.dataset.full; lbImg.alt = im ? im.alt : '';
@@ -1330,54 +1101,41 @@ a.tag:hover{border-color:var(--plum);color:var(--plum)}
     $$('.lb__nav', lb).forEach(b => b.hidden = set.length < 2);
   }
   function openLb(btn) {
-    const name = btn.dataset.set;
-    set = $$(`[data-full][data-set="${name}"]`).filter(x => !x.hidden && !x.hasAttribute('data-alias'));
+    set = $$(`[data-full][data-set="${btn.dataset.set}"]`).filter(x => !x.hidden && !x.hasAttribute('data-alias'));
     if (!set.length) set = [btn];
-    const start = Math.max(0, set.findIndex(x => x.dataset.full === btn.dataset.full));
     lastFocus = btn; lb.hidden = false; root.classList.add('lock');
-    show(start); $('.lb__close', lb).focus();
+    showLb(Math.max(0, set.findIndex(x => x.dataset.full === btn.dataset.full)));
+    $('.lb__close', lb).focus();
   }
   function closeLb() {
     if (lb.hidden) return;
-    lb.hidden = true; root.classList.toggle('lock', root.classList.contains('menu-open'));
-    lbImg.removeAttribute('src');
+    lb.hidden = true; root.classList.remove('lock'); lbImg.removeAttribute('src');
     if (lastFocus) lastFocus.focus({ preventScroll: true });
   }
   d.addEventListener('click', e => { const b = e.target.closest('button[data-full]'); if (b) openLb(b); });
   $('.lb__close', lb).addEventListener('click', closeLb);
-  $('.lb__nav--prev', lb).addEventListener('click', () => show(idx - 1));
-  $('.lb__nav--next', lb).addEventListener('click', () => show(idx + 1));
+  $('.lb__nav--prev', lb).addEventListener('click', () => showLb(idx - 1));
+  $('.lb__nav--next', lb).addEventListener('click', () => showLb(idx + 1));
   lb.addEventListener('click', e => { if (e.target === lb || e.target.classList.contains('lb__fig')) closeLb(); });
   let sx = null;
   $('.lb__fig', lb).addEventListener('pointerdown', e => { sx = e.clientX; });
-  $('.lb__fig', lb).addEventListener('pointerup', e => { if (sx !== null && Math.abs(e.clientX - sx) > 50) show(idx + (e.clientX < sx ? 1 : -1)); sx = null; });
+  $('.lb__fig', lb).addEventListener('pointerup', e => { if (sx !== null && Math.abs(e.clientX - sx) > 50) showLb(idx + (e.clientX < sx ? 1 : -1)); sx = null; });
   d.addEventListener('keydown', e => {
-    if (e.key === 'Escape') { closeLb(); if (root.classList.contains('menu-open')) setMenu(false); }
-    if (!lb.hidden && e.key === 'ArrowRight') show(idx + 1);
-    if (!lb.hidden && e.key === 'ArrowLeft') show(idx - 1);
-    if (!lb.hidden && e.key === 'Tab') {
-      const f = $$('button:not([hidden]), a[href]', lb); const first = f[0], last = f[f.length - 1];
-      if (e.shiftKey && d.activeElement === first) { e.preventDefault(); last.focus(); }
-      else if (!e.shiftKey && d.activeElement === last) { e.preventDefault(); first.focus(); }
-    }
+    if (e.key === 'Escape') { closeLb(); setMenu(false); fabPanel.hidden = true; }
+    if (!lb.hidden && e.key === 'ArrowRight') showLb(idx + 1);
+    if (!lb.hidden && e.key === 'ArrowLeft') showLb(idx - 1);
   });
 
-  /* ---------- gentle reveal of blocks below the first screen ---------- */
-  if ('IntersectionObserver' in window && !RM) {
-    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.remove('pre'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
-    $$('.rise').forEach(r => { if (r.getBoundingClientRect().top > innerHeight) { r.classList.add('pre'); io.observe(r); } });
-  }
-
   /* ---------- header and booking bar ---------- */
-  const hero = $('.hero');
+  const hero = $('.hero'), quiz = $('#quiz');
   let ticking = false;
   function onScroll() {
     ticking = false;
     const vh = innerHeight;
     hdr.classList.toggle('is-scrolled', scrollY > 8);
-    root.classList.toggle('has-bar', hero.getBoundingClientRect().bottom < vh * .35);
-    const cr = calc.getBoundingClientRect();
-    root.classList.toggle('calc-in', cr.top < vh * .6 && cr.bottom > vh * .5);
+    root.classList.toggle('has-bar', hero.getBoundingClientRect().bottom < vh * .4);
+    const qr = quiz.getBoundingClientRect();
+    root.classList.toggle('quiz-in', qr.top < vh * .7 && qr.bottom > vh * .3);
   }
   addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
   onScroll();
