@@ -10,9 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300..500;1,300..400&family=Onest:wght@400..600&display=swap">
 <!-- Концепт для владелицы. Цены, рейтинг, адрес, мастера и отзывы взяты с Яндекс Карт.
-     Демонстрационные допущения, которые сверяем с владелицей: время перезвона (15 минут),
-     «отвечаем в 3 раза быстрее» в виджете связи, часы работы, условия гарантии на покрытие.
-     Форма заявки в концепте не отправляет данные: при запуске подключается к Telegram или CRM -->
+     Демонстрационные допущения, которые сверяем с владелицей: «отвечаем в 3 раза быстрее» в виджете связи, часы работы, условия гарантии на покрытие. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -236,16 +234,35 @@ details[open]>summary .pm{transform:rotate(45deg);background:var(--lilac-2);bord
 .quiz__box{max-width:760px;margin:0 auto;text-align:center}
 .qform{margin-top:28px;padding:22px 18px;border-radius:24px;background:var(--dark-2);text-align:left}
 @media (min-width:700px){.qform{padding:30px 34px}}
-.qprog{display:flex;align-items:center;gap:14px;font-size:13px;color:var(--on-dark-mute)}
-.qprog__bar{flex:1;height:3px;border-radius:3px;background:rgba(244,238,245,.15);overflow:hidden}
-.qprog__bar i{display:block;height:100%;width:33%;border-radius:0;background:var(--lilac);transition:width .35s var(--ease)}
-.qstep h3{margin:18px 0 16px;font-size:22px;line-height:1.25;color:var(--on-dark)}
 .qopts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
 @media (min-width:700px){.qopts--3{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .qopt{display:flex;flex-direction:column;justify-content:center;gap:2px;min-height:56px;padding:10px 14px;border-radius:14px;border:1px solid rgba(244,238,245,.2);background:rgba(244,238,245,.04);text-align:left;font-size:15px;font-weight:500;line-height:1.25;color:var(--on-dark);transition:background-color .2s,border-color .2s}
 .qopt small{font-size:12px;font-weight:400;color:var(--on-dark-mute)}
 .qopt:hover{border-color:var(--lilac)}
 .qopt[aria-pressed="true"]{background:var(--plum);border-color:var(--plum)}
+.qopt[aria-pressed="true"] small{color:rgba(255,255,255,.8)}
+.cstep{padding:18px 0;border-bottom:1px solid rgba(244,238,245,.12);border-radius:0}
+.cstep:first-child{padding-top:4px}
+.cstep h3{display:flex;align-items:center;gap:10px;margin:0 0 14px;font:500 15px/1.3 var(--body);color:var(--on-dark)}
+.cstep h3 b{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:rgba(244,238,245,.1);color:var(--lilac);font-size:13px;font-weight:600}
+.chint{margin:12px 0 0;font-size:13px;color:var(--on-dark-mute)}
+.cextra{display:flex;flex-wrap:wrap;gap:6px 22px;padding:14px 0 4px}
+.tog{display:inline-flex;align-items:center;gap:10px;cursor:pointer;font-size:15px;font-weight:500;min-height:40px;color:var(--on-dark)}
+.tog input{appearance:none;-webkit-appearance:none;margin:0;width:42px;height:24px;border-radius:999px;background:rgba(244,238,245,.2);position:relative;transition:background-color .2s;cursor:pointer;flex:none}
+.tog input::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:transform .2s var(--ease)}
+.tog input:checked{background:var(--plum)}
+.tog input:checked::after{transform:translateX(18px)}
+.cres{position:sticky;bottom:calc(10px + env(safe-area-inset-bottom, 0px));z-index:3;display:grid;gap:12px;margin-top:14px;padding:14px 14px 14px 18px;border-radius:20px;background:var(--surface);color:var(--ink);box-shadow:0 20px 40px -18px rgba(0,0,0,.55)}
+.cres__sum{display:flex;align-items:center;gap:14px}
+.cres__price{flex:none;font:300 46px/1 var(--head);letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cres__price small{font:500 13px var(--body);margin-left:5px;color:var(--mute)}
+.cres__price.bump{animation:bump .35s var(--ease)}
+@keyframes bump{40%{transform:translateY(-5%);color:var(--plum)}}
+.cres__desc{font-size:13px;line-height:1.35;color:var(--mute)}
+.cres__gift{margin:0;display:inline-flex;align-items:center;gap:7px;justify-self:start;font-size:12px;font-weight:500;padding:4px 11px;border-radius:999px;background:var(--lilac-2);color:var(--plum-dk)}
+.cres__gift .hx{font-size:9px}
+.cres .btn{margin-top:4px}
+@media (min-width:700px){.cres{grid-template-columns:minmax(0,1fr) auto;align-items:center;padding:18px 18px 18px 24px}.cres .btn{grid-row:1/span 2;grid-column:2;margin-top:0}.cres__price{font-size:54px}}
 .qlen{display:grid;gap:16px}
 .qlen.has-nail{grid-template-columns:84px minmax(0,1fr);align-items:center}
 .qlen .nailfig{display:none;margin:0}
@@ -259,21 +276,6 @@ details[open]>summary .pm{transform:rotate(45deg);background:var(--lilac-2);bord
 .legend span{display:inline-flex;align-items:center;gap:6px}
 .legend i{width:12px;height:12px;border-radius:3px;border:1.5px solid var(--lilac);background:var(--lilac)}
 .legend i.fe{background:#fff}
-.qback{margin-top:16px;font-size:14px;color:var(--on-dark-mute)}
-.qback:hover{color:var(--on-dark)}
-.qsum{display:inline-flex;align-items:center;gap:8px;margin:0 0 14px;padding:6px 12px;border-radius:999px;background:rgba(244,238,245,.08);font-size:13px;color:var(--on-dark-mute)}
-.qsum .hx{color:var(--lilac);font-size:9px}
-.field{display:block;width:100%;min-height:54px;padding:0 18px;border-radius:14px;border:1px solid rgba(244,238,245,.25);background:var(--surface);color:var(--ink);font:500 17px/1 var(--body);font-variant-numeric:tabular-nums}
-.field:focus{outline:2px solid var(--lilac);outline-offset:2px}
-.field.bad{outline:2px solid #F08FA0}
-.consent{display:flex;align-items:flex-start;gap:10px;margin:14px 0 18px;font-size:12.5px;line-height:1.45;color:var(--on-dark-mute)}
-.consent input{flex:none;margin:2px 0 0;width:17px;height:17px;accent-color:var(--lilac)}
-.consent a{color:var(--on-dark);font-weight:500}
-.qsend{width:100%}
-.qerr{margin:10px 0 0;font-size:13px;color:#F5B5C0}
-.qdone{text-align:center;padding:10px 0 4px}
-.qdone b{display:block;font:400 26px/1.2 var(--head);color:var(--on-dark)}
-.qdone p{margin:10px auto 22px;max-width:30em;color:var(--on-dark-mute)}
 
 /* 5. steps */
 .steps{list-style:none;margin:34px 0 0;padding:0;display:grid;gap:12px;counter-reset:s}
@@ -548,7 +550,7 @@ html.lock{overflow:hidden}
   <div class="wrap">
     <div class="head">
       <h2 class="h2" id="prices-title">Маникюр с покрытием от 60 BYN, педикюр от 40 BYN</h2>
-      <p class="sub">Цены на октябрь 2026. Точную сумму назовём после 3 вопросов ниже</p>
+      <p class="sub">Цены на октябрь 2026. Точную сумму посчитает калькулятор ниже</p>
     </div>
     <div class="svc">
       <article class="svc__c">
@@ -670,55 +672,55 @@ html.lock{overflow:hidden}
   </div>
 </section>
 
-<!-- 4. QUIZ: three steps, the last one is the phone -->
+<!-- 4. CALCULATOR: the price is visible right away, booking is one tap away -->
 <section class="quiz dark" id="quiz" aria-labelledby="quiz-title">
   <div class="wrap quiz__box">
-    <h2 class="h2" id="quiz-title">Узнайте точную цену своего маникюра за 3 вопроса</h2>
-    <p class="sub">Перезвоним за 15 минут, назовём цену и свободное время у мастера</p>
-    <form class="qform" id="qform" novalidate>
-      <div class="qprog"><span id="qstep-n">Вопрос 1 из 3</span><span class="qprog__bar"><i id="qbar"></i></span></div>
-      <div class="qstep" data-step="1">
-        <h3>Что будем делать?</h3>
-        <div class="qopts qopts--3" id="q-s">
-          <button class="qopt" type="button" data-v="coat">Маникюр с покрытием</button>
-          <button class="qopt" type="button" data-v="ext">Наращивание</button>
-          <button class="qopt" type="button" data-v="jap">Японский маникюр</button>
-          <button class="qopt" type="button" data-v="dip">DIP<small>при аллергии на гель-лак</small></button>
-          <button class="qopt" type="button" data-v="ped">Педикюр</button>
-          <button class="qopt" type="button" data-v="podo">Проблемные ногти и стопы</button>
+    <h2 class="h2" id="quiz-title">Посчитайте цену своего маникюра за 3 шага</h2>
+    <p class="sub">Цена по прайсу студии на октябрь 2026, без звонков и заявок</p>
+    <form class="qform" id="calc" aria-label="Калькулятор стоимости">
+      <div class="cstep">
+        <h3><b>1</b>Услуга</h3>
+        <div class="qopts qopts--3" id="c-s">
+          <button class="qopt" type="button" data-g="s" data-v="coat">Маникюр с покрытием</button>
+          <button class="qopt" type="button" data-g="s" data-v="ext">Наращивание</button>
+          <button class="qopt" type="button" data-g="s" data-v="jap">Японский маникюр</button>
+          <button class="qopt" type="button" data-g="s" data-v="dip">DIP<small>при аллергии на гель-лак</small></button>
+          <button class="qopt" type="button" data-g="s" data-v="ped">Педикюр</button>
+          <button class="qopt" type="button" data-g="s" data-v="podo">Проблемные ногти и стопы</button>
         </div>
+        <p class="chint" id="c-hint"></p>
       </div>
-      <div class="qstep" data-step="2" hidden>
-        <h3 id="q-a-t">Какая длина нужна?</h3>
-        <div class="qlen has-nail" id="q-len">
+      <div class="cstep">
+        <h3><b>2</b><span id="c-a-t">Длина</span></h3>
+        <div class="qlen has-nail" id="c-len">
           <figure class="nailfig">
             <svg class="nail" viewBox="20 -150 180 440" aria-hidden="true">
               <path class="nail__finger" d="M40 290V100C40 50 72 22 110 22s70 28 70 78v190"/>
-              <path class="nail__free" id="q-free" transform="translate(110 84) scale(1 .87)" d="M-40 0V-62C-40-88-22-100 0-100S40-88 40-62V0Z"/>
+              <path class="nail__free" id="c-free" transform="translate(110 84) scale(1 .87)" d="M-40 0V-62C-40-88-22-100 0-100S40-88 40-62V0Z"/>
               <path class="nail__bed" d="M70 192V84c0-14 18-24 40-24s40 10 40 24v108c0 6-4 10-10 10H80c-6 0-10-4-10-10Z"/>
             </svg>
           </figure>
           <div>
-            <div class="qopts" id="q-a"></div>
+            <div class="qopts" id="c-a"></div>
             <div class="legend"><span><i></i>ногтевое ложе</span><span><i class="fe"></i>свободный край</span></div>
           </div>
         </div>
-        <button class="qback" type="button" data-back="1">Назад</button>
       </div>
-      <div class="qstep" data-step="3" hidden>
-        <h3>Куда перезвонить?</h3>
-        <p class="qsum" id="q-sum"><span class="hx"></span><span></span></p>
-        <label class="sr" for="q-phone">Телефон</label>
-        <input class="field" id="q-phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+375 (__) ___-__-__">
-        <div class="consent"><input type="checkbox" id="q-ok" checked><label for="q-ok">Даю согласие на <a href="consent.html" target="_blank" rel="noopener">обработку персональных данных</a></label></div>
-        <button class="btn btn--main qsend" type="submit">Узнать точную цену<svg class="i"><use href="#i-arr"/></svg><span class="btn-badge">за 15 минут</span></button>
-        <p class="qerr" id="q-err" hidden></p>
-        <button class="qback" type="button" data-back="2">Назад</button>
+      <div class="cstep" id="c-b-wrap">
+        <h3><b>3</b><span id="c-b-t">Дизайн</span></h3>
+        <div class="qopts qopts--3" id="c-b"></div>
       </div>
-      <div class="qdone" id="q-done" hidden>
-        <b>Заявка принята</b>
-        <p>Перезвоним в течение 15 минут, назовём цену и свободное время. Если удобнее выбрать время самой, оно есть онлайн</p>
-        <a class="btn btn--ghost" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Посмотреть свободные окна</a>
+      <div class="cextra">
+        <label class="tog" id="c-x-wrap"><input type="checkbox" id="c-x"><span id="c-x-l">Массаж рук +30</span></label>
+        <label class="tog" id="c-fr-wrap" hidden><input type="checkbox" id="c-fr"><span>Френч +5</span></label>
+      </div>
+      <div class="cres" aria-live="polite">
+        <div class="cres__sum">
+          <span class="cres__price"><span id="c-price">75</span><small>BYN</small></span>
+          <span class="cres__desc" id="c-desc">Маникюр с покрытием, Medium, френч или дизайн</span>
+        </div>
+        <p class="cres__gift" id="c-gift" hidden></p>
+        <a class="btn btn--main" href="https://yandex.by/maps/org/dofamin/225603981549/" target="_blank" rel="noopener">Записаться на эту услугу<svg class="i"><use href="#i-arr"/></svg><span class="btn-badge">без звонков</span></a>
       </div>
     </form>
   </div>
@@ -728,10 +730,10 @@ html.lock{overflow:hidden}
 <section class="after" id="after" aria-labelledby="after-title">
   <div class="wrap">
     <div class="head">
-      <h2 class="h2" id="after-title">Что будет после заявки: от звонка до подарка</h2>
+      <h2 class="h2" id="after-title">Что будет после записи: от выбора времени до подарка</h2>
     </div>
     <ol class="steps">
-      <li><b>Перезвоним за 15 минут</b><span>Назовём цену и свободные окна</span></li>
+      <li><b>Выберете время онлайн</b><span>Свободные окна видны сразу</span></li>
       <li><b>Подберём мастера</b><span>Под вашу длину, дизайн и ногти</span></li>
       <li><b>Встретим с чаем</b><span>Угощаем чаем с конфетами</span></li>
       <li><b>Покажем варианты дизайна</b><span>Можно принести своё фото</span></li>
@@ -864,7 +866,7 @@ html.lock{overflow:hidden}
       <details><summary><span>Сколько длится процедура?</span><i class="pm"></i></summary><div class="faq__a"><p>Маникюр с покрытием обычно 1,5-2 часа, педикюр около 1,5 часа<span class="flag">*</span>. Точное время назовём при записи</p></div></details>
       <details><summary><span>Можно прийти со своим фото дизайна?</span><i class="pm"></i></summary><div class="faq__a"><p>Да. Покажите фото мастеру или пришлите заранее в Instagram. Мастер предложит и свои варианты</p></div></details>
       <details><summary><span>Будет ли больно?</span><i class="pm"></i></summary><div class="faq__a"><p>Не должно. В отзывах пишут, что «весь процесс прошел без неприятных ощущений». Если что-то беспокоит, скажите мастеру сразу</p></div></details>
-      <details><summary><span>Как понять, какая у меня длина?</span><i class="pm"></i></summary><div class="faq__a"><p>Смотрите на свободный край ногтя. Natural - коротко, Medium - край до половины ложа, Long - до длины ложа, Extra long - длиннее. Схема есть в квизе выше</p></div></details>
+      <details><summary><span>Как понять, какая у меня длина?</span><i class="pm"></i></summary><div class="faq__a"><p>Смотрите на свободный край ногтя. Natural - коротко, Medium - край до половины ложа, Long - до длины ложа, Extra long - длиннее. Схема есть в калькуляторе выше</p></div></details>
       <details><summary><span>Что делать при аллергии на гель-лак?</span><i class="pm"></i></summary><div class="faq__a"><p>Выбрать DIP-покрытие: короткие 80 BYN, средние 90 BYN, снятие бесплатно</p></div></details>
       <details><summary><span>Есть ли парковка?</span><i class="pm"></i></summary><div class="faq__a"><p>Да, парковка рядом со входом. В студии есть Wi-Fi</p></div></details>
     </div>
@@ -921,7 +923,7 @@ html.lock{overflow:hidden}
     <div class="ftr__small">
       <span>Dofamin · студия маникюра и педикюра · Минск, ул. Кунцевщина, 31</span>
       <span><a href="policy.html" target="_blank" rel="noopener">Политика конфиденциальности</a> · <a href="consent.html" target="_blank" rel="noopener">Согласие на обработку персональных данных</a></span>
-      <span>Концепт сайта: отмеченное * сверяем с владелицей, форма заявки подключается при запуске</span>
+      <span>Концепт сайта: отмеченное * сверяем с владелицей</span>
     </div>
   </div>
 </footer>
@@ -1010,25 +1012,43 @@ html.lock{overflow:hidden}
   addEventListener('resize', syncArrows);
   syncArrows();
 
-  /* ---------- quiz: service, length or type, phone ---------- */
-  const Q = {
-    coat: { n: 'Маникюр с покрытием', t: 'Какая длина нужна?', nail: true, o: [['natural', 'Natural', 'короткие', .13], ['medium', 'Medium', 'до ½ ложа', .45], ['long', 'Long', 'до длины ложа', .9], ['xl', 'Extra long', 'длиннее ложа', 1.3]] },
-    ext: { n: 'Наращивание', t: 'Какая длина нужна?', nail: true, o: [['medium', 'Средняя', '', .55], ['long', 'Длинные', '', 1.05]] },
-    jap: { n: 'Японский маникюр', t: 'Сейчас на ногтях есть покрытие?', o: [['no', 'Нет'], ['yes', 'Да, нужно снять']] },
-    dip: { n: 'DIP при аллергии', t: 'Какая длина нужна?', nail: true, o: [['short', 'Короткие', '', .13], ['medium', 'Средние', '', .45]] },
-    ped: { n: 'Педикюр', t: 'Какой педикюр нужен?', o: [['smart', 'Полный', 'стопы и пальцы'], ['express', 'Экспресс', 'только пальцы'], ['jap', 'Японский'], ['unsure', 'Пока не знаю', 'подскажем']] },
-    podo: { n: 'Проблемные ногти и стопы', t: 'Что беспокоит?', o: [['ingrown', 'Врастающий ноготь'], ['onycho', 'Ноготь отслаивается'], ['cracks', 'Трещины и мозоли'], ['other', 'Другое', 'расскажете мастеру']] }
+  /* ---------- calculator: price by the studio's price list ---------- */
+  const SV = {
+    coat: { n: 'Маникюр с покрытием', hint: 'В цену входят снятие, маникюр, ремонт до 3 ногтей, укрепление и покрытие',
+      a: { t: 'Длина', nail: true, o: [['natural', 'Natural', 'короткие', .13], ['medium', 'Medium', 'до ½ ложа', .45], ['long', 'Long', 'до длины ложа', .9], ['xl', 'Extra long', 'длиннее ложа', 1.3]] },
+      b: { t: () => 'Дизайн', o: () => [['mono', 'Однотон'], ['french', 'Френч или дизайн'], ['complex', 'Сложный дизайн', 'роспись, камни +10']] },
+      p: (a, b) => { const t = { natural: [60, 65], medium: [70, 75], long: [80, 90], xl: [100, 110] }[a]; return b === 'mono' ? t[0] : t[1] + (b === 'complex' ? 10 : 0); },
+      g: (a, b) => a === 'natural' && b === 'mono' ? 'Простой декор 2 ногтей в подарок' : '',
+      x: ['Массаж рук', 30], d: ['medium', 'french'] },
+    ext: { n: 'Наращивание', hint: 'По отзывам, наращивание держится без отслоек больше 4 недель',
+      a: { t: 'Длина', nail: true, o: [['medium', 'Средняя', '', .55], ['long', 'Длинные', '', 1.05]] },
+      b: { t: () => 'Покрытие', o: () => [['camo', 'Камуфляж'], ['color', 'Цвет или дизайн']] },
+      p: (a, b) => ({ medium: [100, 110], long: [110, 120] })[a][b === 'camo' ? 0 : 1],
+      x: ['Массаж рук', 30], d: ['medium', 'color'] },
+    jap: { n: 'Японский маникюр', hint: 'Ухоженные натуральные ногти без цветного покрытия',
+      a: { t: 'Сейчас на ногтях есть покрытие?', o: [['no', 'Нет'], ['yes', 'Да, нужно снять']] },
+      p: a => a === 'no' ? 60 : 70, x: ['Массаж рук', 30], d: ['no'] },
+    dip: { n: 'DIP-маникюр', hint: 'Покрытие для тех, у кого аллергия на гель-лак. Снятие бесплатно',
+      a: { t: 'Длина', nail: true, o: [['short', 'Короткие', '', .13], ['medium', 'Средние', '', .45]] },
+      p: a => a === 'short' ? 80 : 90, g: () => 'Снятие бесплатно', x: ['Массаж рук', 30], d: ['short'] },
+    ped: { n: 'Педикюр', hint: 'Полный педикюр: обработка стоп дисками, пальцы и уход с маслом, кремом и свечой',
+      a: { t: 'Вид педикюра', o: [['smart', 'Полный', 'стопы и пальцы'], ['express', 'Экспресс', 'только пальцы'], ['jap', 'Японский']] },
+      b: { t: a => a === 'jap' ? 'Что обрабатываем' : 'Покрытие',
+        o: a => a === 'jap' ? [['full', 'Стопы и пальцы'], ['toes', 'Только пальчики']] : [['none', 'Без покрытия'], ['lac', 'Лак'], ['gel', 'Гель-лак'], ['film', 'Плёнки']] },
+      p: (a, b) => ({ smart: { none: 70, lac: 80, gel: 85, film: 85 }, express: { none: 40, lac: 55, gel: 60, film: 80 }, jap: { full: 75, toes: 55 } })[a][b],
+      g: (a, b) => a === 'smart' && b === 'none' ? 'Лечебный лак в подарок' : '',
+      fr: (a, b) => b === 'lac' || b === 'gel',
+      x: ['Массаж стоп', 30], d: ['smart', 'gel'] },
+    podo: { n: 'Подология', hint: 'Скажите мастеру при записи, что беспокоит, и он подготовится',
+      a: { t: 'Что беспокоит?', o: [['podo', 'Педикюр с подологией'], ['ingrown', 'Врастающий ноготь'], ['onycho', 'Ноготь отслаивается', '1 ноготь'], ['cracks', 'Трещины и мозоли'], ['callus', 'Стержневая мозоль']] },
+      b: { t: () => 'Покрытие', o: a => a === 'podo' ? [['none', 'Без покрытия'], ['lac', 'Лак'], ['gel', 'Гель-лак']] : null },
+      p: (a, b) => a === 'podo' ? { none: 85, lac: 95, gel: 100 }[b] : { ingrown: 35, onycho: 35, cracks: 40, callus: 15 }[a],
+      xOn: a => a === 'podo', x: ['Массаж стоп', 30], d: ['podo', 'none'] }
   };
-  const form = $('#qform'), steps = $$('.qstep', form), bar = $('#qbar'), stepN = $('#qstep-n');
-  const qa = $('#q-a'), qlen = $('#q-len'), qfree = $('#q-free'), phone = $('#q-phone'), err = $('#q-err');
-  const st = { s: null, a: null };
-  function show(n) {
-    steps.forEach(s => { s.hidden = +s.dataset.step !== n; });
-    $('#q-done').hidden = true;
-    bar.style.width = (n / 3 * 100) + '%';
-    stepN.textContent = 'Вопрос ' + n + ' из 3';
-    $$('#q-s .qopt').forEach(b => b.setAttribute('aria-pressed', b.dataset.v === st.s));
-  }
+  const el = { s: $('#c-s'), a: $('#c-a'), b: $('#c-b'), bw: $('#c-b-wrap'), at: $('#c-a-t'), bt: $('#c-b-t'), hint: $('#c-hint'), len: $('#c-len'),
+    x: $('#c-x'), xw: $('#c-x-wrap'), xl: $('#c-x-l'), fr: $('#c-fr'), frw: $('#c-fr-wrap'), price: $('#c-price'), desc: $('#c-desc'), gift: $('#c-gift'), free: $('#c-free') };
+  const st = { s: 'coat', a: 'medium', b: 'french' };
+  const optsHtml = (g, list, val) => list.map(([v, l, sm]) => `<button class="qopt" type="button" data-g="${g}" data-v="${v}" aria-pressed="${v === val}">${l}${sm ? `<small>${sm}</small>` : ''}</button>`).join('');
   let freeK = .87, anim = 0;
   function setFree(ratio) {
     const to = (ratio * 140 + 24) / 100, from = freeK, t0 = performance.now(), dur = RM ? 1 : 420;
@@ -1036,57 +1056,64 @@ html.lock{overflow:hidden}
     const tick = now => {
       const p = clamp((now - t0) / dur, 0, 1), e = 1 - Math.pow(1 - p, 3);
       freeK = from + (to - from) * e;
-      qfree.setAttribute('transform', `translate(110 84) scale(1 ${freeK.toFixed(3)})`);
+      el.free.setAttribute('transform', `translate(110 84) scale(1 ${freeK.toFixed(3)})`);
       if (p < 1) anim = requestAnimationFrame(tick);
     };
     anim = requestAnimationFrame(tick);
   }
-  function pickService(v) {
-    st.s = v; st.a = null;
-    const q = Q[v];
-    $('#q-a-t').textContent = q.t;
-    qlen.classList.toggle('has-nail', !!q.nail);
-    qa.innerHTML = q.o.map(([val, l, sm]) => `<button class="qopt" type="button" data-v="${val}">${l}${sm ? `<small>${sm}</small>` : ''}</button>`).join('');
-    if (q.nail) setFree(q.o[1] ? q.o[1][3] : q.o[0][3]);
-    show(2);
+  function renderB() {
+    const s = SV[st.s], list = s.b ? s.b.o(st.a) : null;
+    if (list) {
+      if (!list.some(o => o[0] === st.b)) st.b = list.some(o => o[0] === s.d[1]) ? s.d[1] : list[0][0];
+      el.bt.textContent = s.b.t(st.a);
+      el.b.innerHTML = optsHtml('b', list, st.b);
+    }
+    el.bw.hidden = !list;
   }
-  $('#q-s').addEventListener('click', e => { const b = e.target.closest('.qopt'); if (b) pickService(b.dataset.v); });
-  qa.addEventListener('click', e => {
+  function renderAll() {
+    const s = SV[st.s];
+    $$('.qopt', el.s).forEach(b => b.setAttribute('aria-pressed', b.dataset.v === st.s));
+    el.hint.textContent = s.hint;
+    el.at.textContent = s.a.t;
+    el.a.innerHTML = optsHtml('a', s.a.o, st.a);
+    el.len.classList.toggle('has-nail', !!s.a.nail);
+    el.xl.textContent = `${s.x[0]} +${s.x[1]}`;
+    renderB();
+  }
+  function update(bump) {
+    const s = SV[st.s], aOpt = s.a.o.find(o => o[0] === st.a);
+    const list = s.b ? s.b.o(st.a) : null, bOpt = list ? list.find(o => o[0] === st.b) : null;
+    if (s.a.nail && aOpt) setFree(aOpt[3]);
+    const frOn = !!(s.fr && s.fr(st.a, st.b)), xOn = !s.xOn || s.xOn(st.a);
+    el.frw.hidden = !frOn; el.xw.hidden = !xOn;
+    let price = s.p(st.a, st.b);
+    const low = t => /^[A-Za-z]/.test(t) ? t : t.toLowerCase();
+    const parts = [s.n, aOpt ? low(aOpt[1]) : ''];
+    if (bOpt) parts.push(low(bOpt[1]));
+    if (frOn && el.fr.checked) { price += 5; parts.push('френч'); }
+    if (xOn && el.x.checked) { price += s.x[1]; parts.push(s.x[0].toLowerCase()); }
+    el.price.textContent = price;
+    el.desc.textContent = parts.filter(Boolean).join(', ');
+    const g = s.g ? s.g(st.a, st.b) : '';
+    el.gift.hidden = !g; el.gift.innerHTML = g ? '<span class="hx"></span>' + g : '';
+    if (bump && !RM) { const pr = el.price.parentNode; pr.classList.remove('bump'); void pr.offsetWidth; pr.classList.add('bump'); }
+  }
+  function pickService(v) {
+    st.s = v; [st.a, st.b] = SV[v].d; el.x.checked = false; el.fr.checked = false;
+    renderAll(); update(true);
+  }
+  $('#calc').addEventListener('click', e => {
     const b = e.target.closest('.qopt'); if (!b) return;
-    const q = Q[st.s], o = q.o.find(x => x[0] === b.dataset.v);
-    st.a = o[0];
-    $$('.qopt', qa).forEach(x => x.setAttribute('aria-pressed', x === b));
-    if (q.nail) setFree(o[3]);
-    $('#q-sum span:last-child').textContent = q.n + ', ' + (/[a-z]/i.test(o[1][0]) ? o[1] : o[1].toLowerCase());
-    setTimeout(() => { show(3); phone.focus({ preventScroll: true }); }, q.nail && !RM ? 380 : 0);
+    const g = b.dataset.g, v = b.dataset.v;
+    if (g === 's') return pickService(v);
+    if (g === 'a') { st.a = v; $$('.qopt', el.a).forEach(x => x.setAttribute('aria-pressed', x === b)); renderB(); }
+    if (g === 'b') { st.b = v; $$('.qopt', el.b).forEach(x => x.setAttribute('aria-pressed', x === b)); }
+    update(true);
   });
-  qa.addEventListener('mouseover', e => { const b = e.target.closest('.qopt'); const q = Q[st.s]; if (b && q && q.nail) { const o = q.o.find(x => x[0] === b.dataset.v); if (o) setFree(o[3]); } });
-  $$('[data-back]', form).forEach(b => b.addEventListener('click', () => show(+b.dataset.back)));
-  phone.addEventListener('input', () => {
-    let dg = phone.value.replace(/\D/g, '');
-    if (!dg.startsWith('375')) dg = '375' + dg.replace(/^3?7?5?/, '');
-    dg = dg.slice(0, 12);
-    const p = dg.slice(3);
-    let out = '+375';
-    if (p.length) out += ' (' + p.slice(0, 2);
-    if (p.length >= 2) out += ')';
-    if (p.length > 2) out += ' ' + p.slice(2, 5);
-    if (p.length > 5) out += '-' + p.slice(5, 7);
-    if (p.length > 7) out += '-' + p.slice(7, 9);
-    phone.value = out;
-    phone.classList.remove('bad'); err.hidden = true;
-  });
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const ok = phone.value.replace(/\D/g, '').length === 12;
-    if (!ok) { phone.classList.add('bad'); err.textContent = 'Введите номер полностью: +375 и 9 цифр'; err.hidden = false; return; }
-    if (!$('#q-ok').checked) { err.textContent = 'Отметьте согласие на обработку данных'; err.hidden = false; return; }
-    steps.forEach(s => { s.hidden = true; });
-    $('.qprog', form).hidden = true;
-    $('#q-done').hidden = false;
-  });
+  $('#calc').addEventListener('change', () => update(true));
+  $('#calc').addEventListener('submit', e => e.preventDefault());
   $$('[data-quiz]').forEach(b => b.addEventListener('click', () => { pickService(b.dataset.quiz); goTo($('#quiz')); }));
-  show(1);
+  renderAll(); update(false);
 
   /* ---------- lightbox ---------- */
   const lbImg = $('.lb__img', lb), lbCap = $('.lb__cap', lb), lbCount = $('.lb__count', lb);
