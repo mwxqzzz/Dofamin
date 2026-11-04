@@ -1,0 +1,29 @@
+name: Deploy to Netlify
+
+on:
+  workflow_dispatch:
+    inputs:
+      proxy_path:
+        description: "Netlify MCP deploy proxy path"
+        required: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Prepare site
+        run: |
+          mkdir _site
+          cp index.html policy.html consent.html _site/
+          cp -r img _site/
+      - name: Deploy
+        working-directory: _site
+        env:
+          PROXY_PATH: ${{ inputs.proxy_path }}
+        run: |
+          echo "::add-mask::$PROXY_PATH"
+          npx -y @netlify/mcp@latest --site-id f31949e6-8331-4dd1-9434-1a6c875b3e89 --proxy-path "$PROXY_PATH"
