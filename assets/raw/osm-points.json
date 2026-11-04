@@ -1,0 +1,460 @@
+{
+ "metro": [
+  {
+   "type": "node",
+   "id": 209161685,
+   "lat": 53.9065308,
+   "lon": 27.4365912,
+   "tags": {
+    "colour": "red",
+    "int_name": "Kamiennaja Horka",
+    "name": "Каменная Горка",
+    "name:be": "Каменная Горка",
+    "name:ru": "Каменная Горка",
+    "network": "Минский метрополитен",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+   }
+  },
+  {
+   "type": "node",
+   "id": 209161853,
+   "lat": 53.9063946,
+   "lon": 27.4354691,
+   "tags": {
+    "colour": "red",
+    "int_name": "Kamiennaja Horka",
+    "name": "Каменная Горка",
+    "name:be": "Каменная Горка",
+    "name:ru": "Каменная Горка",
+    "network": "Минский метрополитен",
+    "railway": "subway_entrance",
+    "wheelchair": "yes"
+   }
+  },
+  {
+   "type": "node",
+   "id": 209161866,
+   "lat": 53.9066075,
+   "lon": 27.4349802,
+   "tags": {
+    "colour": "red",
+    "int_name": "Kamiennaja Horka",
+    "name": "Каменная Горка",
+    "name:be": "Каменная Горка",
+    "name:ru": "Каменная Горка",
+    "network": "Минский метрополитен",
+    "railway": "subway_entrance",
+    "wheelchair": "yes"
+   }
+  },
+  {
+   "type": "node",
+   "id": 209162167,
+   "lat": 53.907246,
+   "lon": 27.436679,
+   "tags": {
+    "colour": "red",
+    "int_name": "Kamiennaja Horka",
+    "name": "Каменная Горка",
+    "name:be": "Каменная Горка",
+    "name:ru": "Каменная Горка",
+    "network": "Минский метрополитен",
+    "railway": "subway_entrance",
+    "wheelchair": "limited"
+   }
+  },
+  {
+   "type": "node",
+   "id": 209186405,
+   "lat": 53.9068666,
+   "lon": 27.4368467,
+   "tags": {
+    "artist_name": "Архитектор: Н.Лопато. Дизайнер: Н.Грибов",
+    "colour": "red",
+    "contact:email": "mail@metropoliten.by",
+    "contact:phone": "+375 17 383-83-83",
+    "contact:website": "https://metropoliten.by/",
+    "elevator": "yes",
+    "int_name": "Kamiennaja Horka",
+    "name": "Каменная Горка",
+    "name:be": "Каменная Горка",
+    "name:en": "Kamiennaja Horka",
+    "name:ru": "Каменная Горка",
+    "network": "Минский метрополитен",
+    "operator": "КУП «Минский метрополитен»",
+    "public_transport": "stop_position",
+    "railway": "station",
+    "ref": "223",
+    "ref:minsktrans": "73219",
+    "start_date": "2005-11-07",
+    "station": "subway",
+    "subway": "yes",
+    "transport": "subway",
+    "wheelchair": "yes",
+    "wikidata": "Q2444858",
+    "wikipedia": "be:Каменная Горка (станцыя метро)"
+   }
+  },
+  {
+   "type": "node",
+   "id": 263061831,
+   "lat": 53.9074804,
+   "lon": 27.4363144,
+   "tags": {
+    "colour": "red",
+    "int_name": "Kamiennaja Horka",
+    "name": "Каменная Горка",
+    "name:be": "Каменная Горка",
+    "name:ru": "Каменная Горка",
+    "network": "Минский метрополитен",
+    "railway": "subway_entrance",
+    "wheelchair": "yes"
+   }
+  },
+  {
+   "type": "node",
+   "id": 280262015,
+   "lat": 53.9063408,
+   "lon": 27.4361765,
+   "tags": {
+    "colour": "red",
+    "int_name": "Kamiennaja Horka",
+    "name": "Каменная Горка",
+    "name:be": "Каменная Горка",
+    "name:ru": "Каменная Горка",
+    "network": "Минский метрополитен",
+    "railway": "subway_entrance",
+    "wheelchair": "yes"
+   }
+  },
+  {
+   "type": "node",
+   "id": 876495728,
+   "lat": 53.9072544,
+   "lon": 27.4343043,
+   "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "minsk_PT": "platform_node",
+    "minsk_PT:checked": "2017-10-26",
+    "minsk_PT:note": "Тэги типа \"minsk_PT...\" - временные, для внесения ОТ Минска! Не удаляйте их - они будут удалены позже. Подробнее: https://goo.gl/Bo7ZpS",
+    "name": "Станцыя метро «Каменная Горка» (прыгарад)",
+    "name:be": "Станцыя метро «Каменная Горка» (прыгарад)",
+    "name:ru": "Станция метро «Каменная Горка» (пригород)",
+    "name:uk": "Станція метро «Кам'яна Гірка» (передмістя)",
+    "operator": "ГП «Столичный транспорт и связь»",
+    "public_transport": "platform",
+    "ref": "81906",
+    "ref:minsktrans": "14608",
+    "shelter": "yes"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1119753405,
+   "lat": 53.9066111,
+   "lon": 27.4387717,
+   "tags": {
+    "colour": "red",
+    "int_name": "Kamiennaja Horka",
+    "name": "Каменная Горка",
+    "name:be": "Каменная Горка",
+    "name:ru": "Каменная Горка",
+    "network": "Минский метрополитен",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1119753644,
+   "lat": 53.9070857,
+   "lon": 27.4395839,
+   "tags": {
+    "colour": "red",
+    "int_name": "Kamiennaja Horka",
+    "name": "Каменная Горка",
+    "name:be": "Каменная Горка",
+    "name:ru": "Каменная Горка",
+    "network": "Минский метрополитен",
+    "railway": "subway_entrance",
+    "wheelchair": "yes"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1119753948,
+   "lat": 53.9071223,
+   "lon": 27.4388189,
+   "tags": {
+    "check_date:wheelchair": "2022-09-24",
+    "colour": "red",
+    "int_name": "Kamiennaja Horka",
+    "name": "Каменная Горка",
+    "name:be": "Каменная Горка",
+    "name:ru": "Каменная Горка",
+    "network": "Минский метрополитен",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1119754198,
+   "lat": 53.9065771,
+   "lon": 27.4394757,
+   "tags": {
+    "colour": "red",
+    "int_name": "Kamiennaja Horka",
+    "name": "Каменная Горка",
+    "name:be": "Каменная Горка",
+    "name:ru": "Каменная Горка",
+    "network": "Минский метрополитен",
+    "railway": "subway_entrance",
+    "wheelchair": "limited"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1783406129,
+   "lat": 53.9073825,
+   "lon": 27.4350486,
+   "tags": {
+    "colour": "red",
+    "int_name": "Kamiennaja Horka",
+    "name": "Каменная Горка",
+    "name:be": "Каменная Горка",
+    "name:ru": "Каменная Горка",
+    "network": "Минский метрополитен",
+    "railway": "subway_entrance",
+    "wheelchair": "yes"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1947354652,
+   "lat": 53.9180114,
+   "lon": 27.4168978,
+   "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "minsk_PT": "platform_node",
+    "minsk_PT:checked": "2017-10-26",
+    "minsk_PT:note": "Тэги типа \"minsk_PT...\" - временные, для внесения ОТ Минска! Не удаляйте их - они будут удалены позже. Подробнее: https://goo.gl/Bo7ZpS",
+    "name": "Каменная Горка-5",
+    "name:be": "Каменная Горка-5",
+    "name:ru": "Каменная Горка-5",
+    "operator": "ДП \"Сталічны транспарт і сувязь\"",
+    "public_transport": "platform",
+    "ref": "81222",
+    "ref:minsktrans": "187016",
+    "shelter": "yes",
+    "tactile_paving": "no"
+   }
+  },
+  {
+   "type": "node",
+   "id": 2852724562,
+   "lat": 53.9171855,
+   "lon": 27.4150252,
+   "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "minsk_PT": "platform_node",
+    "minsk_PT:checked": "2017-10-26",
+    "minsk_PT:note": "Тэги типа \"minsk_PT...\" - временные, для внесения ОТ Минска! Не удаляйте их - они будут удалены позже. Подробнее: https://goo.gl/Bo7ZpS",
+    "name": "ДС Каменная Горка-5",
+    "name:be": "ДС Каменная Горка-5",
+    "name:ru": "ДС Каменная Горка-5",
+    "operator": "ГП \"Столичный транспорт и связь\"",
+    "public_transport": "platform",
+    "ref": "81224",
+    "ref:minsktrans": "147018",
+    "shelter": "yes"
+   }
+  },
+  {
+   "type": "node",
+   "id": 5176408628,
+   "lat": 53.9171695,
+   "lon": 27.4173372,
+   "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "minsk_PT": "platform_node",
+    "minsk_PT:checked": "2017-10-19",
+    "minsk_PT:note": "Тэги типа \"minsk_PT...\" - временные, для внесения ОТ Минска! Не удаляйте их - они будут удалены позже. Подробнее: https://goo.gl/Bo7ZpS",
+    "name": "Каменная Горка-5",
+    "name:be": "Каменная Горка-5",
+    "name:ru": "Каменная Горка-5",
+    "operator": "ДП \"Сталічны транспарт і сувязь\"",
+    "public_transport": "platform",
+    "ref": "81223",
+    "ref:minsktrans": "73866",
+    "shelter": "yes"
+   }
+  },
+  {
+   "type": "node",
+   "id": 5192108273,
+   "lat": 53.9114662,
+   "lon": 27.4263335,
+   "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "minsk_PT": "platform_node",
+    "minsk_PT:checked": "2017-10-26",
+    "minsk_PT:note": "Тэги типа \"minsk_PT...\" - временные, для внесения ОТ Минска! Не удаляйте их - они будут удалены позже. Подробнее: https://goo.gl/Bo7ZpS",
+    "name": "Каменная Горка-1",
+    "name:be": "Каменная Горка-1",
+    "name:en": "Mikrorajon Kamennaya Horka",
+    "name:ru": "Каменная Горка-1",
+    "old_name:be:-2025": "Мікрараён Каменная Горка",
+    "old_name:ru:-2025": "Микрорайон Каменная Горка",
+    "operator": "ГП \"Столичный транспорт и связь\"",
+    "public_transport": "platform",
+    "ref": "81425",
+    "ref:minsktrans": "72616",
+    "shelter": "yes"
+   }
+  },
+  {
+   "type": "node",
+   "id": 5192108279,
+   "lat": 53.9065876,
+   "lon": 27.4379185,
+   "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "minsk_PT": "platform_node",
+    "minsk_PT:checked": "2017-10-26",
+    "minsk_PT:note": "Тэги типа \"minsk_PT...\" - временные, для внесения ОТ Минска! Не удаляйте их - они будут удалены позже. Подробнее: https://goo.gl/Bo7ZpS",
+    "name": "Станцыя метро «Каменная Горка»",
+    "name:be": "Станцыя метро «Каменная Горка»",
+    "name:ru": "Станция метро «Каменная Горка»",
+    "name:uk": "Станція метро «Кам'яна Гірка»",
+    "operator": "ГП «Столичный транспорт и связь»",
+    "public_transport": "platform",
+    "ref": "81908",
+    "ref:minsktrans": "14613",
+    "shelter": "yes"
+   }
+  },
+  {
+   "type": "node",
+   "id": 5192108286,
+   "lat": 53.9122413,
+   "lon": 27.4269243,
+   "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "minsk_PT": "platform_node",
+    "minsk_PT:checked": "2017-10-26",
+    "minsk_PT:note": "Тэги типа \"minsk_PT...\" - временные, для внесения ОТ Минска! Не удаляйте их - они будут удалены позже. Подробнее: https://goo.gl/Bo7ZpS",
+    "name": "Каменная Горка-1",
+    "name:be": "Каменная Горка-1",
+    "name:ru": "Каменная Горка-1",
+    "old_name:be:-2025": "Мікрараён Каменная Горка",
+    "old_name:ru:-2025": "Микрорайон Каменная Горка",
+    "operator": "ГП \"Столичный транспорт и связь\"",
+    "public_transport": "platform",
+    "ref": "81424",
+    "ref:minsktrans": "72406",
+    "shelter": "yes"
+   }
+  },
+  {
+   "type": "node",
+   "id": 5192168846,
+   "lat": 53.9059731,
+   "lon": 27.435487,
+   "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "minsk_PT": "platform_node",
+    "minsk_PT:checked": "2017-10-26",
+    "minsk_PT:note": "Тэги типа \"minsk_PT...\" - временные, для внесения ОТ Минска! Не удаляйте их - они будут удалены позже. Подробнее: https://goo.gl/Bo7ZpS",
+    "name": "Станцыя метро «Каменная Горка»",
+    "name:be": "Станцыя метро «Каменная Горка»",
+    "name:ru": "Станция метро «Каменная Горка»",
+    "name:uk": "Станція метро «Кам'яна Гірка»",
+    "operator": "ДП «Сталічны транспарт і сувязь»",
+    "public_transport": "platform",
+    "ref": "81907",
+    "ref:minsktrans": "14868",
+    "shelter": "yes",
+    "trolleybus": "yes"
+   }
+  },
+  {
+   "type": "node",
+   "id": 5192168852,
+   "lat": 53.9081347,
+   "lon": 27.4363325,
+   "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "minsk_PT": "platform_node",
+    "minsk_PT:checked": "2017-10-26",
+    "minsk_PT:note": "Тэги типа \"minsk_PT...\" - временные, для внесения ОТ Минска! Не удаляйте их - они будут удалены позже. Подробнее: https://goo.gl/Bo7ZpS",
+    "name": "Станцыя метро «Каменная Горка»",
+    "name:be": "Станцыя метро «Каменная Горка»",
+    "name:ru": "Станция метро «Каменная Горка»",
+    "name:uk": "Станція метро «Кам'яна Гірка»",
+    "operator": "ДП «Сталічны транспарт і сувязь»",
+    "public_transport": "platform",
+    "ref": "81905",
+    "ref:minsktrans": "14600",
+    "shelter": "yes",
+    "trolleybus": "yes"
+   }
+  },
+  {
+   "type": "node",
+   "id": 7973672630,
+   "lat": 53.90729,
+   "lon": 27.4334163,
+   "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "minsk_PT": "platform_node",
+    "minsk_PT:checked": "2017-10-26",
+    "minsk_PT:note": "Тэги типа \"minsk_PT...\" - временные, для внесения ОТ Минска! Не удаляйте их - они будут удалены позже. Подробнее: https://goo.gl/Bo7ZpS",
+    "name": "Станцыя метро «Каменная Горка» (горад)",
+    "name:be": "Станцыя метро «Каменная Горка» (горад)",
+    "name:ru": "Станция метро «Каменная Горка» (город)",
+    "name:uk": "Станція метро «Кам'яна Гірка» (місто)",
+    "operator": "ГП «Столичный транспорт и связь»",
+    "public_transport": "platform",
+    "ref": "81906",
+    "ref:minsktrans": "14608",
+    "shelter": "yes"
+   }
+  }
+ ]
+}

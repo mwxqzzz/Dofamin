@@ -1,0 +1,37 @@
+name: Fetch site assets
+on:
+  push:
+    branches: [claude/dofamin-site]
+    paths: [tools/urls.txt, tools/fetch_reviews.py, .github/workflows/fetch-assets.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download photos from Yandex Maps
+        run: |
+          mkdir -p assets/raw
+          while read -r name url; do
+            [ -z "$name" ] && continue
+            curl -sSL --retry 3 -A "Mozilla/5.0" -o "assets/raw/$name.jpg" "$url" \
+              -w "$name %{http_code} %{content_type} %{size_download}\n" || echo "$name FAILED"
+          done < tools/urls.txt | tee assets/raw/photos-log.txt
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch reviews and map data
+        continue-on-error: true
+        run: |
+          pip install -q playwright==1.47.0
+          python -m playwright install --with-deps chromium
+          python tools/fetch_reviews.py
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/raw
+          git commit -m "Add raw photos, reviews and map data from fetch workflow" || echo "nothing to commit"
+          git push

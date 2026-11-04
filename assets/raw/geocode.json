@@ -1,0 +1,23 @@
+[
+ {
+  "place_id": 172198195,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 74095466,
+  "lat": "53.9140372",
+  "lon": "27.4339493",
+  "class": "building",
+  "type": "apartments",
+  "place_rank": 30,
+  "importance": 7.699473563740013e-05,
+  "addresstype": "building",
+  "name": "",
+  "display_name": "31, вуліца Кунцаўшчына, Кунцаўшчына, Фрунзенскі раён, Мінск, 220017, Беларусь",
+  "boundingbox": [
+   "53.9139528",
+   "53.9141218",
+   "27.4333347",
+   "27.4345638"
+  ]
+ }
+]
